@@ -2,6 +2,12 @@ export interface UseLanyardOptions {
 	userId: string | string[];
 }
 
+export interface UseLanyardResults {
+	websocket: WebSocket | undefined;
+	loading: boolean;
+	status: Data | undefined;
+}
+
 export type LanyardResponse = {
 	success: boolean;
 } & LanyardResponseErrorOrData;

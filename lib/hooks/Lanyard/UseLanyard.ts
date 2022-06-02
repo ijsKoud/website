@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { WEBSOCKET_URL } from "../../constants";
-import type { Data, UseLanyardOptions } from "./types";
+import type { Data, UseLanyardOptions, UseLanyardResults } from "./types";
 
 function parseSocketMessage(message: string): {
 	t: "INIT_STATE" | "PRESENCE_UPDATE";
@@ -14,7 +14,7 @@ function parseSocketMessage(message: string): {
 	return { t, d };
 }
 
-export const useLanyard = (options: UseLanyardOptions) => {
+export const useLanyard = (options: UseLanyardOptions): UseLanyardResults => {
 	const [status, setStatus] = useState<Data>();
 	const [websocket, setWebsocket] = useState<WebSocket>();
 	const [loading, setLoading] = useState(true);
