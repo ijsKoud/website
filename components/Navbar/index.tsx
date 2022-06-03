@@ -7,6 +7,7 @@ import { motion, useAnimation, Variants } from "framer-motion";
 export const Navbar: FCWithLanyard = ({ lanyard }) => {
 	const controller = useAnimation();
 	const [discordVisible, setDiscordVisible] = useState(false);
+	const [discordVisibleOverride, setDiscordVisibleOverride] = useState(false);
 	const [stateTimeout, setStateTimeout] = useState<NodeJS.Timeout>();
 
 	const variants: Variants = {
@@ -31,7 +32,10 @@ export const Navbar: FCWithLanyard = ({ lanyard }) => {
 	};
 
 	useEffect(() => {
-		if (discordVisible) {
+		if (discordVisibleOverride) {
+			if (stateTimeout) clearTimeout(stateTimeout);
+			void controller.start("visible");
+		} else if (discordVisible) {
 			if (stateTimeout) clearTimeout(stateTimeout);
 			void controller.start("visible");
 		} else {
@@ -48,13 +52,14 @@ export const Navbar: FCWithLanyard = ({ lanyard }) => {
 	return (
 		<div className="navbar-container-wrapper">
 			<div className="navbar-container">
-				<div>
+				<div className="navbar-links">
 					<Button path="/" title="Home" style="string" type="link" />
 					<Button path="/about" title="About Me" style="string" type="link" />
 					<Button path="/stats" title="Stats" style="string" type="link" />
 				</div>
 				<div className="discord-component-container">
 					<button
+						onClick={() => setDiscordVisibleOverride(!discordVisibleOverride)}
 						onMouseEnter={() => setDiscordVisible(true)}
 						onMouseLeave={() => setDiscordVisible(false)}
 						className="discord-profile-button"

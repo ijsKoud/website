@@ -28,7 +28,9 @@
 		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus-visible {
+		outline: none;
 		filter: drop-shadow(0px 0px 10px #ffffff);
 	}
 }
@@ -57,6 +59,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.navbar-links a {
+	font-size: 25px;
+
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
 }
 
 .discord-component-container {
