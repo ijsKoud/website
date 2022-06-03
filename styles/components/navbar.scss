@@ -27,3 +27,41 @@
 		}
 	}
 }
+
+.navbar-container-wrapper {
+	width: 100%;
+	height: fit-content;
+	position: fixed;
+	z-index: 9999;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar-container {
+	background: #1e1f21;
+	border-radius: 10px;
+	width: 90%;
+	height: 80px;
+	padding: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.discord-component-container {
+	position: relative;
+}
+
+.discord-component {
+	position: absolute;
+	z-index: 9999;
+
+	right: 0%;
+	transform: translateY(10px);
+}
