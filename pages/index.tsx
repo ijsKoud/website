@@ -1,9 +1,11 @@
-import type { NextPage } from "next";
+import { Discord } from "../components";
+import type { NextPageWithLanyard } from "../lib/types";
 
-const Home: NextPage = () => {
+const Home: NextPageWithLanyard = ({ lanyard }) => {
 	return (
 		<main>
 			<h1>Template</h1>
+			<Discord lanyard={lanyard} />
 		</main>
 	);
 };
