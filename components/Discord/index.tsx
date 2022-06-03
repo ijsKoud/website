@@ -12,7 +12,7 @@ export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 					<img src={getAvatar(status.discord_user.avatar, status.discord_user.id)} alt={status.discord_user.username} />
 				</div>
 				<div className="discord-user-details">
-					<div className="discord-user-info">
+					<div className="discord-user-info" onClick={() => window.open(`https://discord.com/users/${status.discord_user.id}`)}>
 						<p className="discord-username">{status.discord_user.username}</p>
 						<p className="discord-discrim">#{status.discord_user.discriminator}</p>
 						<ToolTip content={status.discord_status}>
