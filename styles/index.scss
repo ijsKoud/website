@@ -14,6 +14,20 @@ $background1: #1c1d1e;
 
 $border1: #61656d;
 
+$button-grey: #404142;
+$button-grey-active: #595b5e;
+
+$button-main: #78a4fa;
+$button-main-active: #4181ff;
+
+$button-danger: #e74c3c;
+$button-danger-active: #ef3825;
+
+$switch-success: #5df18e;
+
+$button-nav: rgba($white, 0.15);
+$button-nav-active: rgba($white, 0.3);
+
 * {
 	font-family: "Poppins", sans-serif;
 	padding: 0;
@@ -124,3 +138,4 @@ a {
 }
 
 @import "./components/discord.scss";
+@import "./components/buttons.scss";

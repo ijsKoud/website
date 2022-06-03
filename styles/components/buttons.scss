@@ -1,0 +1,73 @@
+.button {
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+
+	font-size: 20px;
+	font-weight: 500;
+
+	transition: all 0.2s ease;
+
+	i {
+		transition: all 0.2s ease;
+	}
+
+	border: none;
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+.button-main {
+	background-color: $button-main;
+
+	&:hover,
+	&:focus-visible {
+		background-color: $button-main-active;
+	}
+}
+
+.button-secondary-nav {
+	background-color: $button-nav;
+
+	&:hover,
+	&:focus-visible {
+		background-color: $button-nav-active;
+	}
+}
+
+.button-secondary {
+	background-color: $button-grey;
+
+	&:hover,
+	&:focus-visible {
+		background-color: $button-grey-active;
+	}
+}
+
+.button-danger {
+	background-color: $button-danger;
+
+	&:hover,
+	&:focus-visible {
+		background-color: $button-danger-active;
+	}
+}
+
+.button-string {
+	color: $white;
+
+	padding: 0;
+	border-radius: 0;
+
+	&:hover,
+	&:focus-visible {
+		color: $grey;
+
+		i {
+			color: $grey;
+		}
+	}
+}
