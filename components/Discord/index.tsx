@@ -1,7 +1,7 @@
 import type { Data } from "../../lib/hooks/Lanyard/types";
 import type { FC, FCWithLanyard } from "../../lib/types";
 import { getAvatar, getEmojiString, getStatusColor } from "../../lib/utils";
-import { TextLink } from "../TextLink";
+import Button from "../Button";
 import ToolTip from "../Tooltip";
 
 export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
@@ -62,7 +62,7 @@ const Spotify: FC<{ status: Data }> = ({ status }) => {
 	return data ? (
 		<div>
 			<p className="discord-presence-title">LISTENING TO</p>
-			<TextLink className="discord-presence-value" url={`https://open.spotify.com/track/${data.track_id}`} text={data.song} external />
+			<Button path={`https://open.spotify.com/track/${data.track_id}`} title={data.song} style="string" type="link" external />
 		</div>
 	) : null;
 };
