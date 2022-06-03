@@ -1,0 +1,61 @@
+.discord-user,
+.discord-custom-status,
+.discord-user-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.discord-user-avatar {
+	img {
+		border-radius: 50%;
+		height: 76px;
+	}
+}
+
+.discord-user-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.discord-username,
+.discord-discrim {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+
+	line-height: 30px;
+}
+
+.discord-discrim {
+	color: $grey;
+}
+
+.discord-status {
+	margin-left: 10px;
+
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+
+.discord-custom-status {
+	justify-content: left;
+}
+
+.discord-custom-emoji {
+	height: 40px;
+}
+
+.discord-custom-emoji-text {
+	font-size: 25px;
+}
+
+.discord-custom-text {
+	font-weight: 400;
+	font-size: 20px;
+
+	color: $grey;
+	margin-left: 10px;
+}

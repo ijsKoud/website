@@ -6,15 +6,15 @@ import { TextLink } from "../TextLink";
 export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 	return status ? (
 		<div>
-			<div>
-				<div>
+			<div className="discord-user">
+				<div className="discord-user-avatar">
 					<img src={getAvatar(status.discord_user.avatar, status.discord_user.id)} alt={status.discord_user.username} />
 				</div>
-				<div>
-					<div>
-						<p>{status.discord_user.username}</p>
-						<p>#{status.discord_user.discriminator}</p>
-						<div style={{ backgroundColor: getStatusColor(status.discord_status) }} />
+				<div className="discord-user-details">
+					<div className="discord-user-info">
+						<p className="discord-username">{status.discord_user.username}</p>
+						<p className="discord-discrim">#{status.discord_user.discriminator}</p>
+						<div className="discord-status" style={{ backgroundColor: getStatusColor(status.discord_status) }} />
 					</div>
 					<CustomStatus status={status} />
 				</div>
@@ -29,9 +29,13 @@ const CustomStatus: FC<{ status: Data }> = ({ status }) => {
 	const data = status.activities.find((act) => act.type === 4);
 
 	return data ? (
-		<div>
-			{data.emoji?.id ? <img src={getEmojiString(data.emoji)} alt="status emoji" /> : <p>{getEmojiString(data.emoji)}</p>}
-			<p>{data.state}</p>
+		<div className="discord-custom-status">
+			{data.emoji?.id ? (
+				<img className="discord-custom-emoji" src={getEmojiString(data.emoji)} alt="status emoji" />
+			) : (
+				<p className="discord-custom-emoji-text">{getEmojiString(data.emoji)}</p>
+			)}
+			<p className="discord-custom-text">{data.state}</p>
 		</div>
 	) : null;
 };
