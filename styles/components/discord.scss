@@ -1,3 +1,12 @@
+.discord-container {
+	background-color: $background1;
+	border: 1px solid $border1;
+
+	width: fit-content;
+	padding: 15px;
+	border-radius: 10px;
+}
+
 .discord-user,
 .discord-custom-status,
 .discord-user-info {
@@ -7,16 +16,12 @@
 }
 
 .discord-user-avatar {
+	margin-right: 10px;
+
 	img {
 		border-radius: 50%;
 		height: 76px;
 	}
-}
-
-.discord-user-info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .discord-username,
@@ -58,4 +63,27 @@
 
 	color: $grey;
 	margin-left: 10px;
+}
+
+.discord-presences {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 10px;
+}
+
+.discord-presence-game {
+	margin-top: 10px;
+}
+
+.discord-presence-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	color: $grey;
+}
+
+.discord-presence-value {
+	font-weight: 400;
+	font-size: 20px;
 }

@@ -5,7 +5,7 @@ import { TextLink } from "../TextLink";
 
 export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 	return status ? (
-		<div>
+		<div className="discord-container">
 			<div className="discord-user">
 				<div className="discord-user-avatar">
 					<img src={getAvatar(status.discord_user.avatar, status.discord_user.id)} alt={status.discord_user.username} />
@@ -19,8 +19,10 @@ export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 					<CustomStatus status={status} />
 				</div>
 			</div>
-			<Spotify status={status} />
-			<Presence status={status} />
+			<div className="discord-presences">
+				<Spotify status={status} />
+				<Presence status={status} />
+			</div>
 		</div>
 	) : null;
 };
@@ -44,9 +46,9 @@ const Presence: FC<{ status: Data }> = ({ status }) => {
 	const data = status.activities.find((act) => act.type === 0);
 
 	return data ? (
-		<div>
-			<p>PLAYING A GAME</p>
-			<p>{data.name}</p>
+		<div className="discord-presence-game">
+			<p className="discord-presence-title">PLAYING A GAME</p>
+			<p className="discord-presence-value">{data.name}</p>
 		</div>
 	) : null;
 };
@@ -56,8 +58,8 @@ const Spotify: FC<{ status: Data }> = ({ status }) => {
 
 	return data ? (
 		<div>
-			<p>LISTENING TO</p>
-			<TextLink url={`https://open.spotify.com/track/${data.track_id}`} text={data.song} external />
+			<p className="discord-presence-title">LISTENING TO</p>
+			<TextLink className="discord-presence-value" url={`https://open.spotify.com/track/${data.track_id}`} text={data.song} external />
 		</div>
 	) : null;
 };
