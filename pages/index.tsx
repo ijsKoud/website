@@ -1,3 +1,5 @@
+import "tippy.js/dist/tippy.css";
+
 import { Discord } from "../components";
 import type { NextPageWithLanyard } from "../lib/types";
 

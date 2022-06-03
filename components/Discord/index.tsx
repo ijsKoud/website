@@ -2,6 +2,7 @@ import type { Data } from "../../lib/hooks/Lanyard/types";
 import type { FC, FCWithLanyard } from "../../lib/types";
 import { getAvatar, getEmojiString, getStatusColor } from "../../lib/utils";
 import { TextLink } from "../TextLink";
+import ToolTip from "../Tooltip";
 
 export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 	return status ? (
@@ -14,7 +15,9 @@ export const Discord: FCWithLanyard = ({ lanyard: { status } }) => {
 					<div className="discord-user-info">
 						<p className="discord-username">{status.discord_user.username}</p>
 						<p className="discord-discrim">#{status.discord_user.discriminator}</p>
-						<div className="discord-status" style={{ backgroundColor: getStatusColor(status.discord_status) }} />
+						<ToolTip content={status.discord_status}>
+							<div className="discord-status" style={{ backgroundColor: getStatusColor(status.discord_status) }} />
+						</ToolTip>
 					</div>
 					<CustomStatus status={status} />
 				</div>
