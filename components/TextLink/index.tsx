@@ -11,7 +11,7 @@ interface Props {
 export const TextLink: FC<Props> = ({ url, text, className, external }) => {
 	return (
 		<Link href={url}>
-			<a className={className} target="_blank" rel="noopener noreferrer">
+			<a className={`${className ?? ""} textlink`} target="_blank" rel="noopener noreferrer">
 				{text} {external && <i className="fa-solid fa-arrow-up-right-from-square" />}
 			</a>
 		</Link>

@@ -46,6 +46,25 @@ a {
 	-ms-user-select: none; /* IE10+ */
 }
 
+.textlink {
+	color: $white;
+	transition: all 0.5s ease;
+
+	i {
+		color: $white;
+		transition: all 0.5s ease;
+	}
+
+	&:hover,
+	&:focus-visible {
+		color: $grey;
+
+		i {
+			color: $grey;
+		}
+	}
+}
+
 /* == Tippy Theme */
 @font-face {
 	font-family: "Discord Font";
