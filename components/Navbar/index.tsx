@@ -1,6 +1,14 @@
 import type { FCWithLanyard } from "../../lib/types";
 import { DesktopNavbar } from "./DesktopNavbar";
+import { MobileNavbar } from "./MobileNavbar";
 
 export const Navbar: FCWithLanyard = ({ lanyard }) => {
-	return <DesktopNavbar lanyard={lanyard} />;
+	return (
+		<>
+			{/* Created to block items from moving under navbar */}
+			<div className="fake-navbar" />
+			<MobileNavbar lanyard={lanyard} />
+			<DesktopNavbar lanyard={lanyard} />
+		</>
+	);
 };
