@@ -3,6 +3,7 @@ import type { FCWithLanyard } from "../../lib/types";
 import Button from "../Button";
 import { Discord } from "../Discord";
 import { motion, useAnimation, Variants } from "framer-motion";
+import Link from "next/link";
 
 export const Navbar: FCWithLanyard = ({ lanyard }) => {
 	const controller = useAnimation();
@@ -53,7 +54,9 @@ export const Navbar: FCWithLanyard = ({ lanyard }) => {
 		<div className="navbar-container-wrapper">
 			<div className="navbar-container">
 				<div className="navbar-links">
-					<Button path="/" title="Home" style="string" type="link" />
+					<Link href="/">
+						<img tabIndex={0} className="navbar-logo" src="/logo.svg" alt="logo" />
+					</Link>
 					<Button path="/about" title="About Me" style="string" type="link" />
 					<Button path="/stats" title="Stats" style="string" type="link" />
 				</div>

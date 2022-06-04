@@ -61,11 +61,22 @@
 	justify-content: space-between;
 }
 
-.navbar-links a {
-	font-size: 25px;
+.navbar-logo {
+	height: 30px;
+	cursor: pointer;
+}
 
-	&:not(:first-child) {
-		margin-left: 10px;
+.navbar-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		font-size: 25px;
+
+		&:not(:first-child) {
+			margin-left: 10px;
+		}
 	}
 }
 
