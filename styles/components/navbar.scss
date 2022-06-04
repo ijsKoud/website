@@ -137,7 +137,7 @@
 }
 
 .fake-navbar {
-	height: 80px;
+	height: 105px;
 }
 
 .navbar-mobile {
@@ -190,6 +190,10 @@
 		&.mobile {
 			display: block;
 		}
+	}
+
+	.fake-navbar {
+		height: 80px;
 	}
 }
 
