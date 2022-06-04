@@ -56,6 +56,24 @@
 	}
 }
 
+.button-transparent {
+	background-color: transparent;
+
+	&:hover,
+	&:focus-visible {
+		filter: drop-shadow(0px 0px 10px #ffffff);
+	}
+}
+
+.button-black {
+	background-color: $background1;
+
+	&:hover,
+	&:focus-visible {
+		background-color: $background1-active;
+	}
+}
+
 .button-string {
 	color: $white;
 
