@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
+import type { NextPageWithLanyard } from "../lib/types";
 
-const Home: NextPage = () => {
+const Home: NextPageWithLanyard = () => {
 	return (
 		<main>
 			<h1>Template</h1>

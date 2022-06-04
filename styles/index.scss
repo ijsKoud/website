@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -7,6 +7,28 @@ $white: #fff;
 $gray: #232527;
 $dark: #101010;
 $black: #0a0a0a;
+
+$grey: #b8b8b8;
+
+$nav-background: #1e1f21;
+
+$background1: #1c1d1e;
+
+$border1: #61656d;
+
+$button-grey: #404142;
+$button-grey-active: #595b5e;
+
+$button-main: #78a4fa;
+$button-main-active: #4181ff;
+
+$button-danger: #e74c3c;
+$button-danger-active: #ef3825;
+
+$switch-success: #5df18e;
+
+$button-nav: rgba($white, 0.15);
+$button-nav-active: rgba($white, 0.3);
 
 * {
 	font-family: "Poppins", sans-serif;
@@ -38,6 +60,25 @@ a {
 	-moz-user-select: none; /* mozilla browsers */
 	-khtml-user-select: none; /* webkit (konqueror) browsers */
 	-ms-user-select: none; /* IE10+ */
+}
+
+.textlink {
+	color: $white;
+	transition: all 0.5s ease;
+
+	i {
+		color: $white;
+		transition: all 0.5s ease;
+	}
+
+	&:hover,
+	&:focus-visible {
+		color: $grey;
+
+		i {
+			color: $grey;
+		}
+	}
 }
 
 /* == Tippy Theme */
@@ -97,3 +138,7 @@ a {
 		margin-bottom: 8px;
 	}
 }
+
+@import "./components/discord.scss";
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
