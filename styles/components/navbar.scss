@@ -160,9 +160,7 @@
 	flex-direction: column;
 	justify-content: center;
 
-	border-bottom: 2px solid 5px;
-
-	.navbar-navlink {
+	> a {
 		margin-left: 0px !important;
 		margin-top: 10px;
 
@@ -175,6 +173,16 @@
 	}
 }
 
+.navbar-discord {
+	padding-left: 20px;
+	width: 100%;
+
+	.discord-container {
+		transform: scale(0.8) translateX(-4.5rem);
+		max-width: 500px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.navbar-container-wrapper {
 		display: none;
@@ -182,5 +190,11 @@
 		&.mobile {
 			display: block;
 		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navbar-discord .discord-container {
+		transform: scale(0.55) translateX(-12em) translateY(-7rem);
 	}
 }

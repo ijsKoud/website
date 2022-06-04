@@ -37,6 +37,12 @@
 	line-height: 30px;
 }
 
+.discord-username {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .discord-discrim {
 	color: $grey;
 }

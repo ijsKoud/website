@@ -50,7 +50,7 @@ export const MobileNavbar: FCWithLanyard = ({ lanyard }) => {
 						<Button onClick={closeDropdown} path="/about" title="About Me" style="string" type="link" />
 						<Button onClick={closeDropdown} path="/stats" title="Stats" style="string" type="link" />
 					</li>
-					<li>
+					<li className="navbar-discord">
 						<Discord lanyard={lanyard} />
 					</li>
 				</motion.ul>
