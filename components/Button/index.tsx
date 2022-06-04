@@ -3,7 +3,7 @@ import type { FC } from "../../lib/types";
 
 interface PropsButton {
 	title: string;
-	style: "main" | "secondary-nav" | "secondary" | "danger" | "string";
+	style: "main" | "secondary-nav" | "secondary" | "danger" | "string" | "transparent" | "black";
 	external?: boolean;
 
 	type: "button";
@@ -12,7 +12,7 @@ interface PropsButton {
 
 interface PropsLink {
 	title: string;
-	style: "main" | "secondary-nav" | "secondary" | "danger" | "string";
+	style: "main" | "secondary-nav" | "secondary" | "danger" | "string" | "transparent" | "black";
 	external?: boolean;
 
 	type: "link";

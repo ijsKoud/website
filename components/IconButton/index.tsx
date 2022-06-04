@@ -4,7 +4,7 @@ import type { FC } from "../../lib/types";
 interface PropsButton {
 	title?: string;
 	icon: string;
-	style: "main" | "secondary-nav" | "secondary" | "danger" | "transparent" | "black";
+	style: "main" | "secondary-nav" | "secondary" | "danger" | "string" | "transparent" | "black";
 
 	type: "button";
 	onClick: () => void;
@@ -13,7 +13,7 @@ interface PropsButton {
 interface PropsLink {
 	title?: string;
 	icon: string;
-	style: "main" | "secondary-nav" | "secondary" | "danger" | "transparent" | "black";
+	style: "main" | "secondary-nav" | "secondary" | "danger" | "string" | "transparent" | "black";
 
 	type: "link";
 	path: string;
