@@ -74,4 +74,130 @@ export interface AnimeList {
 
 	url: string;
 	image: string;
+	cover_image: string | undefined;
+}
+
+export interface KistuAnimeAPIResponse {
+	data: KitsuAnimeItem[];
+}
+
+export interface KitsuAnimeItem {
+	id: string;
+	type: Type;
+	links: DatumLinks;
+	attributes: Attributes;
+	relationships: { [key: string]: Relationship };
+}
+
+export interface Attributes {
+	createdAt: string;
+	updatedAt: string;
+	slug: string;
+	synopsis: string;
+	description: string;
+	coverImageTopOffset: number;
+	titles: Titles;
+	canonicalTitle: string;
+	abbreviatedTitles: string[];
+	averageRating: null | string;
+	ratingFrequencies: { [key: string]: string };
+	userCount: number;
+	favoritesCount: number;
+	startDate: string;
+	endDate: string;
+	nextRelease: null;
+	popularityRank: number;
+	ratingRank: number | null;
+	ageRating: AgeRating;
+	ageRatingGuide: AgeRatingGuide;
+	subtype: string;
+	status: Status;
+	tba: null | string;
+	posterImage: PosterImage;
+	coverImage: CoverImage | null;
+	episodeCount: number;
+	episodeLength: number;
+	totalLength: number;
+	youtubeVideoId: null | string;
+	showType: string;
+	nsfw: boolean;
+}
+
+export enum AgeRating {
+	PG = "PG"
+}
+
+export enum AgeRatingGuide {
+	Teens13OrOlder = "Teens 13 or older"
+}
+
+export interface CoverImage {
+	tiny: string;
+	large: string;
+	small: string;
+	original: string;
+	meta: CoverImageMeta;
+}
+
+export interface CoverImageMeta {
+	dimensions: PurpleDimensions;
+}
+
+export interface PurpleDimensions {
+	tiny: Large;
+	large: Large;
+	small: Large;
+}
+
+export interface Large {
+	width: number | null;
+	height: number | null;
+}
+
+export interface PosterImage {
+	tiny: string;
+	large: string;
+	small: string;
+	medium: string;
+	original: string;
+	meta: PosterImageMeta;
+}
+
+export interface PosterImageMeta {
+	dimensions: FluffyDimensions;
+}
+
+export interface FluffyDimensions {
+	tiny: Large;
+	large: Large;
+	small: Large;
+	medium: Large;
+}
+
+export enum Status {
+	Finished = "finished"
+}
+
+export interface Titles {
+	en?: string;
+	en_jp: string;
+	en_us?: string;
+	ja_jp: string;
+}
+
+export interface DatumLinks {
+	self: string;
+}
+
+export interface Relationship {
+	links: RelationshipLinks;
+}
+
+export interface RelationshipLinks {
+	self: string;
+	related: string;
+}
+
+export enum Type {
+	Anime = "anime"
 }
