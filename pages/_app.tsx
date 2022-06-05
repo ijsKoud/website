@@ -1,5 +1,6 @@
 import "../styles/index.scss";
 import "tippy.js/dist/tippy.css";
+import "react-loading-skeleton/dist/skeleton.css";
 
 import type { AppProps } from "next/app";
 import { useLanyard } from "../lib/hooks/Lanyard/UseLanyard";

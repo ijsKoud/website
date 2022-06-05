@@ -1,4 +1,6 @@
+import axios from "axios";
 import type { Emoji } from "./hooks/Lanyard/types";
+import type { KistuAnimeAPIResponse } from "./types";
 
 export const getStatusColor = (status: "dnd" | "offline" | "idle" | "online" | "streaming") => {
 	switch (status) {
@@ -27,4 +29,14 @@ export const getEmojiString = (emoji: Emoji | undefined): string => {
 	if (!emoji.id) return emoji.name;
 
 	return `https://cdn.discordapp.com/emojis/${emoji.id}.${emoji.animated ? "gif" : "png"}`;
+};
+
+export const getKitsuCoverImage = async (anime: string): Promise<string | undefined> => {
+	try {
+		const res = await axios.get<KistuAnimeAPIResponse>(`https://kitsu.io/api/edge/anime?filter%5Btext%5D=${encodeURIComponent(anime)}`);
+		return res.data.data[0].attributes.coverImage?.tiny;
+	} catch (err) {
+		console.error(err);
+		return undefined;
+	}
 };
