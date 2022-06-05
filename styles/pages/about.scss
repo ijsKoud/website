@@ -1,0 +1,38 @@
+.about-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-details {
+	margin-top: 5rem;
+	max-width: 80%;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.about-anime {
+	margin-top: 5rem;
+	max-width: 80%;
+}
+
+.about-title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+.about-text {
+	font-weight: 400;
+	font-size: 20px;
+	max-width: 80%;
+}
+
+.about-picture {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+}
