@@ -1,0 +1,126 @@
+.home-container {
+	display: grid;
+	place-items: center;
+
+	height: calc(100vh - 200px);
+}
+
+.home-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-title {
+	height: fit-content;
+	width: fit-content;
+
+	h1,
+	.home-title-name,
+	.Typewriter__cursor {
+		font-size: 50px;
+		font-weight: 600;
+		line-height: 60px;
+	}
+
+	.Typewriter {
+		float: left;
+	}
+
+	.Typewriter__cursor {
+		font-weight: 300;
+	}
+
+	h1 {
+		margin-right: 10px;
+		float: left;
+	}
+}
+
+.home-description {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+
+	margin-bottom: 15px;
+}
+
+.home-title-name {
+	color: $button-main;
+}
+
+.home-buttons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: left;
+
+	a.button.button-black {
+		font-size: 25px;
+	}
+
+	a.button.button-string {
+		font-size: 35px;
+	}
+
+	div {
+		width: fit-content;
+	}
+
+	div:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width: 826px) {
+	.home-title {
+		h1,
+		.home-title-name,
+		.Typewriter__cursor {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+
+	.home-description {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.home-buttons {
+		gap: 5px 5px;
+
+		a.button.button-black {
+			font-size: 20px;
+		}
+
+		a.button.button-string {
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.home-title {
+		h1,
+		.home-title-name,
+		.Typewriter__cursor {
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+
+	.home-description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.home-buttons {
+		a.button.button-black {
+			font-size: 20px;
+		}
+
+		a.button.button-string {
+			font-size: 25px;
+		}
+	}
+}

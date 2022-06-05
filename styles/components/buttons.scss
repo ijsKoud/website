@@ -67,6 +67,9 @@
 
 .button-black {
 	background-color: $background1;
+	padding: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
 
 	&:hover,
 	&:focus-visible {

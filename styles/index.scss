@@ -8,6 +8,8 @@ $gray: #232527;
 $dark: #101010;
 $black: #0a0a0a;
 
+$page-background: #242526;
+
 $grey: #b8b8b8;
 
 $nav-background: #1e1f21;
@@ -20,8 +22,8 @@ $border1: #61656d;
 $button-grey: #404142;
 $button-grey-active: #595b5e;
 
-$button-main: #78a4fa;
-$button-main-active: #4181ff;
+$button-main: #3083ff;
+$button-main-active: #0f51b4;
 
 $button-danger: #e74c3c;
 $button-danger-active: #ef3825;
@@ -40,7 +42,7 @@ $button-nav-active: rgba($white, 0.3);
 }
 
 body {
-	background: rgba($black, 0.94);
+	background: $page-background;
 	min-height: 100vh;
 
 	/* hide scroll bar */
@@ -80,6 +82,16 @@ a {
 			color: $grey;
 		}
 	}
+}
+
+.page-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-container {
+	width: 90%;
 }
 
 /* == Tippy Theme */
@@ -143,3 +155,5 @@ a {
 @import "./components/discord.scss";
 @import "./components/buttons.scss";
 @import "./components/navbar.scss";
+
+@import "./pages/index.scss";
