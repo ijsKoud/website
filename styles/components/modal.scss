@@ -5,7 +5,10 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
+
 	background-color: $modal-backdrop;
+	backdrop-filter: blur(12px);
+
 	display: flex;
 	align-items: center;
 	justify-content: center;

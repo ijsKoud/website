@@ -5,23 +5,27 @@ import BackDrop from "./BackDrop";
 
 const variants: Variants = {
 	hidden: {
-		scale: 0,
-		opacity: 0
+		scale: 0.8,
+		opacity: 0,
+		transition: {
+			duration: 0.3,
+			ease: [0.4, 0, 0.2, 1]
+		}
 	},
 	visible: {
 		scale: 1,
 		opacity: 1,
 		transition: {
-			type: "spring",
-			damping: 25,
-			stiffness: 500
+			duration: 0.3,
+			ease: [0.4, 0, 0.2, 1]
 		}
 	},
 	exit: {
-		scale: 0,
+		scale: 0.8,
 		opacity: 0,
 		transition: {
-			duration: 0.3
+			duration: 0.3,
+			ease: [0.4, 0, 0.2, 1]
 		}
 	}
 };
