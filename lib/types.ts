@@ -74,7 +74,6 @@ export interface AnimeList {
 
 	url: string;
 	image: string;
-	cover_image: string | undefined;
 }
 
 export interface KistuAnimeAPIResponse {
