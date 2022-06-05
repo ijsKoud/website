@@ -22,8 +22,8 @@ $border1: #61656d;
 $button-grey: #404142;
 $button-grey-active: #595b5e;
 
-$button-main: #78a4fa;
-$button-main-active: #4181ff;
+$button-main: #3083ff;
+$button-main-active: #0f51b4;
 
 $button-danger: #e74c3c;
 $button-danger-active: #ef3825;
@@ -155,3 +155,5 @@ a {
 @import "./components/discord.scss";
 @import "./components/buttons.scss";
 @import "./components/navbar.scss";
+
+@import "./pages/index.scss";

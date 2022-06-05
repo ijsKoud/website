@@ -1,0 +1,55 @@
+.home-container {
+	display: grid;
+	place-items: center;
+
+	height: calc(100vh - 200px);
+}
+
+.home-title {
+	display: flex;
+
+	h1,
+	.home-title-name,
+	.Typewriter__cursor {
+		font-size: 50px;
+		font-weight: 600;
+		line-height: 45px;
+	}
+
+	.Typewriter__cursor {
+		font-weight: 300;
+	}
+
+	h1 {
+		margin-right: 10px;
+	}
+}
+
+.home-description {
+	font-weight: 400;
+	font-size: 30px;
+
+	margin-bottom: 10px;
+}
+
+.home-title-name {
+	color: $button-main;
+}
+
+.home-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+
+	a.button.button-black {
+		font-size: 25px;
+	}
+
+	a.button.button-string {
+		font-size: 35px;
+	}
+
+	a.button:not(:first-child) {
+		margin-left: 15px;
+	}
+}

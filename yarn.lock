@@ -3524,6 +3524,7 @@ __metadata:
     react-dom: 18.1.0
     sass: ^1.52.2
     typescript: 4.7.3
+    typewriter-effect: ^2.18.2
   languageName: unknown
   linkType: soft
 
@@ -3890,6 +3891,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"performance-now@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "performance-now@npm:2.1.0"
+  checksum: 534e641aa8f7cba160f0afec0599b6cecefbb516a2e837b512be0adbe6c1da5550e89c78059c7fabc5c9ffdf6627edabe23eb7c518c4500067a898fa65c2b550
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -3978,7 +3986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -4014,6 +4022,15 @@ __metadata:
   version: 4.0.1
   resolution: "quick-lru@npm:4.0.1"
   checksum: bea46e1abfaa07023e047d3cf1716a06172c4947886c053ede5c50321893711577cb6119360f810cc3ffcd70c4d7db4069c3cee876b358ceff8596e062bd1154
+  languageName: node
+  linkType: hard
+
+"raf@npm:^3.4.0":
+  version: 3.4.1
+  resolution: "raf@npm:3.4.1"
+  dependencies:
+    performance-now: ^2.1.0
+  checksum: 50ba284e481c8185dbcf45fc4618ba3aec580bb50c9121385d5698cb6012fe516d2015b1df6dd407a7b7c58d44be8086108236affbce1861edd6b44637c8cd52
   languageName: node
   linkType: hard
 
@@ -4911,6 +4928,19 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 1cb434fbc637d347be90e3a0c6cd05e33c38f941713c8786d3031faf1842c2c148ba91d2fac01e7276b0ae3249b8633f1660e32686cc7a8c6a8fd5361dc52c66
+  languageName: node
+  linkType: hard
+
+"typewriter-effect@npm:^2.18.2":
+  version: 2.18.2
+  resolution: "typewriter-effect@npm:2.18.2"
+  dependencies:
+    prop-types: ^15.6.2
+    raf: ^3.4.0
+  peerDependencies:
+    react: 17.x
+    react-dom: 17.x
+  checksum: a1930f6288dd65ba8fcc7d13012d98943ab80bc237a7d45fc660125b2c66a8a257834b3ad5aba9b5fbce5c07ad59e51548a38d7c57da2d7c1af6c65af9647b34
   languageName: node
   linkType: hard
 
