@@ -82,6 +82,16 @@ a {
 	}
 }
 
+.page-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-container {
+	width: 90%;
+}
+
 /* == Tippy Theme */
 @font-face {
 	font-family: "Discord Font";
