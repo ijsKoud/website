@@ -1,0 +1,46 @@
+.anime-card {
+	position: relative;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.anime-card-image {
+	height: 300px;
+	border-radius: 5px;
+}
+
+.anime-card-title-wrapper {
+	height: 300px;
+	width: 100%;
+
+	position: absolute;
+	z-index: 30;
+	top: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+
+	&:hover,
+	&:focus-visible {
+		outline: none;
+		background-color: rgba($black, 0.5);
+
+		.anime-card-title {
+			opacity: 1;
+		}
+	}
+}
+
+.anime-card-title {
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+
+	transition: opacity 0.3s ease;
+	opacity: 0;
+}
