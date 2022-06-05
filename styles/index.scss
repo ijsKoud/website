@@ -8,6 +8,8 @@ $gray: #232527;
 $dark: #101010;
 $black: #0a0a0a;
 
+$page-background: #242526;
+
 $grey: #b8b8b8;
 
 $nav-background: #1e1f21;
@@ -40,7 +42,7 @@ $button-nav-active: rgba($white, 0.3);
 }
 
 body {
-	background: rgba($black, 0.94);
+	background: $page-background;
 	min-height: 100vh;
 
 	/* hide scroll bar */
