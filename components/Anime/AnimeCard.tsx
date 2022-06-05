@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { FC } from "../../lib/types";
 
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 const AnimeCard: FC<Props> = ({ image, title, onClick }) => {
 	return (
 		<div className="anime-card" onClick={onClick}>
-			<img className="anime-card-image" src={image} alt={title} />
+			<Image className="anime-card-image" src={image} alt={title} loading="lazy" width={210} height={300} />
 			<div className="anime-card-title-wrapper">
 				<p className="anime-card-title">{title}</p>
 			</div>
