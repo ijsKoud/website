@@ -45,7 +45,7 @@ const AnimeListItem: FC<Props> = ({ anime }) => {
 						<tbody>
 							<tr>
 								<td className="anime-modal-table-title">Status:</td>
-								<td style={{ textTransform: "capitalize" }}>{AnimeStatus[anime.status].toLowerCase()}</td>
+								<td style={{ textTransform: "capitalize" }}>{AnimeStatus[anime.status].toLowerCase().replace(/_/g, " ")}</td>
 							</tr>
 							<tr>
 								<td className="anime-modal-table-title">Rating:</td>

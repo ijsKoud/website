@@ -15,7 +15,7 @@ export enum AnimeStatus {
 	COMPLETED,
 	ON_HOLD,
 	DROPPED,
-	PLAN_WATCH = 5 // API doesn't return 4 when marked as "Planned to watch", it returns 5
+	PLAN_TO_WATCH = 5 // API doesn't return 4 when marked as "Planned to watch", it returns 5
 }
 
 export interface AnimeApiResponse {
