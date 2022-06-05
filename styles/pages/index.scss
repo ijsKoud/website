@@ -65,3 +65,55 @@
 		margin-left: 15px;
 	}
 }
+
+@media screen and (max-width: 826px) {
+	.home-title {
+		h1,
+		.home-title-name,
+		.Typewriter__cursor {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+
+	.home-description {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.home-buttons {
+		a.button.button-black {
+			font-size: 20px;
+		}
+
+		a.button.button-string {
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.home-title {
+		h1,
+		.home-title-name,
+		.Typewriter__cursor {
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+
+	.home-description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.home-buttons {
+		a.button.button-black {
+			font-size: 20px;
+		}
+
+		a.button.button-string {
+			font-size: 25px;
+		}
+	}
+}
