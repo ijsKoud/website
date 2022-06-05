@@ -48,7 +48,7 @@ const Home: NextPageWithLanyard = () => {
 	return (
 		<Page>
 			<div className="home-container">
-				<div>
+				<div className="home-content">
 					<div className="home-title">
 						<h1>Hey, I&apos;m</h1>
 						<TypewriterComponent

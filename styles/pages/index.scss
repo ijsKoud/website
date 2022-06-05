@@ -5,15 +5,25 @@
 	height: calc(100vh - 200px);
 }
 
-.home-title {
+.home-content {
 	display: flex;
+	flex-direction: column;
+}
+
+.home-title {
+	height: fit-content;
+	width: fit-content;
 
 	h1,
 	.home-title-name,
 	.Typewriter__cursor {
 		font-size: 50px;
 		font-weight: 600;
-		line-height: 45px;
+		line-height: 60px;
+	}
+
+	.Typewriter {
+		float: left;
 	}
 
 	.Typewriter__cursor {
@@ -22,14 +32,16 @@
 
 	h1 {
 		margin-right: 10px;
+		float: left;
 	}
 }
 
 .home-description {
 	font-weight: 400;
 	font-size: 30px;
+	line-height: 30px;
 
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .home-title-name {
