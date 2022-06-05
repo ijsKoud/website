@@ -28,3 +28,7 @@ export const getEmojiString = (emoji: Emoji | undefined): string => {
 
 	return `https://cdn.discordapp.com/emojis/${emoji.id}.${emoji.animated ? "gif" : "png"}`;
 };
+
+export const getQuery = (query: string | string[]): string => {
+	return Array.isArray(query) ? query[0] : query;
+};
