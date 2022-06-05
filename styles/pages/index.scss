@@ -51,6 +51,7 @@
 .home-buttons {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: left;
 
 	a.button.button-black {
@@ -61,8 +62,12 @@
 		font-size: 35px;
 	}
 
-	div:not(:first-child) {
-		margin-left: 15px;
+	div {
+		width: fit-content;
+	}
+
+	div:not(:last-child) {
+		margin-right: 15px;
 	}
 }
 
@@ -82,6 +87,8 @@
 	}
 
 	.home-buttons {
+		gap: 5px 5px;
+
 		a.button.button-black {
 			font-size: 20px;
 		}
