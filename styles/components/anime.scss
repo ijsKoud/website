@@ -44,3 +44,60 @@
 	transition: opacity 0.3s ease;
 	opacity: 0;
 }
+
+.anime-modal {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.anime-modal-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.anime-modal-title {
+	font-size: 30px;
+	font-weight: 500;
+
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.anime-modal-close {
+	height: 25px;
+
+	i {
+		font-size: 25px;
+	}
+}
+
+.anime-modal-image {
+	overflow: hidden;
+	width: 100%;
+	border-radius: 10px;
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+	}
+}
+
+.anime-modal-stats-table {
+	margin-bottom: 10px;
+
+	td {
+		font-size: 17px;
+	}
+}
+
+.anime-modal-table-title {
+	color: $grey;
+}
