@@ -12,7 +12,7 @@ const Anime = async (req: NextApiRequest, res: NextApiResponse<AnimeApiResponse>
 		title_english: anime.anime_title_eng,
 		genres: anime.genres.map((genre) => genre.name.toLowerCase()),
 		rating: anime.score,
-		status: anime.status,
+		status: anime.status - 1,
 		episodes: {
 			watched: anime.num_watched_episodes,
 			total: anime.anime_num_episodes
