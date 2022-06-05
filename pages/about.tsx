@@ -19,8 +19,8 @@ const About: NextPageWithLanyard = () => {
 				</div>
 				<div className="about-anime">
 					<div>
-						<h1 className="about-title">Anime</h1>
-						<p className="about-text">
+						<h1 className="anime-title">Anime</h1>
+						<p className="anime-text">
 							I watch anime once in a while when I am bored and don&apos;t have anything else to do. Every episode I watch is logged on
 							MyAnimeList and displayed here on my own website.
 						</p>

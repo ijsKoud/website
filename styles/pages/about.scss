@@ -19,16 +19,22 @@
 	max-width: 80%;
 }
 
-.about-title {
+.about-title,
+.anime-title {
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 45px;
 }
 
-.about-text {
+.about-text,
+.anime-text {
 	font-weight: 400;
 	font-size: 20px;
 	max-width: 80%;
+}
+
+.anime-text {
+	max-width: 100%;
 }
 
 .about-picture {
