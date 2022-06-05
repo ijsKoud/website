@@ -2,6 +2,7 @@ import TypewriterComponent from "typewriter-effect";
 import IconButton from "../components/IconButton";
 import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
+import { motion, Variants } from "framer-motion";
 
 const buttonsList = [
 	{
@@ -23,6 +24,26 @@ const buttonsList = [
 	}
 ];
 
+const getVariants = (key: number) => {
+	const variants: Variants = {
+		initial: {
+			transform: "translateY(10px)",
+			opacity: 0
+		},
+		animate: {
+			transform: "translateY(0px)",
+			opacity: 1,
+			transition: {
+				delay: key * 0.1,
+				duration: 0.3,
+				ease: [0.6, 0, 0.17, 1]
+			}
+		}
+	};
+
+	return variants;
+};
+
 const Home: NextPageWithLanyard = () => {
 	return (
 		<Page>
@@ -38,7 +59,9 @@ const Home: NextPageWithLanyard = () => {
 					<p className="home-description">16 year-old anime lover and full-stack developer.</p>
 					<div className="home-buttons">
 						{buttonsList.map((data, key) => (
-							<IconButton key={key} {...data} type="link" style={data.title ? "black" : "string"} />
+							<motion.div key={key} initial="initial" animate="animate" variants={getVariants(key)}>
+								<IconButton {...data} type="link" style={data.title ? "black" : "string"} />
+							</motion.div>
 						))}
 					</div>
 				</div>
