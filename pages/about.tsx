@@ -1,19 +1,8 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import AnimeListItem from "../components/Anime/AnimeListItem";
+import AnimeList from "../components/Anime/AnimeList";
 import Page from "../components/Page";
-import type { AnimeList, NextPageWithLanyard } from "../lib/types";
+import type { NextPageWithLanyard } from "../lib/types";
 
 const About: NextPageWithLanyard = () => {
-	const [anime, setAnime] = useState<AnimeList[]>([]);
-
-	useEffect(() => {
-		axios
-			.get<{ list: AnimeList[] }>("/api/anime")
-			.then((data) => setAnime(data.data.list))
-			.catch(() => void 0);
-	}, []);
-
 	return (
 		<Page>
 			<div className="about-container">
@@ -36,18 +25,7 @@ const About: NextPageWithLanyard = () => {
 							I watch anime once in a while when I am bored and don&apos;t have anything else to do. Every episode I watch is logged on
 							MyAnimeList and displayed here on my own website.
 						</p>
-						{/* <AnimeListItem
-							// @ts-ignore fixed later
-							anime={{
-								title: "Ansatsu Kyoushitsu",
-								status: 1,
-								url: "https://myanimelist.net/anime/24833/Ansatsu_Kyoushitsu",
-								image: "https://cdn.myanimelist.net/r/192x272/images/anime/5/75639.jpg?s=446c4a2d1f128c0d206af25d7e652b56"
-							}}
-						/> */}
-						{anime.map((item) => (
-							<AnimeListItem key={item.title} anime={item} />
-						))}
+						<AnimeList />
 					</div>
 				</div>
 			</div>

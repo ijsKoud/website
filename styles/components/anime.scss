@@ -105,3 +105,15 @@
 .anime-modal-table-title {
 	color: $grey;
 }
+
+.anime-list {
+	margin-top: 10px;
+	margin-bottom: 2rem;
+
+	display: grid;
+	justify-content: left;
+	grid-template-columns: repeat(auto-fill, 200px);
+	grid-gap: 10px;
+	width: 100%;
+	height: 100%;
+}
