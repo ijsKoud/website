@@ -10,6 +10,8 @@ $black: #0a0a0a;
 
 $page-background: #242526;
 
+$modal-backdrop: rgba(#000, 0.75);
+
 $grey: #b8b8b8;
 
 $nav-background: #1e1f21;
@@ -155,5 +157,8 @@ a {
 @import "./components/discord.scss";
 @import "./components/buttons.scss";
 @import "./components/navbar.scss";
+@import "./components/anime.scss";
+@import "./components/modal.scss";
 
 @import "./pages/index.scss";
+@import "./pages/about.scss";

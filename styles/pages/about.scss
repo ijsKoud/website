@@ -1,0 +1,90 @@
+.about-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-details,
+.about-anime {
+	margin-top: 5rem;
+	max-width: 85%;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.about-details {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.about-title,
+.anime-title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+.about-text,
+.anime-text {
+	font-weight: 400;
+	font-size: 20px;
+	max-width: 80%;
+}
+
+.anime-text {
+	max-width: 100%;
+}
+
+.about-picture {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+	.about-details,
+	.about-anime {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.about-picture {
+		height: 200px;
+		width: 200px;
+	}
+
+	.about-text {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.about-details {
+		flex-direction: column;
+	}
+
+	.about-picture-wrapper {
+		display: flex;
+		width: 100%;
+	}
+
+	.about-text {
+		max-width: 100%;
+	}
+
+	.about-title,
+	.anime-title {
+		font-size: 37px;
+		line-height: 45px;
+	}
+
+	.about-text,
+	.anime-text {
+		font-size: 17px;
+	}
+}
