@@ -1,11 +1,11 @@
-import AboutCard from "../components/About/AboutCard";
+import AboutListItem from "../components/About/AboutListItem";
 import AnimeList from "../components/Anime/AnimeList";
 import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 
 const AboutCards = [
 	{
-		title: "Education",
+		title: "Bilingual Education",
 		colours: ["#6EE7B7", "#3B82F6", "#9333EA"],
 		banner: "https://cdn.discordapp.com/attachments/835619926667821117/983347041352704070/unknown.png",
 		description: {
@@ -51,15 +51,7 @@ const About: NextPageWithLanyard = () => {
 				</div>
 				<div>
 					{AboutCards.map((data, key) => (
-						<AboutCard
-							key={key}
-							title={data.title}
-							description={data.description.small}
-							startDate={data.dates.start}
-							endDate={data.dates.end}
-							colours={data.colours}
-							onClick={() => void 0}
-						/>
+						<AboutListItem key={key} item={data} />
 					))}
 				</div>
 				<div className="about-anime">
