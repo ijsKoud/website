@@ -1,3 +1,4 @@
+import AboutList from "../components/About/AboutList";
 import AnimeList from "../components/Anime/AnimeList";
 import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
@@ -19,6 +20,9 @@ const About: NextPageWithLanyard = () => {
 					<div className="about-picture-wrapper">
 						<img className="about-picture" src="https://static.daangamesdg.xyz/discord/pfp.gif" alt="picture" />
 					</div>
+				</div>
+				<div className="about-list-container">
+					<AboutList />
 				</div>
 				<div className="about-anime">
 					<div>
