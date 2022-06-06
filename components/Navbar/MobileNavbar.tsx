@@ -43,7 +43,7 @@ export const MobileNavbar: FCWithLanyard = ({ lanyard }) => {
 							<img tabIndex={0} className="navbar-logo" src="/logo.svg" alt="logo" />
 						</Link>
 					</div>
-					<MenuButton onClick={onClick} />
+					<MenuButton onClick={onClick} isOpen={enabled} />
 				</div>
 				<motion.ul initial={{ height: 0 }} animate={mobileNavbarController} className={`navbar-mobile ${enabled ? "enabled" : ""}`}>
 					<li className="navbar-buttons-mobile">
