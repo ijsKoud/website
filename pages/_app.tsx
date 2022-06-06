@@ -5,7 +5,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import type { AppProps } from "next/app";
 import { useLanyard } from "../lib/hooks/Lanyard/UseLanyard";
 import type { UseLanyardResults } from "../lib/hooks/Lanyard/types";
-import { Navbar } from "../components";
+import { Navbar, Footer } from "../components";
 import Head from "next/head";
 
 const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>) => {
@@ -27,6 +27,7 @@ const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>)
 			</Head>
 			<Navbar lanyard={lanyard} />
 			<Component {...pageProps} lanyard={lanyard} />
+			<Footer lanyard={lanyard} />
 		</>
 	);
 };
