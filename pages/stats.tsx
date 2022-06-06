@@ -7,7 +7,8 @@ const Stats: NextPageWithLanyard = () => {
 	return (
 		<Page>
 			<PinnedRepos />
-			<GitHubCalendar username="DaanGamesDG" />
+			<h1>Commit Graph</h1>
+			<GitHubCalendar username="DaanGamesDG" style={{ marginBottom: "2rem" }} />
 		</Page>
 	);
 };
