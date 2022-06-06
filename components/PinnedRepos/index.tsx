@@ -21,7 +21,7 @@ const PinnedRepos: FC = () => {
 		<div className="pinned-repo-list-container">
 			<h1>Pinned Repositories</h1>
 			<div className="pinned-repo-list">
-				{pinned
+				{pinned.length
 					? pinned.map((pin, key) => <PinnedRepoItem key={key} repo={pin} />)
 					: Array(6)
 							.fill(null)
