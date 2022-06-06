@@ -15,18 +15,18 @@
 	margin-bottom: 2rem;
 
 	width: 80%;
-}
-
-.footer-top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 
 	a.button.button-string {
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
 	}
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer-links {
@@ -38,5 +38,18 @@
 
 	> ul {
 		list-style: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer-links,
+	.footer-top {
+		flex-direction: column;
+		align-items: unset;
+		gap: 20px;
+	}
+
+	.footer-top {
+		gap: 0px;
 	}
 }
