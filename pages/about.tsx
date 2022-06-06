@@ -16,7 +16,9 @@ const About: NextPageWithLanyard = () => {
 							progammers and interested users how the code behind a certain button works.
 						</p>
 					</div>
-					<img className="about-picture" src="https://static.daangamesdg.xyz/discord/pfp.gif" alt="picture" />
+					<div className="about-picture-wrapper">
+						<img className="about-picture" src="https://static.daangamesdg.xyz/discord/pfp.gif" alt="picture" />
+					</div>
 				</div>
 				<div className="about-anime">
 					<div>

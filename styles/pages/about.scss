@@ -44,3 +44,47 @@
 	height: 300px;
 	border-radius: 10px;
 }
+
+@media screen and (max-width: 1300px) {
+	.about-details,
+	.about-anime {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.about-picture {
+		height: 200px;
+		width: 200px;
+	}
+
+	.about-text {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.about-details {
+		flex-direction: column;
+	}
+
+	.about-picture-wrapper {
+		display: flex;
+		width: 100%;
+	}
+
+	.about-text {
+		max-width: 100%;
+	}
+
+	.about-title,
+	.anime-title {
+		font-size: 37px;
+		line-height: 45px;
+	}
+
+	.about-text,
+	.anime-text {
+		font-size: 17px;
+	}
+}
