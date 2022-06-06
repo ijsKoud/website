@@ -1,0 +1,42 @@
+.footer-container-wrapper .page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+}
+
+.footer-container {
+	border-top: 2px solid $border1;
+
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 2rem;
+
+	width: 80%;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a.button.button-string {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 20px;
+
+	> ul {
+		list-style: none;
+	}
+}

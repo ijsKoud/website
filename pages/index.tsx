@@ -15,7 +15,7 @@ const buttonsList = [
 	},
 	{
 		icon: "fa-solid fa-envelope",
-		path: "email:daan@daangamesdg.xyz"
+		path: "mailto:daan@daangamesdg.xyz"
 	},
 	{
 		icon: "fa-solid fa-location-arrow",
