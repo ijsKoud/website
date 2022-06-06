@@ -36,7 +36,18 @@ const AnimeListItem: FC<Props> = ({ anime }) => {
 					</div>
 					<div className="anime-modal-image">
 						{loaded ? (
-							<img src={coverImage ?? "/images/anime_cover.png"} alt={anime.title} />
+							coverImage ? (
+								<img src={coverImage} alt={anime.title} />
+							) : (
+								<Skeleton
+									height={200}
+									width="100%"
+									baseColor="#232628"
+									highlightColor="#1e2021"
+									borderRadius={10}
+									enableAnimation={false}
+								/>
+							)
 						) : (
 							<Skeleton height={200} width="100%" baseColor="#232628" highlightColor="#1e2021" borderRadius={10} />
 						)}
@@ -49,15 +60,15 @@ const AnimeListItem: FC<Props> = ({ anime }) => {
 							</tr>
 							<tr>
 								<td className="anime-modal-table-title">Rating:</td>
-								<td>8/10</td>
+								<td>{anime.rating}/10</td>
 							</tr>
 							<tr>
 								<td className="anime-modal-table-title">Watched Eps:</td>
-								<td>19</td>
+								<td>{anime.episodes.watched}</td>
 							</tr>
 							<tr>
 								<td className="anime-modal-table-title">Total Eps:</td>
-								<td>22</td>
+								<td>{anime.episodes.total}</td>
 							</tr>
 						</tbody>
 					</table>
