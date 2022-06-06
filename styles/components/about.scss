@@ -100,3 +100,20 @@
 	font-weight: 400;
 	font-size: 20px;
 }
+
+.about-list {
+	margin-top: 10px;
+	margin-bottom: 2rem;
+	display: grid;
+	justify-content: left;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.about-list-container {
+	margin-top: 2rem;
+	width: 100%;
+	max-width: 85%;
+}
