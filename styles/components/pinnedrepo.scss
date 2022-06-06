@@ -1,0 +1,36 @@
+.pinned-repo-container {
+	background-color: $background1;
+
+	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid $border1;
+
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	&:hover,
+	&:focus-visible {
+		outline: none;
+		background-color: $background1-active;
+	}
+}
+
+.pinned-repo-title {
+	font-size: 19px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.pinned-repo-desc {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.pinned-repo-stats {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
