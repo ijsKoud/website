@@ -1,0 +1,39 @@
+.about-card-container {
+	width: 300px;
+	height: 175px;
+
+	padding: 7px;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, var(--about-gradient-stops));
+	cursor: pointer;
+}
+
+.about-card {
+	background-color: $page-background;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 100%;
+	padding: 10px;
+}
+
+.about-card-title {
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 30px;
+}
+
+.about-card-desc {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.about-card-date {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 15px;
+}
