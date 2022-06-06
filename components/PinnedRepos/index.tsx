@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import type { FC, PinnedRepoItem as iPinnedRepoItem } from "../../lib/types";
 import PinnedRepoItem from "./PinnedRepoCard";
+import PinnedRepoCardSkeleton from "./PinnedRepoCardSkeleton";
 
 const PinnedRepos: FC = () => {
 	const [pinned, setPinned] = useState<iPinnedRepoItem[]>([]);
@@ -20,9 +21,11 @@ const PinnedRepos: FC = () => {
 		<div className="pinned-repo-list-container">
 			<h1>Pinned Repositories</h1>
 			<div className="pinned-repo-list">
-				{pinned.map((pin, key) => (
-					<PinnedRepoItem key={key} repo={pin} />
-				))}
+				{pinned
+					? pinned.map((pin, key) => <PinnedRepoItem key={key} repo={pin} />)
+					: Array(6)
+							.fill(null)
+							.map((_, key) => <PinnedRepoCardSkeleton key={key} />)}
 			</div>
 		</div>
 	);
