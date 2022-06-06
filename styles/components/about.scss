@@ -6,6 +6,14 @@
 	border-radius: 10px;
 	background-image: linear-gradient(to right, var(--about-gradient-stops));
 	cursor: pointer;
+
+	transition: transform 0.3s ease;
+
+	&:hover,
+	&:focus-visible {
+		outline: none;
+		transform: scale(1.05);
+	}
 }
 
 .about-card {
