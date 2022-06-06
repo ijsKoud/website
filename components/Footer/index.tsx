@@ -8,7 +8,7 @@ export const Footer: FCWithLanyard = ({ lanyard }) => {
 		<Page className="footer-container-wrapper">
 			<div className="footer-container">
 				<div className="footer-top">
-					{lanyard.status?.spotify && (
+					{lanyard.status?.spotify ? (
 						<IconButton
 							type="link"
 							path={`https://open.spotify.com/track/${lanyard.status.spotify.track_id}`}
@@ -16,6 +16,10 @@ export const Footer: FCWithLanyard = ({ lanyard }) => {
 							style="string"
 							title={lanyard.status.spotify.song}
 						/>
+					) : (
+						<p>
+							<i className="fa-brands fa-spotify" /> Not listening to anything.
+						</p>
 					)}
 					<IconButton path="/github/website" icon="fa-solid fa-code-fork" title="Fork It" style="string" type="link" />
 				</div>
