@@ -9,6 +9,20 @@ export type FCWithLanyard<Props extends Record<string, any> = {}> = React.FC<Pro
 
 export type NextPageWithLanyard<Props extends Record<string, any> = {}> = NextPage<Props & { lanyard: UseLanyardResults }>;
 
+/* === Stats Page Types === */
+export interface PinnedRepoItem {
+	owner: string;
+	repo: string;
+	link: string;
+	description: string;
+	image: string;
+	website?: string;
+	language: string;
+	languageColor: string;
+	stars: number | string;
+	forks: number | string;
+}
+
 /* API(Anime): Types */
 export enum AnimeStatus {
 	WATCHING,

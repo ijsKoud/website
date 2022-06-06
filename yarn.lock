@@ -1493,6 +1493,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^2.28.0":
+  version: 2.28.0
+  resolution: "date-fns@npm:2.28.0"
+  checksum: a0516b2e4f99b8bffc6cc5193349f185f195398385bdcaf07f17c2c4a24473c99d933eb0018be4142a86a6d46cb0b06be6440ad874f15e795acbedd6fd727a1f
+  languageName: node
+  linkType: hard
+
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2":
   version: 4.3.3
   resolution: "debug@npm:4.3.3"
@@ -3593,6 +3600,7 @@ __metadata:
     next: 12.1.6
     react: 18.1.0
     react-dom: 18.1.0
+    react-github-calendar: ^3.3.1
     react-loading-skeleton: ^3.1.0
     sass: ^1.52.2
     typescript: 4.7.3
@@ -4106,6 +4114,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-activity-calendar@npm:^1.5.0":
+  version: 1.6.0
+  resolution: "react-activity-calendar@npm:1.6.0"
+  dependencies:
+    date-fns: ^2.28.0
+    tinycolor2: ^1.4.0
+  peerDependencies:
+    react: ^17.0.0
+    react-dom: ^17.0.0
+    react-tooltip: ^4.2.0
+  checksum: aafe22b6ff562629f258383a633ac9a9ab26e5a02ab8caeee6e52d50b86efbeb8a309ba6aee5e74326323c6d78b8393be64e8455483f0732de84fab8977608e1
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:18.1.0":
   version: 18.1.0
   resolution: "react-dom@npm:18.1.0"
@@ -4115,6 +4137,19 @@ __metadata:
   peerDependencies:
     react: ^18.1.0
   checksum: bb0d48eeb0b297c79c2a03978baa29f5b3ff7ba3d070b21e34c9af1a6e7fdf0ca8b8d73e41f9214d91ad40eeb6d1f3559f884cbbc338713374a51320637c23df
+  languageName: node
+  linkType: hard
+
+"react-github-calendar@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "react-github-calendar@npm:3.3.1"
+  dependencies:
+    react-activity-calendar: ^1.5.0
+  peerDependencies:
+    react: ^17.0.0
+    react-dom: ^17.0.0
+    react-tooltip: ^4.2.0
+  checksum: c0300a374fa2f9bf22e6203f6796422d524ea3ec233cab7641112a0766c3321d4cd969120fa44a567b92b9a32b00376232222ad191c743a05cda3c98abb56dae
   languageName: node
   linkType: hard
 
@@ -4825,6 +4860,13 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
+  languageName: node
+  linkType: hard
+
+"tinycolor2@npm:^1.4.0":
+  version: 1.4.2
+  resolution: "tinycolor2@npm:1.4.2"
+  checksum: 57ed262e08815a4ab0ed933edafdbc6555a17081781766149813b44a080ecbe58b3ee281e81c0e75b42e4d41679f138cfa98eabf043f829e0683c04adb12c031
   languageName: node
   linkType: hard
 

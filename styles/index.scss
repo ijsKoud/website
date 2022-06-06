@@ -19,7 +19,7 @@ $nav-background: #1e1f21;
 $background1: #1c1d1e;
 $background1-active: #0e0e0f;
 
-$border1: #61656d;
+$border1: #424242;
 
 $button-grey: #404142;
 $button-grey-active: #595b5e;
@@ -161,6 +161,7 @@ a {
 @import "./components/anime.scss";
 @import "./components/modal.scss";
 @import "./components/about.scss";
+@import "./components/pinnedrepo.scss";
 
 @import "./pages/index.scss";
 @import "./pages/about.scss";
