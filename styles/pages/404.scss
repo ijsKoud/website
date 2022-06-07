@@ -27,18 +27,13 @@
 }
 
 .notfound-tictacttoe {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-auto-columns: auto;
+	grid-auto-rows: auto;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
 
 	margin-top: 20px;
-
-	div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 
 	button {
 		width: 100px;

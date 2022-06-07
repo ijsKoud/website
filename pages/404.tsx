@@ -1,16 +1,18 @@
 import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import React, { useState } from "react";
+import { TicTacToe } from "../lib/games/tictactoe";
 
 const NotFound: NextPageWithLanyard = () => {
-	const [board, setBoard] = useState([
-		["", "", ""],
-		["", "", ""],
-		["", "", ""]
-	]);
+	// const [game] = useState(new TicTacToe(["x", "", "o", "o", "", "o", "", "x", "x"]));
+	const [game] = useState(new TicTacToe());
+	const [board, setBoard] = useState(game.board);
+	const [temp, setTemp] = useState(false); // used to re-render the page
 
-	const getIcon = (type: string): string => {
-		return type === "x" ? "fa-solid fa-xmark" : "fa-solid fa-o";
+	const onClick = (index: number) => {
+		const _board = game.onClick(index);
+		setBoard(_board);
+		setTemp(!temp);
 	};
 
 	return (
@@ -21,12 +23,10 @@ const NotFound: NextPageWithLanyard = () => {
 					<p>I do have an unbeatable TicTacToe AI for you though.</p>
 				</div>
 				<div className="notfound-tictacttoe">
-					{board.map((row, key) => (
-						<div key={key}>
-							{row.map((block, key) => (
-								<button key={key}>{block && <i className={getIcon(block)} />}</button>
-							))}
-						</div>
+					{board.map((block, key) => (
+						<button onClick={() => onClick(key)} key={key}>
+							{block && <i className={game.getIcon(block)} />}
+						</button>
 					))}
 				</div>
 			</div>
