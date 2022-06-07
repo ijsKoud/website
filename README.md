@@ -26,14 +26,18 @@
 
 This project is WIP, please come back later for a guide on how to host this bot yourself.
 
+## Credits
+
+-   TicTacToe MinMax Ai: https://github.com/beaucarnes/fcc-project-tutorials
+
 ## Author
 
 👤 **DaanGamesDG**
 
-- Website: https://daangamesdg.xyz/
-- Email: <daan@daangamesdg.xyz>
-- Twitter: [@DaanGamesDG](https://twitter.com/DaanGamesDG)
-- Github: [@DaanGamesDG](https://github.com/DaanGamesDG)
+-   Website: https://daangamesdg.xyz/
+-   Email: <daan@daangamesdg.xyz>
+-   Twitter: [@DaanGamesDG](https://twitter.com/DaanGamesDG)
+-   Github: [@DaanGamesDG](https://github.com/DaanGamesDG)
 
 ## Donate
 
