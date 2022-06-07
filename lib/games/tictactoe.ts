@@ -3,6 +3,7 @@ import type { PlayingUser } from "../types";
 
 export class TicTacToe {
 	public board: string[];
+	public winner: PlayingUser | "-" | undefined;
 
 	public constructor(board?: string[]) {
 		this.board = board ?? Array(9).fill("");
@@ -15,20 +16,27 @@ export class TicTacToe {
 		const AiMove = this.getAiMove();
 		this.setMove(AiMove, AI_ICON);
 
+		this.updateWinner();
 		return this.board;
+	}
+
+	public AiStart() {
+		if (this.getEmptySpots().length === 9) this.setMove(Math.floor(Math.random() * this.board.length), AI_ICON);
 	}
 
 	public getIcon(type: string): string {
 		return type === USER_ICON ? "fa-solid fa-xmark" : "fa-solid fa-o";
 	}
 
-	public reset() {
-		this.board = Array(9).fill("");
+	public updateWinner() {
+		if (this.checkWin(USER_ICON)) this.winner = USER_ICON;
+		else if (this.checkWin(AI_ICON)) this.winner = AI_ICON;
+		else if (this.getEmptySpots().length === 0) this.winner = "-";
 	}
 
 	private getAiMove(): number {
 		const newBoard = [...this.board];
-		const res = this.minMax(newBoard, AI_ICON);
+		const res = this.minMax(newBoard, USER_ICON);
 		return res.index;
 	}
 
