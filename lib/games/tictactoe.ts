@@ -36,7 +36,7 @@ export class TicTacToe {
 
 	private getAiMove(): number {
 		const newBoard = [...this.board];
-		const res = this.minMax(newBoard, USER_ICON);
+		const res = this.minMax(newBoard, AI_ICON);
 		return res.index;
 	}
 
@@ -49,10 +49,10 @@ export class TicTacToe {
 
 		const moves: { index: number; score: number }[] = [];
 		for (const spot of emptySpots) {
-			const move: { index: number; score: number; player: PlayingUser } = { index: spot, score: 0, player };
-			board[move.index] = move.player;
+			const move: { index: number; score: number } = { index: spot, score: 0 };
+			board[move.index] = player;
 
-			const res = this.minMax(board, player === USER_ICON ? AI_ICON : USER_ICON); // Change the user
+			const res = this.minMax(board, player === AI_ICON ? USER_ICON : AI_ICON); // Change the user
 			moves.push({ ...res, index: move.index });
 		}
 
