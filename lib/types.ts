@@ -23,6 +23,96 @@ export interface PinnedRepoItem {
 	forks: number | string;
 }
 
+/* API(WakaTime): Types */
+export interface WakaTimeApiResult {
+	languages: WakatTimeApiResultLanguage[];
+	total_seconds: number;
+}
+
+interface WakatTimeApiResultLanguage {
+	total_seconds: number;
+	name: string;
+	percent: number;
+}
+
+export interface WakaTimeStatsAPIResponse {
+	data: Data;
+}
+
+export interface Data {
+	best_day: BestDay;
+	categories: Category[];
+	created_at: string;
+	daily_average: number;
+	daily_average_including_other_language: number;
+	days_including_holidays: number;
+	days_minus_holidays: number;
+	dependencies: any[];
+	editors: Category[];
+	end: string;
+	holidays: number;
+	human_readable_daily_average: string;
+	human_readable_daily_average_including_other_language: string;
+	human_readable_range: string;
+	human_readable_total: string;
+	human_readable_total_including_other_language: string;
+	id: string;
+	is_already_updating: boolean;
+	is_coding_activity_visible: boolean;
+	is_including_today: boolean;
+	is_other_usage_visible: boolean;
+	is_stuck: boolean;
+	is_up_to_date: boolean;
+	languages: Category[];
+	machines: Category[];
+	modified_at: string;
+	operating_systems: Category[];
+	percent_calculated: number;
+	project: null;
+	projects: Category[];
+	range: string;
+	start: string;
+	status: string;
+	timeout: number;
+	timezone: string;
+	total_seconds: number;
+	total_seconds_including_other_language: number;
+	user_id: string;
+	username: null;
+	writes_only: boolean;
+}
+
+export interface BestDay {
+	created_at: string;
+	date: string;
+	id: string;
+	modified_at: null;
+	text: string;
+	total_seconds: number;
+}
+
+export interface Category {
+	decimal: string;
+	digital: string;
+	hours: number;
+	minutes: number;
+	name: string;
+	percent: number;
+	text: string;
+	total_seconds: number;
+	machine?: Machine;
+}
+
+export interface Machine {
+	created_at: string;
+	id: string;
+	ip: string;
+	last_seen_at: string;
+	name: string;
+	timezone: string;
+	value: string;
+}
+
 /* API(Anime): Types */
 export enum AnimeStatus {
 	WATCHING,
