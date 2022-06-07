@@ -26,7 +26,9 @@ const renderCustomizedLabel: PieLabel<PieLabelRenderProps> = ({ cx: _cx, cy: _cy
 const WakaTimeChart: FC<{ stats: WakaTimeApiResult }> = ({ stats }) => {
 	return (
 		<>
-			<p>Total coding time this week: {ms(stats.total_seconds * 1e3, { long: true })}</p>
+			<p>
+				My total coding time of the last 7 days is <strong>{ms(stats.total_seconds * 1e3, { long: true })}</strong>
+			</p>
 			<div className="wakatime-stats-container">
 				<div>
 					{stats.languages
