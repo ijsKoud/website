@@ -4,3 +4,7 @@ export const WEBSOCKET_URL = "wss://api.lanyard.rest/socket";
 
 /* === WakaTime: Constants */
 export const WAKATIME_STATS_API = "https://wakatime.com/api/v1/users/current/stats/last_7_days";
+
+/* === TicTacToe: Constants === */
+export const USER_ICON = "x";
+export const AI_ICON = "o";

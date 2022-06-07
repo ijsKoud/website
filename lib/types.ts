@@ -9,6 +9,9 @@ export type FCWithLanyard<Props extends Record<string, any> = {}> = React.FC<Pro
 
 export type NextPageWithLanyard<Props extends Record<string, any> = {}> = NextPage<Props & { lanyard: UseLanyardResults }>;
 
+/* TicTacToe Types */
+export type PlayingUser = "x" | "o";
+
 /* === Stats Page Types === */
 export interface PinnedRepoItem {
 	owner: string;
