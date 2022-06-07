@@ -5,3 +5,19 @@
 
 	width: fit-content;
 }
+
+.wakatime-skeleton {
+	margin-bottom: 20px;
+}
+
+.wakatime-skeleton-chart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: fit-content;
+
+	> div {
+		margin-right: 20px;
+	}
+}
