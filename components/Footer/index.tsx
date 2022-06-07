@@ -55,6 +55,10 @@ export const Footer: FCWithLanyard = ({ lanyard }) => {
 						</li>
 					</ul>
 				</div>
+				<p className="footer-credits">
+					<i className="fa-solid fa-code" /> with <i className="fa-solid fa-heart" /> by{" "}
+					<Button type="link" path="https://daangamesdg.xyz/" title="DaanGamesDG" style="string" />
+				</p>
 			</div>
 		</Page>
 	);
