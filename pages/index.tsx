@@ -52,7 +52,7 @@ const Home: NextPageWithLanyard = () => {
 			<div className="home-container">
 				<div className="home-content">
 					<div className="home-title">
-						<h1>Hey, I&apos;m</h1>
+						<h1>Hey, I’m</h1>
 						<TypewriterComponent
 							options={{ wrapperClassName: "home-title-name" }}
 							onInit={(typewriter) => typewriter.typeString("Daan").start()}
