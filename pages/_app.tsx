@@ -24,6 +24,11 @@ const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>)
 				<meta name="msapplication-TileColor" content="#333333" />
 				<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 				<meta name="theme-color" content="#333333" />
+
+				<meta property="og:title" content="DaanGamesDG" />
+				<meta property="og:type" content="site" />
+				<meta property="og:url" content="https://daangamesdg.xyz/" />
+				<meta property="og:description" content="16 year-old anime lover and full-stack developer from the Netherlands 🇳🇱." />
 			</Head>
 			<Navbar lanyard={lanyard} />
 			<Component {...pageProps} lanyard={lanyard} />
