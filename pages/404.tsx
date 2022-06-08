@@ -6,6 +6,7 @@ import Modal from "../components/Modal";
 import { AI_ICON, USER_ICON } from "../lib/constants";
 import IconButton from "../components/IconButton";
 import Button from "../components/Button";
+import Title from "../components/Title";
 
 const NotFound: NextPageWithLanyard = () => {
 	const [game, setGame] = useState(new TicTacToe());
@@ -29,6 +30,7 @@ const NotFound: NextPageWithLanyard = () => {
 
 	return (
 		<Page className="notfound-page-container">
+			<Title title="( ・⌓・｀)" />
 			<Modal onClick={() => newGame(false)} isOpen={Boolean(game.winner)}>
 				<div>
 					<div className="notfound-modal-top">
