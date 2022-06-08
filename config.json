@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"title": "DaanGamesDG",
-		"page_prefix": "Daan •",
+		"page_prefix": "Daan • ",
 		"description": "16 year-old anime lover and full-stack developer from the Netherlands 🇳🇱.",
 		"theme_color": "#333333"
 	},
@@ -68,6 +68,9 @@
 				"mal_username": "DaanGamesDG",
 				"text": "I watch anime once in a while when I am bored and don’t have anything else to do. Every episode I watch is logged on MyAnimeList and displayed here on my own website."
 			}
+		},
+		"stats": {
+			"chart_colours": ["#277da1", "#577590", "#4d908e", "#43aa8b", "#90be6d", "#f9c74f", "#f8961e", "#f3722c", "#f94144"]
 		}
 	}
 }
