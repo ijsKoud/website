@@ -5,7 +5,7 @@ import type { FC } from "../../lib/types";
 const Title: FC<{ title: string }> = ({ title }) => {
 	return (
 		<Head>
-			<title>DaanGamesDG • {title}</title>
+			<title>Daan • {title}</title>
 		</Head>
 	);
 };
