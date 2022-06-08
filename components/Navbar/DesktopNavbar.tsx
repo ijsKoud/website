@@ -55,7 +55,7 @@ export const DesktopNavbar: FCWithLanyard = ({ lanyard }) => {
 			<div className="navbar-container">
 				<div className="navbar-links">
 					<Link href="/">
-						<img tabIndex={0} className="navbar-logo" src="/logo.svg" alt="logo" />
+						<img tabIndex={0} className="navbar-logo" src="/assets/svg/logo.svg" alt="logo" />
 					</Link>
 					<Button path="/about" title="About Me" style="string" type="link" />
 					<Button path="/stats" title="Stats" style="string" type="link" />
