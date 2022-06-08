@@ -7,6 +7,7 @@ import { useLanyard } from "../lib/hooks/Lanyard/UseLanyard";
 import type { UseLanyardResults } from "../lib/hooks/Lanyard/types";
 import { Navbar, Footer } from "../components";
 import Head from "next/head";
+import PageTransition from "../components/PageTransition";
 
 const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>) => {
 	const lanyard = useLanyard({ userId: "304986851310043136" });
@@ -31,7 +32,9 @@ const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>)
 				<meta property="og:description" content="16 year-old anime lover and full-stack developer from the Netherlands 🇳🇱." />
 			</Head>
 			<Navbar lanyard={lanyard} />
-			<Component {...pageProps} lanyard={lanyard} />
+			<PageTransition>
+				<Component {...pageProps} lanyard={lanyard} />
+			</PageTransition>
 			<Footer lanyard={lanyard} />
 		</>
 	);
