@@ -1,28 +1,8 @@
 import type { FC, WakaTimeApiResult } from "../../lib/types";
 import ms from "ms";
-import { Cell, Pie, PieChart, PieLabel, PieLabelRenderProps } from "recharts";
+import { Cell, Pie, PieChart } from "recharts";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#ee453f"];
-const RADIAN = Math.PI / 180;
-
-const renderCustomizedLabel: PieLabel<PieLabelRenderProps> = ({ cx: _cx, cy: _cy, midAngle, innerRadius: inner, outerRadius: outer, percent }) => {
-	const innerRadius = Number(inner) ?? 0;
-	const outerRadius = Number(outer) ?? 0;
-
-	const cx = Number(_cx) ?? 0;
-	const cy = Number(_cy) ?? 0;
-
-	const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-	const x = cx + radius * Math.cos(-midAngle * RADIAN);
-	const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-	return (
-		<text x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central">
-			{`${(percent ?? 1).toFixed(0)}%`}
-		</text>
-	);
-};
-
+const COLORS = ["#277da1", "#577590", "#4d908e", "#43aa8b", "#90be6d", "#f9c74f", "#f8961e", "#f3722c", "#f94144"];
 const WakaTimeChart: FC<{ stats: WakaTimeApiResult }> = ({ stats }) => {
 	return (
 		<>
@@ -31,21 +11,19 @@ const WakaTimeChart: FC<{ stats: WakaTimeApiResult }> = ({ stats }) => {
 			</p>
 			<div className="wakatime-stats-container">
 				<div>
-					{stats.languages
-						.filter((lang) => lang.percent > 1)
-						.map((lang, i) => (
-							<p key={i}>
-								<i className="fa-solid fa-square" style={{ color: COLORS[i % COLORS.length] }} /> {lang.name}
-							</p>
-						))}
+					{stats.languages.map((lang, i) => (
+						<p key={i}>
+							<i className="fa-solid fa-square" style={{ color: COLORS[i % COLORS.length] }} /> {lang.name} ({lang.percent}%)
+						</p>
+					))}
 				</div>
 				<PieChart width={200} height={200}>
 					<Pie
-						data={stats.languages.filter((lang) => lang.percent > 1)}
+						data={stats.languages}
 						cx="50%"
 						cy="50%"
 						labelLine={false}
-						label={renderCustomizedLabel}
+						strokeOpacity={0}
 						outerRadius={80}
 						fill="#8884d8"
 						dataKey="percent"
