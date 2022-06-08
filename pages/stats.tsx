@@ -3,10 +3,12 @@ import type { NextPageWithLanyard } from "../lib/types";
 import GitHubCalendar from "react-github-calendar";
 import PinnedRepos from "../components/PinnedRepos";
 import WakaTimeStats from "../components/WakaTimeStats";
+import Title from "../components/Title";
 
 const Stats: NextPageWithLanyard = () => {
 	return (
 		<Page>
+			<Title title="Stats" />
 			<PinnedRepos />
 			<WakaTimeStats />
 			<h1>Commit Graph</h1>

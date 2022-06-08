@@ -1,11 +1,13 @@
 import AboutList from "../components/About/AboutList";
 import AnimeList from "../components/Anime/AnimeList";
 import Page from "../components/Page";
+import Title from "../components/Title";
 import type { NextPageWithLanyard } from "../lib/types";
 
 const About: NextPageWithLanyard = () => {
 	return (
 		<Page>
+			<Title title="About me" />
 			<div className="about-container">
 				<div className="about-details">
 					<div>

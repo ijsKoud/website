@@ -3,6 +3,7 @@ import IconButton from "../components/IconButton";
 import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import { motion, Variants } from "framer-motion";
+import Title from "../components/Title";
 
 const buttonsList = [
 	{
@@ -47,6 +48,7 @@ const getVariants = (key: number) => {
 const Home: NextPageWithLanyard = () => {
 	return (
 		<Page>
+			<Title title="Landing" />
 			<div className="home-container">
 				<div className="home-content">
 					<div className="home-title">
