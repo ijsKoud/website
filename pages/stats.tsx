@@ -4,6 +4,7 @@ import GitHubCalendar from "react-github-calendar";
 import PinnedRepos from "../components/PinnedRepos";
 import WakaTimeStats from "../components/WakaTimeStats";
 import Title from "../components/Title";
+import config from "../config.json";
 
 const Stats: NextPageWithLanyard = () => {
 	return (
@@ -12,7 +13,7 @@ const Stats: NextPageWithLanyard = () => {
 			<PinnedRepos />
 			<WakaTimeStats />
 			<h1>Commit Graph</h1>
-			<GitHubCalendar username="DaanGamesDG" style={{ marginBottom: "2rem" }} />
+			<GitHubCalendar username={config.github} style={{ marginBottom: "2rem" }} />
 		</Page>
 	);
 };
