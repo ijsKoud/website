@@ -14,7 +14,7 @@ We do **not** accept issues with text among the lines: "Oh, this, this and that 
 
 ## Setup
 
-To work on the project you must do the following:
+To work on the project you must do the following (if you want to test run this project, please follow [this guide](https://github.com/DaanGamesDG/website/wiki/Self-Hosting-Guide)):
 
 **1**. Fork and clone the repository, make sure you are in the correct branch in this case the **main** branch.
 
