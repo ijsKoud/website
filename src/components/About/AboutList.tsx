@@ -1,6 +1,6 @@
 import type { FC } from "../../lib/types";
 import AboutListItem from "./AboutListItem";
-import config from "../../config.json";
+import config from "../../../config.json";
 
 const AboutList: FC = () => {
 	return (

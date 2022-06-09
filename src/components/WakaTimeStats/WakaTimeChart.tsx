@@ -1,7 +1,7 @@
 import type { FC, WakaTimeApiResult } from "../../lib/types";
 import ms from "ms";
 import { Cell, Pie, PieChart } from "recharts";
-import config from "../../config.json";
+import config from "../../../config.json";
 
 const WakaTimeChart: FC<{ stats: WakaTimeApiResult }> = ({ stats }) => {
 	return (

@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import facts from "../../assets/facts.json";
+import facts from "../../../assets/facts.json";
 
 const sources = [
 	"http://www.djtech.net/humor/useless_facts.htm",

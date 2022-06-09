@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import type { AnimeList, AnimeListRaw, AnimeApiResponse } from "../../lib/types";
 import axios from "axios";
-import config from "../../config.json";
+import config from "../../../config.json";
 
 const Anime = async (req: NextApiRequest, res: NextApiResponse<AnimeApiResponse>) => {
 	const response = await axios

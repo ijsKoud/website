@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar";
 import PinnedRepos from "../components/PinnedRepos";
 import WakaTimeStats from "../components/WakaTimeStats";
 import Title from "../components/Title";
-import config from "../config.json";
+import config from "../../config.json";
 
 const Stats: NextPageWithLanyard = () => {
 	return (

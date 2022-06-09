@@ -8,7 +8,7 @@ import type { UseLanyardResults } from "../lib/hooks/Lanyard/types";
 import { Navbar, Footer } from "../components";
 import Head from "next/head";
 import PageTransition from "../components/PageTransition";
-import config from "../config.json";
+import config from "../../config.json";
 
 const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>) => {
 	const lanyard = useLanyard({ userId: config.discord });

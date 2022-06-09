@@ -4,7 +4,7 @@ import Page from "../components/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import { motion, Variants } from "framer-motion";
 import Title from "../components/Title";
-import config from "../config.json";
+import config from "../../config.json";
 
 const getVariants = (key: number) => {
 	const variants: Variants = {

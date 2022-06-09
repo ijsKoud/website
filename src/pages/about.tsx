@@ -3,7 +3,7 @@ import AnimeList from "../components/Anime/AnimeList";
 import Page from "../components/Page";
 import Title from "../components/Title";
 import type { NextPageWithLanyard } from "../lib/types";
-import config from "../config.json";
+import config from "../../config.json";
 
 const About: NextPageWithLanyard = () => {
 	return (
