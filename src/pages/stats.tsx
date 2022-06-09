@@ -1,9 +1,9 @@
-import Page from "../components/Page";
+import Page from "../components/general/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import GitHubCalendar from "react-github-calendar";
-import PinnedRepos from "../components/PinnedRepos";
-import WakaTimeStats from "../components/WakaTimeStats";
-import Title from "../components/Title";
+import PinnedRepos from "../components/page-related/PinnedRepos";
+import WakaTimeStats from "../components/page-related/WakaTimeStats";
+import Title from "../components/general/Title";
 import config from "../../config.json";
 
 const Stats: NextPageWithLanyard = () => {

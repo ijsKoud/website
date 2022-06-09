@@ -1,9 +1,9 @@
 import TypewriterComponent from "typewriter-effect";
-import IconButton from "../components/IconButton";
-import Page from "../components/Page";
+import IconButton from "../components/general/IconButton";
+import Page from "../components/general/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import { motion, Variants } from "framer-motion";
-import Title from "../components/Title";
+import Title from "../components/general/Title";
 import config from "../../config.json";
 
 const getVariants = (key: number) => {

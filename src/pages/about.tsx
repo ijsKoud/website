@@ -1,7 +1,7 @@
-import AboutList from "../components/About/AboutList";
-import AnimeList from "../components/Anime/AnimeList";
-import Page from "../components/Page";
-import Title from "../components/Title";
+import AboutList from "../components/page-related/About/AboutList";
+import AnimeList from "../components/page-related/Anime/AnimeList";
+import Page from "../components/general/Page";
+import Title from "../components/general/Title";
 import type { NextPageWithLanyard } from "../lib/types";
 import config from "../../config.json";
 

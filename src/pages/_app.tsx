@@ -5,10 +5,11 @@ import "react-loading-skeleton/dist/skeleton.css";
 import type { AppProps } from "next/app";
 import { useLanyard } from "../lib/hooks/Lanyard/UseLanyard";
 import type { UseLanyardResults } from "../lib/hooks/Lanyard/types";
-import { Navbar, Footer } from "../components";
 import Head from "next/head";
-import PageTransition from "../components/PageTransition";
 import config from "../../config.json";
+import Navbar from "../components/other/Navbar";
+import PageTransition from "../components/general/PageTransition";
+import Footer from "../components/other/Footer";
 
 const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>) => {
 	const lanyard = useLanyard({ userId: config.discord });

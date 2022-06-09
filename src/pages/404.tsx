@@ -1,12 +1,12 @@
-import Page from "../components/Page";
+import Page from "../components/general/Page";
 import type { NextPageWithLanyard } from "../lib/types";
 import React, { useState } from "react";
 import { TicTacToe } from "../lib/games/tictactoe";
-import Modal from "../components/Modal";
+import Modal from "../components/general/Modal";
 import { AI_ICON, USER_ICON } from "../lib/constants";
-import IconButton from "../components/IconButton";
-import Button from "../components/Button";
-import Title from "../components/Title";
+import IconButton from "../components/general/IconButton";
+import Button from "../components/general/Button";
+import Title from "../components/general/Title";
 
 const NotFound: NextPageWithLanyard = () => {
 	const [game, setGame] = useState(new TicTacToe());
