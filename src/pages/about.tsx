@@ -4,6 +4,7 @@ import Page from "../components/general/Page";
 import Title from "../components/general/Title";
 import type { NextPageWithLanyard } from "../lib/types";
 import config from "../../config.json";
+import ToolTip from "../components/general/Tooltip";
 
 const About: NextPageWithLanyard = () => {
 	return (
@@ -16,7 +17,9 @@ const About: NextPageWithLanyard = () => {
 						<p className="about-text">{config.pages.about.about.text}</p>
 					</div>
 					<div className="about-picture-wrapper">
-						<img className="about-picture" src={config.pages.about.about.picture} alt="picture" />
+						<ToolTip content={config.pages.about.about.picture_tooltip}>
+							<img className="about-picture" src={config.pages.about.about.picture} alt="picture" />
+						</ToolTip>
 					</div>
 				</div>
 				<div className="about-list-container">
