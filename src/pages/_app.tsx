@@ -30,7 +30,6 @@ const App = ({ Component, pageProps }: AppProps<{ lanyard: UseLanyardResults }>)
 
 				<meta property="og:title" content={config.meta.title} />
 				<meta property="og:type" content="site" />
-				<meta property="og:url" content="https://daangamesdg.xyz/" />
 				<meta property="og:description" content={config.meta.description} />
 			</Head>
 			<Navbar lanyard={lanyard} />

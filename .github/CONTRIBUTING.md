@@ -1,6 +1,6 @@
 ## Contributing
 
-**The issue page is only for bug reports. For questions, suggestions or support, join [this Discord server](https://daangamesdg.xyz/discord) and DM DaanGamesDG#7621 for help.**
+**The issue page is only for bug reports. For questions, suggestions or support, join [this Discord server](https://daangamesdg.xyz/discord) and DM ijsKoud#7621 for help.**
 
 When you open an issue for bug reports we expect you to provide useful information such as:
 
@@ -14,7 +14,7 @@ We do **not** accept issues with text among the lines: "Oh, this, this and that 
 
 ## Setup
 
-To work on the project you must do the following (if you want to test run this project, please follow [this guide](https://github.com/DaanGamesDG/website/wiki/Self-Hosting-Guide)):
+To work on the project you must do the following (if you want to test run this project, please follow [this guide](https://github.com/ijsKoud/website/wiki/Self-Hosting-Guide)):
 
 **1**. Fork and clone the repository, make sure you are in the correct branch in this case the **main** branch.
 

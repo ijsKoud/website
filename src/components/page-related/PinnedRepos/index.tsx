@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import type { FC, PinnedRepoItem as iPinnedRepoItem } from "../../../lib/types";
 import PinnedRepoItem from "./PinnedRepoCard";
 import PinnedRepoCardSkeleton from "./PinnedRepoCardSkeleton";
+import config from "../../../../config.json";
 
 const PinnedRepos: FC = () => {
 	const [pinned, setPinned] = useState<iPinnedRepoItem[]>([]);
@@ -10,7 +11,7 @@ const PinnedRepos: FC = () => {
 	useEffect(() => {
 		const { cancel, token } = axios.CancelToken.source();
 		axios
-			.get<iPinnedRepoItem[]>("https://gh-pinned-repos.egoist.sh/?username=DaanGamesDG", { cancelToken: token })
+			.get<iPinnedRepoItem[]>(`https://gh-pinned-repos.egoist.sh/?username=${config.github}`, { cancelToken: token })
 			.then((data) => setPinned(data.data))
 			.catch(() => void 0);
 

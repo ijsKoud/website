@@ -31,7 +31,7 @@ By forking this project and hosting it yourself you accept the terms in the [Lic
 
 ## Install
 
-For a detailed guide on how to install [click here](https://github.com/DaanGamesDG/website/wiki/Self-Hosting-Guide).
+For a detailed guide on how to install [click here](https://github.com/ijsKoud/website/wiki/Self-Hosting-Guide).
 
 ## Credits
 
@@ -39,12 +39,12 @@ For a detailed guide on how to install [click here](https://github.com/DaanGames
 
 ## Author
 
-👤 **DaanGamesDG**
+👤 **ijsKoud**
 
 -   Website: https://daangamesdg.xyz/
 -   Email: <daan@daangamesdg.xyz>
 -   Twitter: [@DaanGamesDG](https://twitter.com/DaanGamesDG)
--   Github: [@DaanGamesDG](https://github.com/DaanGamesDG)
+-   Github: [@ijsKoud](https://github.com/ijsKoud)
 
 ## Donate
 
