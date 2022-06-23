@@ -17,12 +17,12 @@ module.exports = {
 		},
 		{
 			source: "/github",
-			destination: "https://github.com/DaanGamesDG",
+			destination: "https://github.com/ijsKoud",
 			permanent: true
 		},
 		{
 			source: "/github/:repo",
-			destination: "https://github.com/DaanGamesDG/:repo",
+			destination: "https://github.com/ijsKoud/:repo",
 			permanent: true
 		},
 		{
@@ -32,7 +32,7 @@ module.exports = {
 		},
 		{
 			source: "/kofi",
-			destination: "https://ko-fi.com/DaanGamesDG",
+			destination: "https://ko-fi.com/ijsKoud",
 			permanent: true
 		}
 	]
