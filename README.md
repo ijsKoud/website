@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://daangamesdg.xyz/assets/svg/logo.svg" width="100px" />
+    <img src="https://ijskoud.dev/assets/svg/logo.svg" width="100px" />
     <h1>Website</h1>
   
   <p>My personal website build with NextJS and written in TypeScript.</p>
@@ -11,8 +11,8 @@
     </a>
   </p>
 
-  <a href="https://daangamesdg.xyz/discord" target="_blank">
-    <img src="https://daangamesdg.xyz/discord/banner" />
+  <a href="https://ijskoud.dev/discord" target="_blank">
+    <img src="https://ijskoud.dev/discord/banner" />
   </a>
 </div>
 
@@ -41,14 +41,14 @@ For a detailed guide on how to install [click here](https://github.com/ijsKoud/w
 
 👤 **ijsKoud**
 
--   Website: https://daangamesdg.xyz/
--   Email: <daan@daangamesdg.xyz>
--   Twitter: [@DaanGamesDG](https://twitter.com/DaanGamesDG)
+-   Website: https://ijskoud.dev/
+-   Email: <github@ijskoud.dev>
+-   Twitter: [@ijsKoud](https://twitter.com/ijs_Koud)
 -   Github: [@ijsKoud](https://github.com/ijsKoud)
 
 ## Donate
 
-This will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://paypal.me/daangamesdg) or to [Ko-Fi](https://daangamesdg.xyz/kofi). Thanks in advance! I really appriciate it <3
+This will always be open source project, even if I don't receive donations. But there are still people out there that want to donate, so if you do here is the link [PayPal](https://paypal.me/daangamesdg) or to [Ko-Fi](https://ijskoud.dev/kofi). Thanks in advance! I really appriciate it <3
 
 ## License
 
