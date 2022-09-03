@@ -2,7 +2,7 @@
 	"name": "website",
 	"version": "1.1.1",
 	"repository": "https://github.com/ijsKoud/website",
-	"author": "ijsKoud <daan@daangamesdg.xyz>",
+	"author": "ijsKoud <github@ijskoud.dev>",
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",
