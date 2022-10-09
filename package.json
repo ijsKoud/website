@@ -20,7 +20,7 @@
 		"react-dom": "18.2.0",
 		"react-github-calendar": "^3.3.4",
 		"react-loading-skeleton": "^3.1.0",
-		"recharts": "2.1.12",
+		"recharts": "2.1.14",
 		"typewriter-effect": "^2.19.0"
 	},
 	"devDependencies": {
@@ -34,7 +34,7 @@
 		"@types/react": "18.0.21",
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
 		"@typescript-eslint/parser": "^5.39.0",
-		"eslint": "^8.24.0",
+		"eslint": "^8.25.0",
 		"eslint-config-next": "12.3.1",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
