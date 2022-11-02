@@ -25,23 +25,28 @@ export default function loadCursor(ball: HTMLDivElement) {
 		y = event.touches[0].pageY;
 	};
 
-	const mouseMove = (event: MouseEvent) => {
+	const checkTimeout = () => {
 		ball.style.opacity = "1";
 
 		if (hideTimeout) {
 			clearTimeout(hideTimeout);
 		}
 
-		x = event.pageX;
-		y = event.pageY;
-
 		hideTimeout = setTimeout(() => {
 			ball.style.opacity = "0";
 		}, 1e3);
 	};
 
+	const mouseMove = (event: MouseEvent) => {
+		checkTimeout();
+
+		x = event.pageX;
+		y = event.pageY;
+	};
+
 	const mouseDown = () => {
 		ball.style.transform = "scale(2)";
+		checkTimeout();
 	};
 
 	const mouseUp = () => {
