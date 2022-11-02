@@ -18,7 +18,7 @@ const LightModeBlobs = () => {
 			</svg>
 
 			<svg
-				className="z-0 fixed left-[10%] bottom-[10%] animate-bg-move-up md:max-lg:hidden"
+				className="z-0 fixed left-[10%] bottom-[10%] animate-bg-move-up max-lg:hidden"
 				width="421"
 				height="433"
 				viewBox="0 0 421 433"

@@ -17,7 +17,7 @@ const DarkModeBlobs = () => {
 				/>
 			</svg>
 			<svg
-				className="z-0 fixed left-[10%] bottom-[10%] animate-bg-move-up md:max-lg:hidden"
+				className="z-0 fixed left-[10%] bottom-[10%] animate-bg-move-up max-lg:hidden"
 				width="309"
 				height="317"
 				viewBox="0 0 309 317"
