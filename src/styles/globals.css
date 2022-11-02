@@ -13,3 +13,7 @@
 *::-webkit-scrollbar {
 	display: none;
 }
+
+.ball-transitions {
+	transition: opacity 0.2s, transform 0.2s;
+}
