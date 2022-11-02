@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--background-filter-dark: linear-gradient(112.68deg, rgba(19, 19, 19, 0.9) 0%, rgba(19, 19, 19, 0.8) 50%, rgba(19, 19, 19, 0.7));
-	--background-filter-light: linear-gradient(112.68deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.2) 100%);
+* {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+	display: none;
 }
