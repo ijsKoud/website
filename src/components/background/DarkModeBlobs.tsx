@@ -1,8 +1,8 @@
 import React from "react";
 
-const DarkMode = ({ children }: React.PropsWithChildren) => {
+const DarkModeBlobs = () => {
 	return (
-		<div className="w-screen h-screen fixed">
+		<>
 			<svg
 				className="z-0 fixed right-[10%] top-[10%]"
 				width="582"
@@ -29,9 +29,8 @@ const DarkMode = ({ children }: React.PropsWithChildren) => {
 					fill="#62ADE3"
 				/>
 			</svg>
-			<div className="w-screen h-screen bg-[var(--background-filter-dark)] backdrop-blur-[250px] fixed z-10">{children}</div>
-		</div>
+		</>
 	);
 };
 
-export default DarkMode;
+export default DarkModeBlobs;
