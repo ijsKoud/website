@@ -1,12 +1,14 @@
-import { useTheme } from "next-themes";
 import React from "react";
-import DarkMode from "./background/DarkMode";
-import LightMode from "./background/LightMode";
+import BackgroundLayout from "./background/BackgroundLayout";
+import Navbar from "./navbar";
 
 const Layout = ({ children }: React.PropsWithChildren) => {
-	const { theme } = useTheme();
-
-	return <>{theme === "dark" ? <DarkMode>{children}</DarkMode> : <LightMode>{children}</LightMode>}</>;
+	return (
+		<BackgroundLayout>
+			<Navbar />
+			<div className="mt-[70px] w-screen h-screen z-10 overflow-y-auto">{children}</div>
+		</BackgroundLayout>
+	);
 };
 
 export default Layout;
