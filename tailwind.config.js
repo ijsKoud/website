@@ -24,6 +24,8 @@ module.exports = {
 			},
 			colors: {
 				primary: "#4E9ED7",
+				"light-gray": "#AFAFAF",
+				"dark-gray": "#151516",
 				background: "#131313",
 				"background-alt": "#191919",
 				"background-900": "rgba(19, 19, 19, 0.9)",
