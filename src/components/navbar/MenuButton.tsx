@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-const MenuButton = () => {
-	const [menu, setMenu] = useState(false);
-	const toggleMenu = () => setMenu(!menu);
+interface Props {
+	menu: boolean;
+	toggleMenu: () => void;
+}
 
+const MenuButton: React.FC<Props> = ({ menu, toggleMenu }) => {
 	return (
 		<button className="text-lg font-semibold hover:text-primary transition-colors flex" onClick={toggleMenu}>
 			<p>·</p>
-			<p className={`translate-y-[${menu ? "5px" : "0px"}] transition-transform`}>·</p>
+			<p className={`transform ${menu ? "translate-y-1" : "translate-y-0"} transition-transform`}>·</p>
 			<p>·</p>
 		</button>
 	);

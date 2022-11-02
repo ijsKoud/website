@@ -18,9 +18,13 @@ module.exports = {
 			"bg-dark": "175px",
 			"bg-light": "175px"
 		},
+		borderColor: {
+			background: "#272728"
+		},
 		colors: {
 			primary: "#4E9ED7",
 			background: "#131313",
+			"background-alt": "#191919",
 			"background-900": "rgba(19, 19, 19, 0.9)",
 			"background-800": "rgba(19, 19, 19, 0.8)",
 			"background-700": "rgba(19, 19, 19, 0.7)",
