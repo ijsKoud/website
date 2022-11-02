@@ -4,7 +4,7 @@ const DarkModeBlobs = () => {
 	return (
 		<>
 			<svg
-				className="z-0 fixed right-[10%] top-[10%]"
+				className="z-0 fixed right-[10%] top-[10%] animate-bg-move-down"
 				width="582"
 				height="500"
 				viewBox="0 0 582 500"
@@ -17,7 +17,7 @@ const DarkModeBlobs = () => {
 				/>
 			</svg>
 			<svg
-				className="z-0 fixed left-[10%] bottom-[10%]"
+				className="z-0 fixed left-[10%] bottom-[10%] animate-bg-move-up md:max-lg:hidden"
 				width="309"
 				height="317"
 				viewBox="0 0 309 317"
