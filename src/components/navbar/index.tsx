@@ -4,9 +4,14 @@ import Menu from "./Menu";
 import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
+	const scrollTop = () => {
+		const el = document.getElementById("content");
+		el?.scrollTo({ top: 0 });
+	};
+
 	return (
 		<div className="px-12 max-md:px-8 h-[70px] w-screen fixed z-[9999] flex justify-between items-center">
-			<Link href="/" className="text-xl font-extrabold w-fit hover:text-primary transition-colors">
+			<Link href="/" onClick={scrollTop} className="text-xl font-extrabold w-fit hover:text-primary transition-colors">
 				ijsKoud
 			</Link>
 			<div className="flex justify-center gap-12 items-center max-md:gap-8">
