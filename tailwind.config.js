@@ -8,6 +8,7 @@ module.exports = {
 				sans: ["Nunito", "sans-serif"]
 			},
 			fontSize: {
+				sm: ["16.80px"],
 				base: ["21px"],
 				lg: ["26.25px"],
 				xl: ["32.81px"],
