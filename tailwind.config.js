@@ -8,6 +8,7 @@ module.exports = {
 				sans: ["Nunito", "sans-serif"]
 			},
 			fontSize: {
+				sm: ["16.80px"],
 				base: ["21px"],
 				lg: ["26.25px"],
 				xl: ["32.81px"],
@@ -24,6 +25,15 @@ module.exports = {
 			},
 			colors: {
 				primary: "#4E9ED7",
+				"primary-900": "rgba(78, 158, 215, 0.9)",
+				"primary-800": "rgba(78, 158, 215, 0.8)",
+				"primary-700": "rgba(78, 158, 215, 0.7)",
+				"primary-600": "rgba(78, 158, 215, 0.6)",
+				"primary-500": "rgba(78, 158, 215, 0.5)",
+				"primary-400": "rgba(78, 158, 215, 0.4)",
+				"primary-300": "rgba(78, 158, 215, 0.3)",
+				"primary-200": "rgba(78, 158, 215, 0.2)",
+				"primary-100": "rgba(78, 158, 215, 0.1)",
 				"light-gray": "#AFAFAF",
 				"dark-gray": "#151516",
 				background: "#131313",
@@ -45,7 +55,17 @@ module.exports = {
 				"white-400": "rgba(255, 255, 255, 0.4)",
 				"white-300": "rgba(255, 255, 255, 0.3)",
 				"white-200": "rgba(255, 255, 255, 0.2)",
-				"white-100": "rgba(255, 255, 255, 0.1)"
+				"white-100": "rgba(255, 255, 255, 0.1)",
+				black: "#222222",
+				"black-900": "rgba(34, 34, 34, 0.9)",
+				"black-800": "rgba(34, 34, 34, 0.8)",
+				"black-700": "rgba(34, 34, 34, 0.7)",
+				"black-600": "rgba(34, 34, 34, 0.6)",
+				"black-500": "rgba(34, 34, 34, 0.5)",
+				"black-400": "rgba(34, 34, 34, 0.4)",
+				"black-300": "rgba(34, 34, 34, 0.3)",
+				"black-200": "rgba(34, 34, 34, 0.2)",
+				"black-100": "rgba(34, 34, 34, 0.1)"
 			},
 			keyframes: {
 				"bg-move-down": {
