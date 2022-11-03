@@ -13,7 +13,7 @@ const Menu = () => {
 		<div>
 			<MenuButton menu={menu} toggleMenu={toggleMenu} />
 			<div
-				className={`bg-background-alt rounded-md flex flex-col absolute right-12 max-md:right-8 py-2 px-4 border-background border-2 ${opacity} ${
+				className={`bg-white dark:bg-background-alt rounded-md flex flex-col absolute right-12 max-md:right-8 py-2 px-4 border-light-gray dark:border-background border-2 ${opacity} ${
 					menu ? "pointer-events-auto" : "pointer-events-none"
 				} transition-opacity`}
 			>
