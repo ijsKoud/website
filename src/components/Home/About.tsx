@@ -10,7 +10,7 @@ const About = () => {
 					<h3 id="about" className="text-lg font-extrabold">
 						ABOUT ME
 					</h3>
-					<i className="border-white-300 border mt-1" />
+					<i className="border-black-500 dark:border-white-300 border mt-1" />
 				</div>
 				<div className="flex justify-between mt-6">
 					<div className="w-3/5 flex flex-col gap-5">
