@@ -8,5 +8,15 @@
 			"github": "PaperPlane",
 			"page": "https://paperplane.ijskoud.dev/"
 		}
+	},
+	{
+		"name": "Website",
+		"slogan": "This beautifully designed website.",
+		"description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript.",
+		"image": "https://cdn.ijskoud.dev/files/iNuTC53E21.png",
+		"links": {
+			"github": "website",
+			"page": "https://ijskoud.dev/"
+		}
 	}
 ]
