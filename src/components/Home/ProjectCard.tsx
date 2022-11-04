@@ -24,7 +24,7 @@ const ProjectCard: React.FC<Props> = ({ name, slogan, description, links, image,
 				indexRes ? "flex-row-reverse" : "flex-row"
 			} justify-between items-center gap-12 w-full relative max-lg:flex-col max-lg:gap-0`}
 		>
-			<div className="relative max-w-[600px] max-xl:max-w-[500px] max-lg:max-w-full rounded-md">
+			<div className="relative max-w-[700px] max-2xl:max-w-[600px] max-xl:max-w-[500px] max-lg:max-w-full rounded-md">
 				<img className="w-full rounded-md" src={image} alt="project-preview" loading="lazy" />
 			</div>
 			<div
