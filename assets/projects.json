@@ -1,0 +1,22 @@
+[
+	{
+		"name": "PaperPlane",
+		"slogan": "File uploading. URL Shortening. Protected views.",
+		"description": "A file-upload server build for ShareX with Docker. Shipped with clean minimalistic dashboard, front-end uploading, password protections for files and a lot more.",
+		"image": "https://cdn.ijskoud.dev/files/RVCivoMK7B.png",
+		"links": {
+			"github": "PaperPlane",
+			"page": "https://paperplane.ijskoud.dev/"
+		}
+	},
+	{
+		"name": "Website",
+		"slogan": "This beautifully designed website.",
+		"description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript.",
+		"image": "https://cdn.ijskoud.dev/files/iNuTC53E21.png",
+		"links": {
+			"github": "website",
+			"page": "https://ijskoud.dev/"
+		}
+	}
+]
