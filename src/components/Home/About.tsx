@@ -13,7 +13,7 @@ const About = () => {
 					</p>
 					<p className="font-normal text-base max-xl:text-sm">
 						Anyway, fast-forward to today; I love programming and work on a series of projects you can find below,{" "}
-						<Link href="#contact" className="text-primary hover:text-primary-600 transition-colors">
+						<Link href="#contact" className="text-primary hover:text-tertairy hover:dark:text-secondary transition-colors">
 							maybe yours too
 						</Link>
 						. I love open-source, hence why this website and many other projects are open to the public!

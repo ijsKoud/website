@@ -12,7 +12,7 @@ const Landing = () => {
 				</h2>
 				<Link
 					href="#about"
-					className="text-base max-sm:text-sm max-sm:px-2 max-sm:py-1 font-semibold text-primary border-2 border-primary px-4 py-2 rounded-md w-fit mt-6 hover:bg-primary-300 hover:text-white transition-colors"
+					className="text-base max-sm:text-sm max-sm:px-2 max-sm:py-1 font-semibold text-primary border-2 border-primary px-4 py-2 rounded-md w-fit mt-6 hover:bg-primary-300 hover:dark:text-white hover:text-black transition-colors"
 				>
 					About myself
 				</Link>
