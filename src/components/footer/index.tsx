@@ -4,8 +4,8 @@ import GitHubStats from "./GitHubStats";
 
 const Footer = () => {
 	return (
-		<div className="min-h-7 px-40 -mt-28 max-lg:px-28 max-md:px-9 max-sm:px-3">
-			<div className="flex justify-between">
+		<div className="min-h-7 px-40 -mt-28 max-lg:px-28 max-md:px-9 max-sm:px-3 max-sm:-mt-40">
+			<div className="flex justify-between max-sm:flex-col max-sm:justify-center max-sm:items-center">
 				<div className="flex gap-2 text-sm">
 					<Link className="hover:text-primary transition-colors" href="/discord">
 						<i className="fa-brands fa-discord" />
