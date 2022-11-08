@@ -16,7 +16,7 @@ const HomeSectionLayout = ({ children, title, id, width }: React.PropsWithChildr
 					</h3>
 					<i className="border-black-500 dark:border-white-300 border mt-1" />
 				</div>
-				<div className="flex flex-col gap-32 max-lg:gap-12">{children}</div>
+				{children}
 			</div>
 		</div>
 	);
