@@ -34,6 +34,8 @@ module.exports = {
 				"primary-300": "rgba(78, 158, 215, 0.3)",
 				"primary-200": "rgba(78, 158, 215, 0.2)",
 				"primary-100": "rgba(78, 158, 215, 0.1)",
+				secondary: "#62ADE3",
+				tertairy: "#2B91D9",
 				"light-gray": "#AFAFAF",
 				"dark-gray": "#151516",
 				background: "#131313",
