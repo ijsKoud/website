@@ -6,7 +6,7 @@ const About = () => {
 		<div className="flex flex-col justify-center items-center min-h-screen">
 			<div className="flex flex-col w-4/5 max-xl:w-11/12">
 				<div className="flex flex-col w-full">
-					<h3 id="about" className="text-lg font-extrabold">
+					<h3 id="about" className="text-xl font-extrabold max-sm:text-lg">
 						ABOUT ME
 					</h3>
 					<i className="border-black-500 dark:border-white-300 border mt-1" />
