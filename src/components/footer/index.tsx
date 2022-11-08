@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import GitHubStats from "./GitHubStats";
 
 const Footer = () => {
 	return (
@@ -22,14 +23,7 @@ const Footer = () => {
 						<i className="fa-solid fa-mug-saucer" />
 					</Link>
 				</div>
-				<div className="flex gap-4">
-					<p>
-						<i className="fa-solid fa-code-fork" />
-					</p>
-					<p>
-						<i className="fa-solid fa-star" />
-					</p>
-				</div>
+				<GitHubStats />
 				<p className="text-sm">
 					<i className="fa-solid fa-code" /> with <i className="fa-solid fa-heart" /> by{" "}
 					<Link className="hover:text-primary transition-colors" href="https://ijskoud.dev">
