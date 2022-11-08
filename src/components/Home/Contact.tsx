@@ -24,7 +24,7 @@ const Contact = () => {
 					</div>
 					<Link
 						href="mailto:hi@ijskoud.dev"
-						className="text-center font-medium border-primary border-2 rounded-md px-4 py-2 text-primary hover:bg-primary-300 hover:text-white transition-colors"
+						className="text-center font-medium border-primary border-2 rounded-md px-4 py-2 text-primary hover:bg-primary-300 hover:text-black hover:dark:text-white transition-colors"
 					>
 						<i className="fa-regular fa-envelope" /> Say hello!
 					</Link>
