@@ -16,7 +16,7 @@ const GitHubStats = () => {
 			.catch(() => setLoading(false));
 
 		return () => cancel();
-	});
+	}, []);
 
 	return (
 		<Link href="https://ijskoud.dev/github/website" target="_blank" className="flex gap-4 hover:text-primary transition-colors">

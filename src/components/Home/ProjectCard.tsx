@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { FadeInAnimation } from "../animations/general";
 
 interface Props {
 	name: string;
@@ -19,7 +21,11 @@ const ProjectCard: React.FC<Props> = ({ name, slogan, description, links, image,
 	const indexRes = index % 2 === 0;
 
 	return (
-		<div
+		<motion.div
+			variants={FadeInAnimation}
+			initial="initial"
+			whileInView="inView"
+			viewport={{ once: true, amount: 0.5 }}
 			className={`mt-10 flex ${
 				indexRes ? "flex-row-reverse" : "flex-row"
 			} justify-between items-center gap-12 w-full relative max-lg:flex-col max-lg:gap-0`}
@@ -46,7 +52,7 @@ const ProjectCard: React.FC<Props> = ({ name, slogan, description, links, image,
 					</Link>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

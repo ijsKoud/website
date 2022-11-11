@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { FadeInAnimation } from "./animations/general";
 
 interface Props {
 	title: string;
@@ -7,9 +9,15 @@ interface Props {
 	contactTitle?: boolean;
 }
 
-const HomeSectionLayout = ({ children, title, id, width, contactTitle }: React.PropsWithChildren<Props>) => {
+const HomeSectionLayout: React.FC<React.PropsWithChildren<Props>> = ({ children, title, id, width, contactTitle }) => {
 	return (
-		<div className="flex flex-col justify-center items-center min-h-screen mb-48">
+		<motion.div
+			variants={FadeInAnimation}
+			initial="initial"
+			whileInView="inView"
+			viewport={{ once: true, amount: 0.5 }}
+			className="flex flex-col justify-center items-center min-h-screen mb-48"
+		>
 			<div className={`flex flex-col ${width} max-xl:w-11/12`}>
 				{contactTitle ? (
 					<div className="flex flex-col items-center w-full">
@@ -27,7 +35,7 @@ const HomeSectionLayout = ({ children, title, id, width, contactTitle }: React.P
 				)}
 				{children}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
