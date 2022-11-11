@@ -1,5 +1,6 @@
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
+import { FadeInAnimation } from "./animations/general";
 
 interface Props {
 	title: string;
@@ -8,25 +9,10 @@ interface Props {
 	contactTitle?: boolean;
 }
 
-const LayoutAnimation: Variants = {
-	initial: {
-		opacity: 0,
-		transform: "translateY(1rem)"
-	},
-	inView: {
-		opacity: 1,
-		transform: "translateY(0rem)",
-		transition: {
-			duration: 0.5,
-			ease: [0.6, 0, 0.17, 1]
-		}
-	}
-};
-
 const HomeSectionLayout: React.FC<React.PropsWithChildren<Props>> = ({ children, title, id, width, contactTitle }) => {
 	return (
 		<motion.div
-			variants={LayoutAnimation}
+			variants={FadeInAnimation}
 			initial="initial"
 			whileInView="inView"
 			viewport={{ once: true, amount: 0.5 }}
