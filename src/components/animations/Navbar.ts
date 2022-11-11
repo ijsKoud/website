@@ -22,8 +22,8 @@ export const NavbarItemAnimations = (index: number): Variants => ({
 		opacity: 1,
 		marginTop: "0rem",
 		transition: {
-			duration: 0.7,
-			delay: index * 0.2 + 0.5,
+			duration: 0.3,
+			delay: index * 0.2 + 0.3,
 			ease: [0.6, 0, 0.17, 1]
 		}
 	}
