@@ -1,3 +1,34 @@
+export interface AnimeApiResponse {
+	list: Anime[];
+	username: string;
+}
+
+export enum AnimeStatus {
+	WATCHING,
+	COMPLETED,
+	ON_HOLD,
+	DROPPED,
+	PLAN_TO_WATCH = 5 // API doesn't return 4 when marked as "Planned to watch", it returns 5
+}
+
+export interface Anime {
+	title: string;
+	title_english: string;
+	genres: string[];
+
+	rating: number;
+	status: AnimeStatus;
+
+	episodes: {
+		watched: number;
+		total: number;
+	};
+
+	url: string;
+	image: string;
+	banner: string;
+}
+
 export interface GitHubRepoData {
 	id: number;
 	node_id: string;
