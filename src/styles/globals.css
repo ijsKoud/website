@@ -24,8 +24,18 @@
 	--block-reveal-color: #2b91d9;
 }
 
-.block-reveal-light-gray::after {
+html.dark .block-reveal-slogan::after {
 	--block-reveal-color: #afafaf;
+}
+.block-reveal-slogan::after {
+	--block-reveal-color: #151516;
+}
+
+html.dark .block-reveal-name::after {
+	--block-reveal-color: #fff;
+}
+.block-reveal-name::after {
+	--block-reveal-color: #000;
 }
 
 .block-reveal-delay-1 *,
