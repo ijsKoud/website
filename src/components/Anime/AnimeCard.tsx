@@ -10,10 +10,13 @@ interface Props {
 
 const AnimeCard: React.FC<Props> = ({ anime, index }) => {
 	return (
-		<motion.div variants={FadeInAnimationKey(index)} initial="initial" animate="inView" className="relative">
-			<div className="w-44 rounded-lg max-sm:w-32 bg-black-500 absolute z-10 top-0" />
+		<motion.button variants={FadeInAnimationKey(index)} initial="initial" animate="inView" className="relative">
+			<div className="w-44 h-full rounded-lg max-sm:w-32 bg-primary-500 absolute z-10 top-0 opacity-0 hover:opacity-100 transition-opacity px-2 py-2 flex flex-col justify-center">
+				<h3 className="text-base font-bold leading-5 text-left">{anime.title}</h3>
+				<p className="text-base leading-5 text-left">{anime.genres.join(" • ")}</p>
+			</div>
 			<img alt={anime.title} src={anime.image} className="w-44 rounded-lg max-sm:w-32" loading="lazy" />
-		</motion.div>
+		</motion.button>
 	);
 };
 
