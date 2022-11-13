@@ -1,3 +1,6 @@
+/* TicTacToe Types */
+export type PlayingUser = "x" | "o";
+
 export interface AnimeApiResponse {
 	list: Anime[];
 	username: string;
