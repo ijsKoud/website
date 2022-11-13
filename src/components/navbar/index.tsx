@@ -27,17 +27,17 @@ const Navbar = () => {
 			</Link>
 			<div className="flex justify-center gap-12 items-center max-md:gap-8">
 				<div className="flex justify-between gap-12 items-center max-md:hidden">
-					<Link legacyBehavior href="#about">
+					<Link legacyBehavior href="/#about">
 						<motion.a variants={NavbarItemAnimations(0)} initial="initial" animate="animate" className={navItemClassName}>
 							About
 						</motion.a>
 					</Link>
-					<Link legacyBehavior href="#projects">
+					<Link legacyBehavior href="/#projects">
 						<motion.a variants={NavbarItemAnimations(1)} initial="initial" animate="animate" className={navItemClassName}>
 							Projects
 						</motion.a>
 					</Link>
-					<Link legacyBehavior href="#contact">
+					<Link legacyBehavior href="/#contact">
 						<motion.a variants={NavbarItemAnimations(2)} initial="initial" animate="animate" className={navItemClassName}>
 							Contact
 						</motion.a>
