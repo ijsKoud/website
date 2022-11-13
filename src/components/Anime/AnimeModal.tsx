@@ -20,7 +20,7 @@ const AnimeModal: React.FC<Anime> = (anime) => {
 					</tr>
 					<tr>
 						<td className="text-dark-gray dark:text-light-gray">Status:</td>
-						<td className="capitalize">{AnimeStatus[anime.status].toLowerCase()}</td>
+						<td className="capitalize">{AnimeStatus[anime.status].toLowerCase().replaceAll("_", " ")}</td>
 					</tr>
 					<tr>
 						<td className="text-dark-gray dark:text-light-gray">Rating:</td>
