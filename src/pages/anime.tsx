@@ -19,7 +19,7 @@ const AnimeComp: React.FC = () => {
 			<HomeSectionLayout contactTitle title="ANIME" id="anime" width="w-full max-xl:w-full">
 				<div className="grid gap-1 mt-2 place-content-center grid-cols-[repeat(auto-fill,11rem)] max-sm:grid-cols-[repeat(auto-fill,8rem)]">
 					{anime.map((an, key) => (
-						<AnimeCard key={key} anime={an} />
+						<AnimeCard key={key} index={key} anime={an} />
 					))}
 				</div>
 			</HomeSectionLayout>
