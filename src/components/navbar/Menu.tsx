@@ -17,20 +17,17 @@ const Menu = () => {
 					menu ? "pointer-events-auto" : "pointer-events-none"
 				} transition-opacity`}
 			>
-				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="#about">
+				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="/#about">
 					About
 				</Link>
-				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="#projects">
+				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="/#projects">
 					Projects
 				</Link>
-				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="#contact">
+				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors md:hidden" href="/#contact">
 					Contact
 				</Link>
 				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors" href="/anime">
 					Anime
-				</Link>
-				<Link onClick={closeMenu} className="text-base font-semibold hover:text-primary transition-colors" href="/cc">
-					Discount
 				</Link>
 			</div>
 		</div>
