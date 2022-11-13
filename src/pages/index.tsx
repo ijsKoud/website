@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
+import HeadTitle from "../components/HeadTitle";
 import About from "../components/Home/About";
 import Contact from "../components/Home/Contact";
 import Landing from "../components/Home/Landing";
@@ -19,6 +20,7 @@ const Home = () => {
 
 	return (
 		<div className="min-h-screen px-40 -mt-24 max-lg:px-28 max-md:px-9 max-sm:px-3">
+			<HeadTitle title="Daan Klarenbeek" />
 			<Landing />
 			<About />
 			<Projects />
