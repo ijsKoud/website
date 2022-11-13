@@ -32,8 +32,8 @@ const Error: NextPage<Props> = ({ statusCode }) => {
 	};
 
 	return (
-		<div className="min-h-screen w-full mt-6 px-40 max-lg:px-28 max-md:px-9 max-sm:px-3 place-items-center grid">
-			<HomeSectionLayout contactTitle title="AN ERROR OCCURRED." id="" width="w-3/5 max-xl:w-full text-center">
+		<div className="min-h-screen w-full -mt-24 px-40 max-lg:px-28 max-md:px-9 max-sm:px-3 place-items-center grid">
+			<HomeSectionLayout contactTitle title="😔 AN ERROR OCCURRED." id="" width="w-3/5 max-xl:w-full text-center">
 				<div className="flex flex-col items-center justify-center">
 					<Modal onClick={() => newGame(false)} isOpen={Boolean(game.winner)}>
 						<div className="max-w-md">
