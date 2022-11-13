@@ -66,9 +66,9 @@ const Error: NextPage<Props> = ({ statusCode }) => {
 						</div>
 					</Modal>
 					<p className="text-center text-base max-sm:text-sm">
-						{statusCode === 500
-							? `Ugh, one of the workers behind the scenes broke something again. Why not play a game of tic-tac-toe before you try again?`
-							: "Ugh, someone must have pulled this page offline. Why not play a game of tic-tac-toe before you try to load this page again?"}
+						{statusCode === 404
+							? "Ugh, someone must have pulled this page offline. Why not play a game of tic-tac-toe before you try to load this page again?"
+							: "Ugh, one of the workers behind the scenes broke something again. Why not play a game of tic-tac-toe before you try again?"}
 					</p>
 					<div className="grid auto-cols-auto auto-rows-auto grid-cols-[100px,100px,100px] grid-rows-[100px,100px,100px] mt-5">
 						{board.map((block, key) => (
