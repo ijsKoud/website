@@ -10,7 +10,6 @@ const Home = () => {
 
 	useEffect(() => {
 		if (asPath.startsWith("/#")) {
-			console.log(asPath);
 			const id = asPath.replace("/#", "");
 			const el = document.getElementById(id);
 
