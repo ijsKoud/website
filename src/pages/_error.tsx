@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import React, { useState } from "react";
+import HeadTitle from "../components/HeadTitle";
 import HomeSectionLayout from "../components/HomeSectionLayout";
 import Modal from "../components/Modal";
 import { AI_ICON, USER_ICON } from "../lib/constants";
@@ -8,8 +9,6 @@ import { TicTacToe } from "../lib/games/tictactoe";
 interface Props {
 	statusCode: number | undefined;
 }
-
-// ( ・⌓・｀)
 
 const Error: NextPage<Props> = ({ statusCode }) => {
 	const [game, setGame] = useState(new TicTacToe());
@@ -33,6 +32,7 @@ const Error: NextPage<Props> = ({ statusCode }) => {
 
 	return (
 		<div className="min-h-screen w-full -mt-24 px-40 max-lg:px-28 max-md:px-9 max-sm:px-3 place-items-center grid">
+			<HeadTitle title="( ・⌓・｀)" />
 			<HomeSectionLayout contactTitle title="😔 AN ERROR OCCURRED." id="" width="w-3/5 max-xl:w-full text-center">
 				<div className="flex flex-col items-center justify-center">
 					<Modal onClick={() => newGame(false)} isOpen={Boolean(game.winner)}>
