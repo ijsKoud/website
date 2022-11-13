@@ -12,7 +12,7 @@ const Cursor = () => {
 	return (
 		<div
 			ref={ref}
-			className="ball-transitions pointer-events-none fixed z-30 h-6 w-6 rounded-full border border-black bg-transparent opacity-0 shadow-md duration-200 dark:border-white"
+			className="ball-transitions pointer-events-none fixed z-50 h-6 w-6 rounded-full border border-black bg-transparent opacity-0 shadow-md duration-200 dark:border-white"
 		/>
 	);
 };

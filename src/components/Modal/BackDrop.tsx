@@ -28,7 +28,7 @@ const variants: Variants = {
 const BackDrop: React.FC<React.PropsWithChildren<{ onClick: () => void }>> = ({ onClick, children }) => {
 	return (
 		<motion.div
-			className="flex items-center fixed z-50 inset-0 h-full w-full justify-center overflow-y-hidden backdrop-blur-md bg-[rgba(0,0,0,0.7)]"
+			className="flex items-center fixed z-40 inset-0 h-full w-full justify-center overflow-y-hidden backdrop-blur-md bg-[rgba(0,0,0,0.7)]"
 			onClick={onClick}
 			initial="hidden"
 			animate="visible"
