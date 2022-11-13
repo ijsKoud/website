@@ -34,6 +34,11 @@ module.exports = {
 			source: "/kofi",
 			destination: "https://ko-fi.com/ijsKoud",
 			permanent: true
+		},
+		{
+			source: "/twitter",
+			destination: "https://twitter.com/ijs_Koud",
+			permanent: true
 		}
 	]
 };
