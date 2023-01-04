@@ -1,17 +1,24 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { getAge } from "../../lib/utils";
 import HomeSectionLayout from "../HomeSectionLayout";
 
 const About = () => {
+	const [age, setAge] = useState(0);
+
+	useEffect(() => {
+		const interval = setInterval(() => setAge(getAge()), 1e2);
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<HomeSectionLayout title="ABOUT ME" id="about" width="w-4/5">
 			<div className="flex justify-between mt-6 max-lg:flex-col">
 				<div className="w-3/5 max-lg:w-full flex flex-col gap-5">
 					<p className="font-normal text-base max-xl:text-sm">
-						Hey, I am Daan. A <strong>{getAge()}</strong> year-old full-stack developer & anime lover from the Netherlands. Who knew that
-						writing half-working chat bots by following a simple tutorial in 2020 would bring me here. I guess that that one tutorial
-						decided my whole life.
+						Hey, I am Daan. A <strong>{age.toPrecision(10)}...</strong> year-old full-stack developer & anime lover from the Netherlands.
+						Who knew that writing half-working chat bots by following a simple tutorial in 2020 would bring me here. I guess that that one
+						tutorial decided my whole life.
 					</p>
 					<p className="font-normal text-base max-xl:text-sm">
 						Anyway, fast-forward to today; I love programming and work on a series of projects you can find below,{" "}
