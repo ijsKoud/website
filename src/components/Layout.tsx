@@ -7,7 +7,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
 	return (
 		<BackgroundLayout>
 			<Navbar />
-			<div id="content" className="mt-[70px] w-screen h-screen z-10 overflow-y-auto">
+			<div id="content" className="mt-[70px] w-screen h-screen overflow-y-auto">
 				{children}
 				<Footer />
 			</div>
