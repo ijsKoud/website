@@ -13,7 +13,7 @@ interface Props {
 }
 
 interface Links {
-	github: string;
+	github?: string;
 	page: string;
 }
 
@@ -44,9 +44,11 @@ const ProjectCard: React.FC<Props> = ({ name, slogan, description, links, image,
 				</div>
 				<p className="font-normal text-sm mb-2">{description}</p>
 				<div className="text-base flex gap-2">
-					<Link className="hover:text-primary transition-colors" href={`/github/${links.github}`} target="_blank">
-						<i className="fa-brands fa-github" />
-					</Link>
+					{links.github && (
+						<Link className="hover:text-primary transition-colors" href={`/github/${links.github}`} target="_blank">
+							<i className="fa-brands fa-github" />
+						</Link>
+					)}
 					<Link className="hover:text-primary transition-colors" href={links.page} target="_blank">
 						<i className="fa-solid fa-arrow-up-right-from-square" />
 					</Link>
