@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn.ijskoud.dev/files/xaTEOXlBgo9i.png" width="500px" />
+    <img src="https://cdn.ijskoud.dev/files/xaTEOXlBgo9i.png" width="100%" />
     <h1>website</h1>
   
   <p>My personal website build with NextJS and written in TypeScript.</p>
