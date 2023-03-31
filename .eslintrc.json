@@ -1,7 +1,6 @@
 {
-	"extends": ["next", "next/core-web-vitals", "@sapphire"],
+	"extends": ["@sapphire"],
 	"rules": {
-		"react-hooks/exhaustive-deps": "off",
-		"@next/next/no-img-element": "off"
+		"@typescript-eslint/no-base-to-string": "off"
 	}
 }
