@@ -254,6 +254,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^0.8.2":
+  version: 0.8.8
+  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+  dependencies:
+    "@emotion/memoize": 0.7.4
+  checksum: bb7ec6d48c572c540e24e47cc94fc2f8dec2d6a342ae97bc9c8b6388d9b8d283862672172a1bb62d335c02662afe6291e10c71e9b8642664a8b43416cdceffac
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@emotion/memoize@npm:0.7.4"
+  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.2.0
   resolution: "@eslint-community/eslint-utils@npm:4.2.0"
@@ -961,6 +977,28 @@ __metadata:
   checksum: 77d53f74648e48bf1c6313cd60568c2b1539157ac13945f26204a54beb156666c24f3d033dd0db8ed5d1d4595ee63c072732b17132e4488b46763bf8fdcefa49
   languageName: node
   linkType: hard
+
+"@website/navbar@*, @website/navbar@workspace:packages/navbar":
+  version: 0.0.0-use.local
+  resolution: "@website/navbar@workspace:packages/navbar"
+  dependencies:
+    "@sapphire/eslint-config": ^4.3.8
+    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/ts-config": ^3.3.4
+    "@types/react": ^18.0.31
+    "@types/react-dom": ^18.0.11
+    framer-motion: ^10.10.0
+    next-themes: ^0.2.1
+    react: ^18.2.0
+  peerDependencies:
+    "@types/node": 18.15.11
+    eslint: ^8.37.0
+    next: 13.2.4
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
 
 "@website/ui@*, @website/ui@workspace:packages/ui":
   version: 0.0.0-use.local
@@ -2690,6 +2728,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "framer-motion@npm:10.10.0"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.2
+    tslib: ^2.4.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 378301b0532e71b1d85ed82754278d3852180c232869523b0f725b6194df72716bae807eaf588367a2c10d564cbbb4fd48aa739efaf99ac4f1ab31aae207b7d3
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^11.0.0":
   version: 11.1.0
   resolution: "fs-extra@npm:11.1.0"
@@ -4225,6 +4284,17 @@ __metadata:
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
   checksum: b8ffeb1e262eff7968fc90a2b6767b04cfd9842582a9d0ece0af7049537266e7b2506dfb1d107a32f06dd849ab2aea834d5830f7f4d0e5cb7d36e1ae55d021d9
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "next-themes@npm:0.2.1"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: ebc248b956138e73436c4ed0a0f0a877a0a48a33156db577029b8b8469e48b5c777d61abf2baeb75953378febea74e067a4869ff90b4a3e94fce123289b862ba
   languageName: node
   linkType: hard
 
@@ -6207,17 +6277,19 @@ __metadata:
     "@types/node": 18.15.11
     "@types/react": 18.0.31
     "@types/react-dom": 18.0.11
+    "@website/navbar": "*"
     "@website/ui": "*"
     autoprefixer: ^10.4.14
     eslint-config-next: 13.2.4
-    next: 13.2.4
+    next-themes: ^0.2.1
     postcss: ^8.4.21
-    react: 18.2.0
-    react-dom: 18.2.0
     tailwindcss: ^3.3.1
   peerDependencies:
     "@types/node": 18.15.11
     eslint: ^8.37.0
+    next: 13.2.4
+    react: 18.2.0
+    react-dom: 18.2.0
     typescript: ^4.9.5
   languageName: unknown
   linkType: soft
@@ -6240,7 +6312,10 @@ __metadata:
     husky: ^8.0.3
     is-ci: ^3.0.1
     lint-staged: ^13.2.0
+    next: 13.2.4
     prettier: ^2.8.7
+    react: 18.2.0
+    react-dom: 18.2.0
     turbo: ^1.8.8
     typescript: ^4.9.5
   languageName: unknown
