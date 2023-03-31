@@ -1,10 +1,10 @@
 import Head from "next/head.js";
 import Image from "next/image.js";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Test from "@website/ui";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"], display: "swap" });
 
 export default function Home() {
 	return (
@@ -47,10 +47,10 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<h2 className={inter.className}>
+						<h2 className={nunito.className}>
 							Docs <span>-&gt;</span>
 						</h2>
-						<p className={inter.className}>Find in-depth information about Next.js features and&nbsp;API.</p>
+						<p className={nunito.className}>Find in-depth information about Next.js features and&nbsp;API.</p>
 					</a>
 
 					<a
@@ -59,10 +59,10 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<h2 className={inter.className}>
+						<h2 className={nunito.className}>
 							Learn <span>-&gt;</span>
 						</h2>
-						<p className={inter.className}>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+						<p className={nunito.className}>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
 					</a>
 
 					<a
@@ -71,10 +71,10 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<h2 className={inter.className}>
+						<h2 className={nunito.className}>
 							Templates <span>-&gt;</span>
 						</h2>
-						<p className={inter.className}>Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
+						<p className={nunito.className}>Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
 					</a>
 
 					<a
@@ -83,10 +83,10 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<h2 className={inter.className}>
+						<h2 className={nunito.className}>
 							Deploy <span>-&gt;</span>
 						</h2>
-						<p className={inter.className}>Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
+						<p className={nunito.className}>Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
 					</a>
 				</div>
 			</main>
