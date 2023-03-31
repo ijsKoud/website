@@ -10,6 +10,8 @@ interface Props {
 export const MenuButton: React.FC<Props> = ({ menu, toggleMenu }) => {
 	return (
 		<motion.button
+			aria-label="Toggle navbar menu"
+			aria-checked={menu}
 			variants={navbarItemAnimations(3)}
 			initial="initial"
 			animate="animate"

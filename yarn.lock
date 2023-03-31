@@ -739,6 +739,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/twemoji-parser@npm:^13.1.1":
+  version: 13.1.1
+  resolution: "@types/twemoji-parser@npm:13.1.1"
+  checksum: dbb915a0e1d4b1471a9c0bad52f81293ea8b1f3e92a2dc288261e6eb6dfb8b9ad37dcb6adf77832c5965a0e29f279f6a8d531f91f1c1f78ef4e592d177115d39
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:^5.33.1":
   version: 5.36.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.36.1"
@@ -987,9 +994,11 @@ __metadata:
     "@sapphire/ts-config": ^3.3.4
     "@types/react": ^18.0.31
     "@types/react-dom": ^18.0.11
+    "@types/twemoji-parser": ^13.1.1
     framer-motion: ^10.10.0
     next-themes: ^0.2.1
     react: ^18.2.0
+    twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
     eslint: ^8.37.0
@@ -6045,6 +6054,13 @@ __metadata:
   bin:
     turbo: bin/turbo
   checksum: 6dcfd7b38e2dd9abe279bda54e474be3463df51428f0b91c5e0539e9fd8c9b1efec562df629946f5ca92ede05f0aba35027481065d054249334e11692085ddb7
+  languageName: node
+  linkType: hard
+
+"twemoji-parser@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "twemoji-parser@npm:14.0.0"
+  checksum: 8eede69cf71f94735de7b6fddf5dfbfe3cb2e01baefc3201360984ccc97cfc659f206c8f73bd1405a2282779af3b79a8c9bed3864c672e15e2dc6f8ce4810452
   languageName: node
   linkType: hard
 
