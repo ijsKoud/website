@@ -13,27 +13,30 @@ const Navbar: React.FC = () => {
 	};
 
 	return (
-		<nav className="px-12 max-md:px-8 h-[70px] w-screen fixed z-[9999] flex justify-between items-center">
-			<Link href="/" legacyBehavior>
-				<motion.a
-					variants={NavbarTitleAnimations}
-					initial="initial"
-					animate="animate"
-					onClick={scrollTop}
-					className="text-8 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
-				>
-					ijsKoud
-				</motion.a>
-			</Link>
-			<div className="flex justify-center  gap-16 items-center max-md:gap-8">
-				<div className="flex justify-between  gap-16 items-center max-md:hidden">
-					{NAV_LINKS.map((link) => (
-						<NavLink key={link.index} {...link} />
-					))}
+		<>
+			<nav className="px-12 max-md:px-8 h-[70px] w-screen fixed z-[9999] flex justify-between items-center">
+				<Link href="/" legacyBehavior>
+					<motion.a
+						variants={NavbarTitleAnimations}
+						initial="initial"
+						animate="animate"
+						onClick={scrollTop}
+						className="text-8 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
+					>
+						ijsKoud
+					</motion.a>
+				</Link>
+				<div className="flex justify-center gap-16 items-center max-md:gap-8">
+					<div className="flex justify-between gap-16 items-center max-lg:hidden">
+						{NAV_LINKS.map((link) => (
+							<NavLink key={link.index} {...link} />
+						))}
+					</div>
+					<Menu />
 				</div>
-				<Menu />
-			</div>
-		</nav>
+			</nav>
+			<nav aria-disabled className="w-screen h-[70px]" />
+		</>
 	);
 };
 

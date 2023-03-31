@@ -20,7 +20,7 @@ export const NavMenuLink: React.FC<Props> = ({ title, emoji, onClick, href }) =>
 					<p className="navlink relative">{title}</p>
 				</Link>
 			) : (
-				<button aria-label={`Go to ${title}`} onClick={onClick} className="text-5 flex items-center gap-2 font-semibold">
+				<button aria-label={`Click on ${title} button`} onClick={onClick} className="text-5 flex items-center gap-2 font-semibold">
 					<img src={twemoji.url} alt={twemoji.text} className="h-8" />
 					<p className="navlink relative">{title}</p>
 				</button>
