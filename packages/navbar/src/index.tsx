@@ -13,30 +13,27 @@ const Navbar: React.FC = () => {
 	};
 
 	return (
-		<>
-			<nav className="px-12 max-md:px-8 h-[70px] w-screen fixed z-[9999] flex justify-between items-center">
-				<Link href="/" legacyBehavior>
-					<motion.a
-						variants={NavbarTitleAnimations}
-						initial="initial"
-						animate="animate"
-						onClick={scrollTop}
-						className="text-8 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
-					>
-						ijsKoud
-					</motion.a>
-				</Link>
-				<div className="flex justify-center gap-16 items-center max-md:gap-8">
-					<div className="flex justify-between gap-16 items-center max-lg:hidden">
-						{NAV_LINKS.map((link) => (
-							<NavLink key={link.index} {...link} />
-						))}
-					</div>
-					<Menu />
+		<nav className="px-12 max-md:px-8 h-[70px] w-screen fixed z-[9999] flex justify-between items-center backdrop-blur-md bg-gradient-to-br dark:from-background-400 dark:to-background-200 from-white-400 to-white-200">
+			<Link href="/" legacyBehavior>
+				<motion.a
+					variants={NavbarTitleAnimations}
+					initial="initial"
+					animate="animate"
+					onClick={scrollTop}
+					className="text-8 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
+				>
+					ijsKoud
+				</motion.a>
+			</Link>
+			<div className="flex justify-center gap-16 items-center max-md:gap-8">
+				<div className="flex justify-between gap-16 items-center max-lg:hidden">
+					{NAV_LINKS.map((link) => (
+						<NavLink key={link.index} {...link} />
+					))}
 				</div>
-			</nav>
-			<nav aria-disabled className="w-screen h-[70px]" />
-		</>
+				<Menu />
+			</div>
+		</nav>
 	);
 };
 

@@ -30,6 +30,17 @@ module.exports = {
 				secondary: "#62ADE3",
 				tertairy: "#2B91D9",
 
+				white: "#fff",
+				"white-900": "rgba(255, 255, 255, 0.9)",
+				"white-800": "rgba(255, 255, 255, 0.8)",
+				"white-700": "rgba(255, 255, 255, 0.7)",
+				"white-600": "rgba(255, 255, 255, 0.6)",
+				"white-500": "rgba(255, 255, 255, 0.5)",
+				"white-400": "rgba(255, 255, 255, 0.4)",
+				"white-300": "rgba(255, 255, 255, 0.3)",
+				"white-200": "rgba(255, 255, 255, 0.2)",
+				"white-100": "rgba(255, 255, 255, 0.1)",
+
 				"light-gray": "#AFAFAF",
 				"dark-gray": "#151516",
 
