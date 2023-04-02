@@ -985,6 +985,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@website/constants@*, @website/constants@workspace:packages/constants":
+  version: 0.0.0-use.local
+  resolution: "@website/constants@workspace:packages/constants"
+  dependencies:
+    "@sapphire/eslint-config": ^4.3.8
+    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/ts-config": ^3.3.4
+    "@types/react": ^18.0.31
+    "@types/react-dom": ^18.0.11
+    "@types/twemoji-parser": ^13.1.1
+  peerDependencies:
+    "@types/node": 18.15.11
+    eslint: ^8.37.0
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
+
 "@website/navbar@*, @website/navbar@workspace:packages/navbar":
   version: 0.0.0-use.local
   resolution: "@website/navbar@workspace:packages/navbar"
@@ -995,9 +1012,9 @@ __metadata:
     "@types/react": ^18.0.31
     "@types/react-dom": ^18.0.11
     "@types/twemoji-parser": ^13.1.1
+    "@website/constants": "*"
     framer-motion: ^10.10.0
     next-themes: ^0.2.1
-    react: ^18.2.0
     twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
@@ -1018,10 +1035,10 @@ __metadata:
     "@sapphire/ts-config": ^3.3.4
     "@types/react": ^18.0.31
     "@types/react-dom": ^18.0.11
-    react: ^18.2.0
   peerDependencies:
     "@types/node": 18.15.11
     eslint: ^8.37.0
+    react: ^18.2.0
     typescript: ^4.9.5
   languageName: unknown
   linkType: soft
@@ -4998,7 +5015,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:

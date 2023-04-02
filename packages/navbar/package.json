@@ -22,10 +22,10 @@
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/react": "^18.0.31",
 		"@types/react-dom": "^18.0.11",
-		"@types/twemoji-parser": "^13.1.1",
-		"react": "^18.2.0"
+		"@types/twemoji-parser": "^13.1.1"
 	},
 	"dependencies": {
+		"@website/constants": "*",
 		"framer-motion": "^10.10.0",
 		"next-themes": "^0.2.1",
 		"twemoji-parser": "^14.0.0"
