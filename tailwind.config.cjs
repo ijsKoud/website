@@ -4,7 +4,7 @@ module.exports = {
 	darkMode: "class",
 	theme: {
 		extend: {
-			fontSize: Array(12)
+			fontSize: Array(24)
 				.fill(null)
 				.map((_, key) => ({ [key + 1]: [(key + 1) * 4] }))
 				.reduce((a, b) => ({ ...a, ...b }), {}),

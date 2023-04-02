@@ -996,7 +996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@website/buttons@workspace:packages/buttons":
+"@website/buttons@*, @website/buttons@workspace:packages/buttons":
   version: 0.0.0-use.local
   resolution: "@website/buttons@workspace:packages/buttons"
   dependencies:
@@ -1064,6 +1064,7 @@ __metadata:
     "@sapphire/ts-config": ^3.3.4
     "@types/react": ^18.0.32
     "@types/react-dom": ^18.0.11
+    twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
     eslint: ^8.37.0
@@ -6339,6 +6340,8 @@ __metadata:
     "@types/node": 18.15.11
     "@types/react": 18.0.32
     "@types/react-dom": 18.0.11
+    "@website/buttons": "*"
+    "@website/constants": "*"
     "@website/navbar": "*"
     "@website/ui": "*"
     autoprefixer: ^10.4.14
