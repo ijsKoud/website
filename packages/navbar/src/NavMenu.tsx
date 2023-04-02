@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { MenuButton, NavMenuLink } from "./buttons";
-import { getNavMenuConstants } from "./constants/Navbar";
+import { getNavMenuConstants } from "@website/constants";
 
 const Menu: React.FC = () => {
 	const [menu, setMenu] = useState(false);

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { navbarItemAnimations } from "../constants/animations";
+import { navbarItemAnimations } from "@website/constants";
 
 interface Props {
 	href: string;

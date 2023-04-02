@@ -1,6 +1,7 @@
 import type { Variants } from "framer-motion";
 
-export const NavbarTitleAnimations: Variants = {
+/** DO NOT RENAME THIS CONSTANT, ONLY CHANGE THE VALUES IF YOU KNOW WHAT YOU ARE DOING */
+export const navbarTitleAnimations: Variants = {
 	initial: {
 		opacity: 0
 	},
@@ -13,6 +14,7 @@ export const NavbarTitleAnimations: Variants = {
 	}
 };
 
+/** DO NOT RENAME THIS FUNCTION OR CHANGE THE FUNCTION PARAMS, ONLY CHANGE THE VALUES IF YOU KNOW WHAT YOU ARE DOING */
 export const navbarItemAnimations = (index: number): Variants => ({
 	initial: {
 		opacity: 0,
