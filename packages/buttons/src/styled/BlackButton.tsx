@@ -6,7 +6,7 @@ export const BlackButton: React.FC<React.PropsWithChildren<ButtonProps>> = (prop
 	return (
 		<Button
 			{...props}
-			className={`${props.className} text-5 text-white bg-black-500 rounded-full py-2 px-4 hover:bg-black-800 transition-colors`}
+			className={`${props.className ?? ""} text-5 text-white bg-black-500 rounded-full py-2 px-4 hover:bg-black-800 transition-colors`}
 		/>
 	);
 };
