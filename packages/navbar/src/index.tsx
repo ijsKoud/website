@@ -4,6 +4,9 @@ import Menu from "./NavMenu";
 import { motion } from "framer-motion";
 import { navbarTitleAnimations, NAVBAR_NAV_LINKS } from "@website/constants";
 import { NavLink } from "./buttons";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ display: "swap", subsets: ["latin"] });
 
 const Navbar: React.FC = () => {
 	const scrollTop = () => {
@@ -19,9 +22,10 @@ const Navbar: React.FC = () => {
 					initial="initial"
 					animate="animate"
 					onClick={scrollTop}
-					className="text-8 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
+					style={inter.style}
+					className="text-11 font-extrabold w-fit hover:text-primary transition-colors cursor-pointer"
 				>
-					ijsKoud
+					{NAVBAR_LOGO_TEXT}
 				</motion.a>
 			</Link>
 			<div className="flex justify-center gap-16 items-center max-md:gap-8">
