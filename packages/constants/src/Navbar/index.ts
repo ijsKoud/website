@@ -2,6 +2,8 @@ export * from "./animations";
 
 import type { GetNavMenuConstantsProps } from "./types";
 
+export const NAVBAR_LOGO_TEXT = "D" as const;
+
 /**
  * ONLY MODIFY THE CONSTANTS ITSELF, DO NOT RENAME THIS ITEM
  * DO NOT REMOVE OR RENAME THE `index: number` PROP ON EVERY LINK, ALWAYS ADD IT TO THE OBJECT IF YOU ADD/MODIFY ANY OF THEM

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Menu from "./NavMenu";
 import { motion } from "framer-motion";
-import { navbarTitleAnimations, NAVBAR_NAV_LINKS } from "@website/constants";
+import { navbarTitleAnimations, NAVBAR_NAV_LINKS, NAVBAR_LOGO_TEXT } from "@website/constants";
 import { NavLink } from "./buttons";
 import { Inter } from "next/font/google";
 
