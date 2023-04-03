@@ -4,7 +4,6 @@ import { BlackButton, PrimaryButtonArrow } from "@website/buttons";
 import type { NextPage } from "next";
 import { Inter } from "next/font/google";
 import Markdown from "@website/markdown";
-import ReactMarkdown from "react-markdown";
 
 const inter = Inter({ subsets: ["latin"], display: "swap", weight: "800" });
 
@@ -21,16 +20,7 @@ const Home: NextPage = () => {
 							<Markdown>{LANDING_TEXT.name.toUpperCase()}</Markdown>
 						</h1>
 						<h3 className="text-light-gray text-12 font-semibold leading-[95%] pt-4 w-3/4 max-lg:text-10 max-md:w-full max-sm:text-8 max-[400px]:text-6">
-							<ReactMarkdown
-								skipHtml
-								allowedElements={["strong", "code", "p"]}
-								components={{
-									strong: ({ children }) => <span className="text-white">{children}</span>,
-									code: ({ children }) => <span className="text-primary">{children}</span>
-								}}
-							>
-								{LANDING_TEXT.subtitle}
-							</ReactMarkdown>
+							<Markdown>{LANDING_TEXT.subtitle}</Markdown>
 						</h3>
 					</div>
 					<div className="w-fit -mt-4">
