@@ -4,22 +4,32 @@ import { BlackButton, PrimaryButtonArrow } from "@website/buttons";
 import type { NextPage } from "next";
 import { Inter } from "next/font/google";
 import Markdown from "@website/markdown";
+import { useTheme } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"], display: "swap", weight: "800" });
 
 const Home: NextPage = () => {
+	const { theme } = useTheme();
+
 	return (
 		<PageLayout className="min-h-screen">
 			<section className="flex flex-col items-center justify-center h-[calc(100vh-192px)]">
 				<div className="flex flex-col gap-y-10">
-					<div className="flex flex-col gap-y-1">
+					<div className="relative flex flex-col gap-y-1">
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img
+							aria-hidden
+							src={theme === "dark" ? "/grid/dark.svg" : "/grid/light.svg"}
+							alt="Grid illustration"
+							className="absolute -z-10 top-0 left-0 -translate-x-11 -translate-y-11"
+						/>
 						<h2 className="text-primary text-12 font-normal leading-[95%] w-fit max-lg:text-10 max-sm:text-8 max-[400px]:text-6">
 							<Markdown>{LANDING_TEXT.title.toUpperCase()}</Markdown>
 						</h2>
 						<h1 className="text-24 leading-[80%] w-fit max-lg:text-20 max-sm:text-14 max-[400px]:text-10" style={inter.style}>
 							{LANDING_TEXT.name.toUpperCase()}
 						</h1>
-						<h3 className="text-light-gray text-12 font-semibold leading-[95%] pt-4 w-3/4 max-lg:text-10 max-md:w-full max-sm:text-8 max-[400px]:text-6">
+						<h3 className="dark:text-light-gray text-zinc-500 text-12 font-semibold leading-[95%] pt-4 w-3/4 max-lg:text-10 max-md:w-full max-sm:text-8 max-[400px]:text-6">
 							<Markdown>{LANDING_TEXT.subtitle}</Markdown>
 						</h3>
 					</div>
