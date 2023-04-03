@@ -1,3 +1,4 @@
+import Markdown from "@website/markdown";
 import React from "react";
 import { parse } from "twemoji-parser";
 
@@ -12,7 +13,9 @@ export const EmojiBulletPoint: React.FC<Props> = ({ text, emoji }) => {
 	return (
 		<div className="flex items-center gap-5 mt-4 max-md:gap-2">
 			<img className="h-10 max-lg:h-8 max-md:h-6" alt={emoji} src={twemoji.url} />
-			<h4 className="text-10 text-light-gray max-lg:text-8 max-sm:text-6 max-[400px]:text-4 leading-[95%]">{text}</h4>
+			<h4 className="text-10 text-light-gray max-lg:text-8 max-sm:text-6 max-[400px]:text-4 leading-[95%]">
+				<Markdown>{text}</Markdown>
+			</h4>
 		</div>
 	);
 };
