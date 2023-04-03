@@ -11,7 +11,7 @@ const Markdown: React.FC<Props> = ({ children }) => {
 			skipHtml
 			allowedElements={["strong", "code", "p"]}
 			components={{
-				strong: ({ children }) => <span className="text-white">{children}</span>,
+				strong: ({ children }) => <span className="dark:text-white text-[#000]">{children}</span>,
 				code: ({ children }) => <span className="text-primary">{children}</span>
 			}}
 		>

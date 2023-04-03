@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 							<Markdown>{LANDING_TEXT.title.toUpperCase()}</Markdown>
 						</h2>
 						<h1 className="text-24 leading-[80%] w-fit max-lg:text-20 max-sm:text-14 max-[400px]:text-10" style={inter.style}>
-							<Markdown>{LANDING_TEXT.name.toUpperCase()}</Markdown>
+							{LANDING_TEXT.name.toUpperCase()}
 						</h1>
 						<h3 className="text-light-gray text-12 font-semibold leading-[95%] pt-4 w-3/4 max-lg:text-10 max-md:w-full max-sm:text-8 max-[400px]:text-6">
 							<Markdown>{LANDING_TEXT.subtitle}</Markdown>
