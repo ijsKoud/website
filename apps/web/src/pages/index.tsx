@@ -5,11 +5,17 @@ import type { NextPage } from "next";
 import { Inter } from "next/font/google";
 import Markdown from "@website/markdown";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"], display: "swap", weight: "800" });
 
 const Home: NextPage = () => {
-	const { theme } = useTheme();
+	const [theme, setTheme] = useState("dark");
+	const { theme: _theme } = useTheme();
+
+	useEffect(() => {
+		if (_theme) setTheme(_theme);
+	}, [_theme]);
 
 	return (
 		<PageLayout className="min-h-screen">
