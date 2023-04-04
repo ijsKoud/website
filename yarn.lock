@@ -1123,7 +1123,9 @@ __metadata:
     "@sapphire/ts-config": ^3.3.4
     "@types/react": ^18.0.32
     "@types/react-dom": ^18.0.11
+    "@website/constants": "*"
     "@website/markdown": "*"
+    framer-motion: 10.10.0
     twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
@@ -2895,7 +2897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^10.10.0":
+"framer-motion@npm:10.10.0, framer-motion@npm:^10.10.0":
   version: 10.10.0
   resolution: "framer-motion@npm:10.10.0"
   dependencies:

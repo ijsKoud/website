@@ -22,7 +22,9 @@
 		"@types/react-dom": "^18.0.11"
 	},
 	"dependencies": {
+		"@website/constants": "*",
 		"@website/markdown": "*",
+		"framer-motion": "10.10.0",
 		"twemoji-parser": "^14.0.0"
 	}
 }
