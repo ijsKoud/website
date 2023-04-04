@@ -23,6 +23,8 @@
 	},
 	"dependencies": {
 		"@website/markdown": "*",
+		"@website/constants": "*",
+		"framer-motion": "10.10.0",
 		"twemoji-parser": "^14.0.0"
 	}
 }
