@@ -1126,6 +1126,8 @@ __metadata:
     "@website/constants": "*"
     "@website/markdown": "*"
     framer-motion: 10.10.0
+    next-themes: 0.2.1
+    react-intersection-observer: 9.4.3
     twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
@@ -4791,7 +4793,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-themes@npm:^0.2.1":
+"next-themes@npm:0.2.1, next-themes@npm:^0.2.1":
   version: 0.2.1
   resolution: "next-themes@npm:0.2.1"
   peerDependencies:
@@ -5490,6 +5492,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-intersection-observer@npm:9.4.3":
+  version: 9.4.3
+  resolution: "react-intersection-observer@npm:9.4.3"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: ac31c6c76ce72019a1fb50fe6b53ef6429d98b9e9b937f92d16635ef8586392c7058bb61526a8fe6bea6ce36c006015fe2d8893bac43eda6157b9e6b17ad9b68
   languageName: node
   linkType: hard
 
@@ -7003,7 +7014,6 @@ __metadata:
     "@website/ui": "*"
     autoprefixer: ^10.4.14
     eslint-config-next: 13.2.4
-    next-themes: ^0.2.1
     postcss: ^8.4.21
     tailwindcss: ^3.3.1
   peerDependencies:
