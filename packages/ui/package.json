@@ -25,6 +25,7 @@
 		"@website/constants": "*",
 		"@website/markdown": "*",
 		"framer-motion": "10.10.0",
+		"next-themes": "0.2.1",
 		"twemoji-parser": "^14.0.0"
 	}
 }
