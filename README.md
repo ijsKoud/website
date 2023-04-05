@@ -2,7 +2,7 @@
     <img src="https://cdn.ijskoud.dev/files/xaTEOXlBgo9i.png" width="100%" />
     <h1>website</h1>
   
-  <p>My personal website build with NextJS and written in TypeScript.</p>
+  <p>✨ My portfolio built with Next.js, Tailwind and TypeScript. Hosted on Vercel.</p>
   
   <p align="center">
     <img alt="Version" src="https://img.shields.io/badge/version-2.0.1-blue.svg" />
