@@ -1126,6 +1126,7 @@ __metadata:
     "@website/constants": "*"
     "@website/markdown": "*"
     framer-motion: 10.10.0
+    next-themes: 0.2.1
     twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.15.11
@@ -4791,7 +4792,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-themes@npm:^0.2.1":
+"next-themes@npm:0.2.1, next-themes@npm:^0.2.1":
   version: 0.2.1
   resolution: "next-themes@npm:0.2.1"
   peerDependencies:
@@ -6926,6 +6927,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"usehooks-ts@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "usehooks-ts@npm:2.9.1"
+  peerDependencies:
+    react: ^16.8.0  || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
+  checksum: 36f1e4142ce23bc019b81d2e93aefd7f2c350abcf255598c21627114a69a2f2f116b35dc3a353375f09c6e4c9b704a04f104e3d10e98280545c097feca66c30a
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -7003,9 +7014,9 @@ __metadata:
     "@website/ui": "*"
     autoprefixer: ^10.4.14
     eslint-config-next: 13.2.4
-    next-themes: ^0.2.1
     postcss: ^8.4.21
     tailwindcss: ^3.3.1
+    usehooks-ts: ^2.9.1
   peerDependencies:
     "@types/node": 18.15.11
     eslint: ^8.37.0
