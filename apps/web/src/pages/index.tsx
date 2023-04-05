@@ -67,6 +67,26 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 			</PageSection>
+
+			{/* <-- PROJECTS SECTION --> */}
+			<PageSection className="items-center">
+				<div className="flex flex-col gap-y-4 relative">
+					<SlideFade useInView>
+						<GridIllustration className="top-0 left-0 -translate-x-11 -translate-y-11 h-28" />
+						<h1
+							id="projects"
+							className="text-16 leading-[80%] w-fit max-lg:text-14 max-sm:text-12 max-[400px]:text-10"
+							style={inter.style}
+						>
+							Projects
+						</h1>
+						<h2 className="text-6 mt-2 mb-3">Here are some of the projects I&apos;ve worked on</h2>
+						<PrimaryButtonArrow type="link" href="/projects">
+							View more
+						</PrimaryButtonArrow>
+					</SlideFade>
+				</div>
+			</PageSection>
 		</PageLayout>
 	);
 };
