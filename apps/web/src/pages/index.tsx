@@ -44,11 +44,13 @@ const Home: NextPage = () => {
 			{/* <-- ABOUT ME SECTION --> */}
 			<PageSection className="items-center">
 				<div className="flex flex-col gap-y-4 relative">
-					<GridIllustration className="top-0 left-0 -translate-x-11 -translate-y-11 h-28" />
-					<h1 id="about" className="text-16 leading-[80%] w-fit max-lg:text-14 max-sm:text-12 max-[400px]:text-10" style={inter.style}>
-						About Me
-					</h1>
-					<div className="flex justify-between max-lg:flex-col max-lg:mb-8">
+					<SlideFade useInView>
+						<GridIllustration className="top-0 left-0 -translate-x-11 -translate-y-11 h-28" />
+						<h1 id="about" className="text-16 leading-[80%] w-fit max-lg:text-14 max-sm:text-12 max-[400px]:text-10" style={inter.style}>
+							About Me
+						</h1>
+					</SlideFade>
+					<SlideFade useInView delay={0.2} className="flex justify-between max-lg:flex-col max-lg:mb-8">
 						<div className="text-5 w-3/5 flex flex-col gap-y-4 max-lg:w-full">
 							<Markdown>{ABOUT_ME_TEXT}</Markdown>
 						</div>
@@ -57,7 +59,7 @@ const Home: NextPage = () => {
 							src="/profile.png"
 							className="-translate-y-10 w-64 h-[332px] max-lg:translate-y-0 overflow-hidden"
 						/>
-					</div>
+					</SlideFade>
 					<div className="flex flex-col gap-y-4">
 						{Object.keys(ABOUT_ME_EXPERIENCE).map((id, key) => (
 							<Experience key={key} id={id} style={inter.style} />

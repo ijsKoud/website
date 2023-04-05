@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 import { HTMLMotionProps, motion, Variants, MotionProps, useAnimation } from "framer-motion";
 import { TRANSITION_EASINGS } from "@website/constants";
+import { useInView } from "react-intersection-observer";
 
 export interface SlideFadeProps {
 	delay?: number;
 	duration?: number;
+	useInView?: boolean;
 }
 
 type Props = SlideFadeProps & Omit<HTMLMotionProps<"div">, keyof MotionProps>;
 
 export const SlideFade: React.FC<React.PropsWithChildren<Props>> = ({ children, ...props }) => {
-	const { delay = 0, duration = 0.5, ...divProps } = props;
+	const { delay = 0, duration = 0.5, useInView: UseInViewBool = false, ...divProps } = props;
+	const [inViewRef, isInView] = useInView({ threshold: 0.5, triggerOnce: true });
 
 	const animate = useAnimation();
 	const variants: Variants = {
@@ -25,12 +28,15 @@ export const SlideFade: React.FC<React.PropsWithChildren<Props>> = ({ children, 
 	};
 
 	useEffect(() => {
-		void animate.start("animate");
-	}, []);
+		if (UseInViewBool) {
+			if (isInView) void animate.start("animate");
+		} else void animate.start("animate");
+	}, [animate, isInView]);
 
 	return (
 		<motion.div
 			{...divProps}
+			ref={inViewRef}
 			variants={variants}
 			animate={animate}
 			initial="initial"
