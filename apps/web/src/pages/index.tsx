@@ -1,5 +1,5 @@
-import { ABOUT_ME_EXPERIENCE, ABOUT_ME_TEXT, LANDING_BULLET_POINTS, LANDING_TEXT } from "@website/constants";
-import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience } from "@website/ui";
+import { ABOUT_ME_EXPERIENCE, ABOUT_ME_TEXT, LANDING_BULLET_POINTS, LANDING_TEXT, PROJECTS_LIST } from "@website/constants";
+import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience, ProjectCard } from "@website/ui";
 import { BlackButton, PrimaryButtonArrow } from "@website/buttons";
 import type { NextPage } from "next";
 import { Inter } from "next/font/google";
@@ -64,6 +64,52 @@ const Home: NextPage = () => {
 						{Object.keys(ABOUT_ME_EXPERIENCE).map((id, key) => (
 							<Experience key={key} id={id} style={inter.style} />
 						))}
+					</div>
+				</div>
+			</PageSection>
+
+			{/* <-- PROJECTS SECTION --> */}
+			<PageSection className="items-center mt-24">
+				<div className="flex flex-col gap-y-4 relative">
+					<div className="flex gap-8 max-lg:gap-4 max-md:flex-col">
+						<div>
+							<SlideFade useInView>
+								<GridIllustration className="top-0 left-0 -translate-x-11 -translate-y-11 h-28" />
+								<h1
+									id="projects"
+									className="text-16 leading-[80%] w-fit max-lg:text-14 max-sm:text-12 max-[400px]:text-10"
+									style={inter.style}
+								>
+									Projects
+								</h1>
+								<h2 className="text-6 mt-2 mb-3">Here are some of the projects I&apos;ve worked on</h2>
+								<PrimaryButtonArrow type="link" href="/projects">
+									View more
+								</PrimaryButtonArrow>
+							</SlideFade>
+							{/* FOR BIGGER DEVICES */}
+							<div className="flex-col gap-8 mt-8 lg:flex hidden">
+								{PROJECTS_LIST.filter((_, key) => key % 2 === 1)
+									.slice(0, 2)
+									.map((project, key) => (
+										<ProjectCard key={key} {...project} />
+									))}
+							</div>
+						</div>
+						{/* FOR BIGGER DEVICES */}
+						<div className="flex-col gap-8 lg:flex hidden">
+							{PROJECTS_LIST.filter((_, key) => key % 2 === 0)
+								.slice(0, 2)
+								.map((project, key) => (
+									<ProjectCard key={key} {...project} />
+								))}
+						</div>
+						{/* FOR SMALLER DEVICES */}
+						<div className="flex flex-col gap-8 lg:hidden">
+							{PROJECTS_LIST.slice(0, 4).map((project, key) => (
+								<ProjectCard key={key} {...project} />
+							))}
+						</div>
 					</div>
 				</div>
 			</PageSection>
