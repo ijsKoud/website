@@ -17,8 +17,9 @@ interface Props {
 export const ProjectCard: React.FC<Props> = ({ name, description, urls, image }) => {
 	return (
 		<SlideFade useInView>
-			<article className="w-[512px] bg-zinc-200 border-zinc-300 dark:bg-background-alt dark:border-background border rounded-xl overflow-hidden hover:scale-[1.01] transition-transform">
-				<Image src={image} alt={`${name} preview`} height={242} width={512} quality={100} />
+			<article className="w-[500px] max-sm:w-[300px] bg-zinc-200 border-zinc-300 dark:bg-background-alt dark:border-background border rounded-xl overflow-hidden hover:scale-[1.01] transition-transform">
+				<Image src={image} alt={`${name} preview`} height={242} width={500} quality={100} className="max-sm:hidden" />
+				<Image src={image} alt={`${name} preview`} height={242} width={300} quality={100} className="sm:hidden" />
 				<div className="px-4 py-2">
 					<div className="flex items-center justify-between">
 						<h1 className="text-6 font-semibold" style={inter.style}>
