@@ -69,7 +69,7 @@ const Home: NextPage = () => {
 			</PageSection>
 
 			{/* <-- PROJECTS SECTION --> */}
-			<PageSection className="items-center">
+			<PageSection className="items-center mt-24">
 				<div className="flex flex-col gap-y-4 relative">
 					<div className="flex gap-8 max-lg:gap-4 max-md:flex-col">
 						<div>
