@@ -21,6 +21,7 @@
 		"@emailjs/browser": "^3.11.0",
 		"@website/buttons": "*",
 		"@website/constants": "*",
+		"@website/footer": "*",
 		"@website/markdown": "*",
 		"@website/navbar": "*",
 		"@website/ui": "*",

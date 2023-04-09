@@ -126,7 +126,7 @@ const Home: NextPage = () => {
 								>
 									Contact
 								</h1>
-								<h2 className="text-6 mt-2 mb-3 w-3/4">
+								<h2 className="text-6 mt-2 mb-3 w-3/4 max-sm:w-full">
 									Interested in my work? Leave your contact details below and I will contact you back as soon as possible!
 								</h2>
 							</SlideFade>
