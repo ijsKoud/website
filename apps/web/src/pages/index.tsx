@@ -1,12 +1,9 @@
 import { ABOUT_ME_EXPERIENCE, ABOUT_ME_TEXT, LANDING_BULLET_POINTS, LANDING_TEXT, PROJECTS_LIST } from "@website/constants";
-import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience, ProjectCard, ContactForm } from "@website/ui";
+import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience, ProjectCard, ContactForm, inter } from "@website/ui";
 import { BlackButton, PrimaryButtonArrow } from "@website/buttons";
 import type { NextPage } from "next";
-import { Inter } from "next/font/google";
 import Markdown from "@website/markdown";
 import { onContactSubmit } from "../lib/email";
-
-const inter = Inter({ subsets: ["latin"], display: "swap", weight: ["800", "600"] });
 
 const Home: NextPage = () => {
 	return (

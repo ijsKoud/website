@@ -1,11 +1,9 @@
 import Markdown from "@website/markdown";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import React from "react";
 import Link from "next/link";
 import { SlideFade } from "../Animations";
-
-const inter = Inter({ subsets: ["latin"], display: "swap", weight: ["800", "600"] });
+import { inter } from "../Fonts";
 
 interface Props {
 	name: string;

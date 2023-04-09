@@ -2,11 +2,9 @@ import React from "react";
 import { SlideFade } from "../Animations";
 import { Formik, Form, FormikConfig } from "formik";
 import { CONTACT_FORM_FIELDS } from "@website/constants";
-import { Inter } from "next/font/google";
 import { PrimaryButton } from "@website/buttons";
 import { object, string } from "yup";
-
-const inter = Inter({ subsets: ["latin"], display: "swap", weight: ["800", "600"] });
+import { inter } from "../Fonts";
 
 interface FieldProps<V extends string | number> {
 	id: string;

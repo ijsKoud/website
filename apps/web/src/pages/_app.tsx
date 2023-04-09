@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider, useTheme } from "next-themes";
 import { Nunito } from "next/font/google";
 import Navbar from "@website/navbar";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 
 const nunito = Nunito({ subsets: ["latin"], display: "swap" });
@@ -17,8 +17,6 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	useEffect(() => {
 		if (_theme) setTheme(_theme);
 	}, [_theme]);
-
-	toast.info("test");
 
 	return (
 		<div className={nunito.className}>
