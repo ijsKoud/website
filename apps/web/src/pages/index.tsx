@@ -1,9 +1,10 @@
 import { ABOUT_ME_EXPERIENCE, ABOUT_ME_TEXT, LANDING_BULLET_POINTS, LANDING_TEXT, PROJECTS_LIST } from "@website/constants";
-import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience, ProjectCard } from "@website/ui";
+import { EmojiBulletPoint, PageLayout, PageSection, SlideFade, GridIllustration, Experience, ProjectCard, ContactForm } from "@website/ui";
 import { BlackButton, PrimaryButtonArrow } from "@website/buttons";
 import type { NextPage } from "next";
 import { Inter } from "next/font/google";
 import Markdown from "@website/markdown";
+import { onContactSubmit } from "../lib/email";
 
 const inter = Inter({ subsets: ["latin"], display: "swap", weight: ["800", "600"] });
 
@@ -109,6 +110,30 @@ const Home: NextPage = () => {
 							{PROJECTS_LIST.slice(0, 4).map((project, key) => (
 								<ProjectCard key={key} {...project} />
 							))}
+						</div>
+					</div>
+				</div>
+			</PageSection>
+
+			{/* <-- CONTACT SECTION --> */}
+			<PageSection className="items-center mt-24">
+				<div className="flex flex-col gap-y-4 relative">
+					<div className="flex gap-8 max-lg:gap-4 max-md:flex-col">
+						<div>
+							<SlideFade useInView>
+								<GridIllustration className="top-0 left-0 -translate-x-11 -translate-y-11 h-28" />
+								<h1
+									id="contact"
+									className="text-16 leading-[80%] w-fit max-lg:text-14 max-sm:text-12 max-[400px]:text-10"
+									style={inter.style}
+								>
+									Contact
+								</h1>
+								<h2 className="text-6 mt-2 mb-3 w-3/4">
+									Interested in my work? Leave your contact details below and I will contact you back as soon as possible!
+								</h2>
+							</SlideFade>
+							<ContactForm onSubmit={onContactSubmit} />
 						</div>
 					</div>
 				</div>
