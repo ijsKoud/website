@@ -1,0 +1,34 @@
+{
+	"name": "@website/footer",
+	"type": "module",
+	"version": "0.0.0",
+	"main": "./src/index.tsx",
+	"types": "./src/index.tsx",
+	"license": "MIT",
+	"scripts": {
+		"lint": "TIMING=1 eslint"
+	},
+	"peerDependencies": {
+		"@types/node": "18.15.11",
+		"eslint": "^8.38.0",
+		"next": "13.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "^4.9.5"
+	},
+	"devDependencies": {
+		"@sapphire/eslint-config": "^4.3.8",
+		"@sapphire/prettier-config": "^1.4.5",
+		"@sapphire/ts-config": "^3.3.4",
+		"@types/react": "^18.0.33",
+		"@types/react-dom": "^18.0.11",
+		"@types/twemoji-parser": "^13.1.1"
+	},
+	"dependencies": {
+		"@website/constants": "*",
+		"axios": "^1.3.5",
+		"framer-motion": "^10.11.2",
+		"next-themes": "^0.2.1",
+		"twemoji-parser": "^14.0.0"
+	}
+}
