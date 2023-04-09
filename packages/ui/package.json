@@ -10,7 +10,7 @@
 	},
 	"peerDependencies": {
 		"@types/node": "18.15.11",
-		"eslint": "^8.37.0",
+		"eslint": "^8.38.0",
 		"react": "^18.2.0",
 		"typescript": "^4.9.5"
 	},
@@ -18,13 +18,13 @@
 		"@sapphire/eslint-config": "^4.3.8",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^3.3.4",
-		"@types/react": "^18.0.32",
+		"@types/react": "^18.0.33",
 		"@types/react-dom": "^18.0.11"
 	},
 	"dependencies": {
 		"@website/constants": "*",
 		"@website/markdown": "*",
-		"framer-motion": "10.10.0",
+		"framer-motion": "10.11.2",
 		"next-themes": "0.2.1",
 		"react-intersection-observer": "9.4.3",
 		"twemoji-parser": "^14.0.0"
