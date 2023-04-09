@@ -10,11 +10,10 @@ interface Props {
 
 export const Experience: React.FC<Props> = ({ id, style }) => {
 	const values = ABOUT_ME_EXPERIENCE[id as keyof typeof ABOUT_ME_EXPERIENCE];
-	const index = Object.keys(ABOUT_ME_EXPERIENCE).indexOf(id);
 	if (!values) return <></>;
 
 	return (
-		<SlideFade useInView delay={0.2 * index}>
+		<SlideFade useInView>
 			<h2 className="text-6" style={style}>
 				{id}
 			</h2>
