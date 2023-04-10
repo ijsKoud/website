@@ -4,7 +4,7 @@ module.exports = {
 	generateRobotsTxt: true,
 	additionalPaths: () => {
 		const paths = ["github", "discord", "paypal", "twitter", "linkedin"];
-		return paths.map((path) => ({ loc: `/${path}`, priority: 0.7, changefreq: "daily", lastmod: new Date().toString() }));
+		return paths.map((path) => ({ loc: `/${path}`, priority: 0.7, changefreq: "daily", lastmod: new Date().toISOString() }));
 	},
 	exclude: ["/api/*"]
 };
