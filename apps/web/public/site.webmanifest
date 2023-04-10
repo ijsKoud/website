@@ -1,0 +1,14 @@
+{
+    "name": "ijskoud.dev",
+    "short_name": "ijskoud.dev",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png?v=2",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
