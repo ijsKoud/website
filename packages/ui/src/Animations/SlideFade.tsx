@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HTMLMotionProps, motion, Variants, MotionProps, useAnimation } from "framer-motion";
+import { type HTMLMotionProps, motion, type Variants, type MotionProps, useAnimation } from "framer-motion";
 import { TRANSITION_EASINGS } from "@website/constants";
 import { useInView } from "react-intersection-observer";
 

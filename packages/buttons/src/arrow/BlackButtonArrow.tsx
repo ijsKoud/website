@@ -1,7 +1,7 @@
 import React from "react";
 import { PrimaryButton } from "../styled";
 import type { ButtonProps } from "../types";
-import ButtonArrow, { ArrowProps } from "./Arrow";
+import ButtonArrow, { type ArrowProps } from "./Arrow";
 
 type Props = Partial<ArrowProps> & ButtonProps;
 

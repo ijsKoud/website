@@ -13,8 +13,7 @@
 		"noEmit": true,
 		"incremental": true,
 		"esModuleInterop": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true
+		"resolveJsonModule": true
 	},
 	"include": ["**/*.ts", "**/*.tsx"]
 }
