@@ -3,23 +3,8 @@ module.exports = {
 	siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ijskoud.dev/",
 	generateRobotsTxt: true,
 	additionalPaths: () => {
-		return [
-			{
-				loc: "/github"
-			},
-			{
-				loc: "/discord"
-			},
-			{
-				loc: "/paypal"
-			},
-			{
-				loc: "/twitter"
-			},
-			{
-				loc: "/linkedin"
-			}
-		];
+		const paths = ["github", "discord", "paypal", "twitter", "linkedin"];
+		return paths.map((path) => ({ loc: `/${path}`, priority: 0.7, changefreq: "daily", lastmod: new Date().toString() }));
 	},
 	exclude: ["/api/*"]
 };
