@@ -10,6 +10,7 @@ const config: SeoProps = {
 	description: "Full-stack developer building apps for the internet",
 	twitter: { cardType: "summary" },
 	openGraph: {
+		title: "Daan Klarenbeek",
 		description: "Full-stack developer building apps for the internet",
 		images: [{ url: "/profile.png", alt: "Profile picture", type: "image/png" }]
 	}
