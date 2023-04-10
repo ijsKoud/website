@@ -2,6 +2,7 @@ import { PROJECTS_LIST } from "@website/constants";
 import { PageLayout, PageSection, SlideFade, GridIllustration, ProjectCard, inter } from "@website/ui";
 import Fuse from "fuse.js";
 import type { NextPage } from "next";
+import { NextSeo } from "next-seo";
 import React, { useState } from "react";
 
 const Projects: NextPage = () => {
@@ -20,6 +21,7 @@ const Projects: NextPage = () => {
 
 	return (
 		<PageLayout className="min-h-screen flex flex-col gap-y-52 pt-28">
+			<NextSeo title="Projects" />
 			<PageSection className="items-center !pe-0 !ps-0">
 				<div className="flex flex-col gap-y-4 relative">
 					<SlideFade useInView className="w-full flex flex-col items-center justify-center">
