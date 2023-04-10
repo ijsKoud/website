@@ -3166,6 +3166,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fuse.js@npm:^6.6.2":
+  version: 6.6.2
+  resolution: "fuse.js@npm:6.6.2"
+  checksum: 17ae758ce205276ebd88bd9c9f088a100be0b4896abac9f6b09847151269d1690f41d7f98ff5813d4a58973162dbd99d0072ce807020fee6f9de60170f6b08eb
+  languageName: node
+  linkType: hard
+
 "gauge@npm:^4.0.3":
   version: 4.0.4
   resolution: "gauge@npm:4.0.4"
@@ -7299,6 +7306,7 @@ __metadata:
     "@website/ui": "*"
     autoprefixer: ^10.4.14
     eslint-config-next: 13.3.0
+    fuse.js: ^6.6.2
     next-seo: ^6.0.0
     next-sitemap: ^4.0.7
     next-themes: ^0.2.1
