@@ -5,9 +5,10 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "next build && yarn run sitemap",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"sitemap": "next-sitemap --config next-sitemap.config.cjs"
 	},
 	"peerDependencies": {
 		"@types/node": "18.15.11",
@@ -25,6 +26,8 @@
 		"@website/markdown": "*",
 		"@website/navbar": "*",
 		"@website/ui": "*",
+		"next-seo": "^6.0.0",
+		"next-sitemap": "^4.0.7",
 		"next-themes": "^0.2.1",
 		"react-toastify": "9.1.2"
 	},
