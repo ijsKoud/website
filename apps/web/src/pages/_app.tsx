@@ -8,6 +8,8 @@ import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 import Navbar from "@website/navbar";
 import Footer from "@website/footer";
+import { DefaultSeo } from "next-seo";
+import config from "../../next-seo.config";
 
 const nunito = Nunito({ subsets: ["latin"], display: "swap" });
 
@@ -21,6 +23,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 
 	return (
 		<div className={nunito.className}>
+			<DefaultSeo {...config} />
 			<ThemeProvider enableSystem enableColorScheme attribute="class">
 				<Navbar />
 				<Component {...pageProps} />
