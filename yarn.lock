@@ -1160,7 +1160,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@website/modal@workspace:packages/modal":
+"@website/modal@*, @website/modal@workspace:packages/modal":
   version: 0.0.0-use.local
   resolution: "@website/modal@workspace:packages/modal"
   dependencies:
@@ -1216,6 +1216,7 @@ __metadata:
     "@website/buttons": "*"
     "@website/constants": "*"
     "@website/markdown": "*"
+    "@website/modal": "*"
     formik: ^2.2.9
     framer-motion: 10.11.2
     next-themes: 0.2.1

@@ -9,7 +9,7 @@ interface Props extends React.PropsWithChildren {
 const BackDrop: React.FC<Props> = ({ onClick, children }) => {
 	return (
 		<motion.div
-			className="flex items-center fixed z-50 top-0 inset-0 h-full w-full justify-center overflow-y-hidden backdrop-blur-md bg-[rgba(0,0,0,0.7)]"
+			className="flex items-center fixed z-[9999] top-0 inset-0 h-full w-full justify-center overflow-y-hidden backdrop-blur-md bg-[rgba(0,0,0,0.7)]"
 			onClick={onClick}
 			initial="hidden"
 			animate="visible"

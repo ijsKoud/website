@@ -22,6 +22,14 @@ export interface AnimeAPIEpisodes {
 	total: number;
 }
 
+export enum AnimeStatus {
+	WATCHING,
+	COMPLETED,
+	ON_HOLD,
+	DROPPED,
+	PLAN_TO_WATCH = 5 // API doesn't return 4 when marked as "Planned to watch", it returns 5
+}
+
 export const ANIME_API_URL = "https://api.ijskoud.dev/anime/stats";
 
 /**
