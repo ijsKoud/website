@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FadeInAnimationKey, type AnimeAPIListEntry } from "@website/constants";
+import AnimeModal from "./AnimeModal";
+import Modal from "@website/modal";
 
 interface Props {
 	anime: AnimeAPIListEntry;
@@ -14,9 +16,9 @@ export const AnimeCard: React.FC<Props> = ({ anime, index }) => {
 
 	return (
 		<>
-			{/* <Modal isOpen={modalOpen} onClick={closeModal}>
+			<Modal isOpen={modalOpen} onClick={closeModal}>
 				<AnimeModal {...anime} />
-			</Modal> */}
+			</Modal>
 			<motion.button
 				aria-label={`Open modal for ${anime.title}`}
 				onClick={openModal}

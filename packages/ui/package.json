@@ -27,6 +27,7 @@
 		"@website/buttons": "*",
 		"@website/constants": "*",
 		"@website/markdown": "*",
+		"@website/modal": "*",
 		"formik": "^2.2.9",
 		"framer-motion": "10.11.2",
 		"next-themes": "0.2.1",
