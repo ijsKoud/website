@@ -12,7 +12,7 @@ const ModalItem: React.FC<React.PropsWithChildren<Props>> = ({ children, onClick
 		<BackDrop onClick={onClick}>
 			<motion.div
 				onClick={(e) => e.stopPropagation()}
-				className="relative bg-white dark:bg-background border-light-gray dark:border-black rounded-xl border-2 px-4 py-2 mx-4 my-4"
+				className="relative bg-white dark:bg-background-alt border-light-gray dark:border-black rounded-xl border-2 px-4 py-2 mx-4 my-4"
 				variants={ModalItemVariants}
 				initial="hidden"
 				animate="visible"
