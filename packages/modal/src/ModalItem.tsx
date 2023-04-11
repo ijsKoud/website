@@ -19,7 +19,11 @@ const ModalItem: React.FC<React.PropsWithChildren<Props>> = ({ children, onClick
 				exit="exit"
 			>
 				<div>{children}</div>
-				<button onClick={onClick} className="absolute right-4 top-4 text-center text-base hover:text-primary transition-colors">
+				<button
+					aria-label="Close the modal"
+					onClick={onClick}
+					className="absolute right-4 top-3 text-center text-5 hover:text-primary transition-colors"
+				>
 					<i className="fa-solid fa-times" />
 				</button>
 			</motion.div>
