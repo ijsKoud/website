@@ -17,16 +17,16 @@
 		"typescript": "^5.0.4"
 	},
 	"devDependencies": {
-		"@sapphire/eslint-config": "^4.3.8",
+		"@sapphire/eslint-config": "^4.4.0",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
-		"@types/react": "^18.0.33",
+		"@types/react": "^18.0.34",
 		"@types/react-dom": "^18.0.11",
 		"@types/twemoji-parser": "^13.1.1"
 	},
 	"dependencies": {
 		"@website/constants": "*",
-		"framer-motion": "^10.11.2",
+		"framer-motion": "^10.11.5",
 		"next-themes": "^0.2.1",
 		"twemoji-parser": "^14.0.0"
 	}
