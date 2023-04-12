@@ -1,5 +1,5 @@
 {
-	"name": "@website/ui",
+	"name": "@website/firebase",
 	"type": "module",
 	"version": "0.0.0",
 	"main": "./src/index.tsx",
@@ -24,16 +24,9 @@
 		"@types/react-dom": "^18.0.11"
 	},
 	"dependencies": {
-		"@website/buttons": "*",
 		"@website/constants": "*",
-		"@website/firebase": "*",
-		"@website/markdown": "*",
-		"@website/modal": "*",
-		"formik": "^2.2.9",
-		"framer-motion": "10.11.5",
-		"next-themes": "0.2.1",
-		"react-intersection-observer": "9.4.3",
-		"twemoji-parser": "^14.0.0",
-		"yup": "^1.0.2"
+		"firebase": "^9.19.1",
+		"react-firebase-hooks": "^5.1.1",
+		"reactfire": "^4.2.2"
 	}
 }

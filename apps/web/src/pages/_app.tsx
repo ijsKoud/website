@@ -10,6 +10,7 @@ import Footer from "@website/footer";
 import { DefaultSeo } from "next-seo";
 import config from "../../next-seo.config";
 import { nunito } from "@website/ui";
+import { FirebaseProvider } from "@website/firebase";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	const [theme, setTheme] = useState("dark");
@@ -22,12 +23,14 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	return (
 		<div className={nunito.className}>
 			<DefaultSeo {...config} />
-			<ThemeProvider enableSystem enableColorScheme attribute="class">
-				<Navbar />
-				<Component {...pageProps} />
-				<ToastContainer theme={theme as "dark" | "light"} toastClassName="dark:bg-background-alt bg-zinc-200" toastStyle={nunito.style} />
-				<Footer />
-			</ThemeProvider>
+			<FirebaseProvider>
+				<ThemeProvider enableSystem enableColorScheme attribute="class">
+					<Navbar />
+					<Component {...pageProps} />
+					<ToastContainer theme={theme as "dark" | "light"} toastClassName="dark:bg-background-alt bg-zinc-200" toastStyle={nunito.style} />
+					<Footer />
+				</ThemeProvider>
+			</FirebaseProvider>
 		</div>
 	);
 };
