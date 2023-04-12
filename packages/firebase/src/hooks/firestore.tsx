@@ -1,6 +1,6 @@
-import { useCollection } from "react-firebase-hooks/firestore";
 import { firestore } from "../lib/firebase";
 import { CollectionReference, DocumentReference, collection } from "firebase/firestore";
+import { useFirestoreCollection } from "reactfire";
 
 export interface GuestbookDocument {
 	username: string;
@@ -16,5 +16,5 @@ export const GuestBookCollection = collection(firestore, "guestbook") as Collect
  * Returns an instance of `useCollection` for "guestbook"
  */
 export const useGuestbookCollection = () => {
-	return useCollection(GuestBookCollection);
+	return useFirestoreCollection(GuestBookCollection);
 };
