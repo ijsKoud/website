@@ -26,6 +26,7 @@
 	"dependencies": {
 		"@website/buttons": "*",
 		"@website/constants": "*",
+		"@website/firebase": "*",
 		"@website/markdown": "*",
 		"@website/modal": "*",
 		"formik": "^2.2.9",

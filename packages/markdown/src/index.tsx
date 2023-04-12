@@ -17,7 +17,8 @@ const Markdown: React.FC<Props & ReactMarkdownOptions> = ({ children, ...props }
 					<a {...props} className="text-primary hover:text-primary-500 transition-colors">
 						{children}
 					</a>
-				)
+				),
+				...props.components
 			}}
 			{...props}
 		>
