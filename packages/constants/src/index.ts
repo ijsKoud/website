@@ -4,3 +4,4 @@ export * from "./Animations";
 export * from "./Projects";
 export * from "./Anime";
 export * from "./Modal";
+export * from "./Error";
