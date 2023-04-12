@@ -20,8 +20,10 @@
 	},
 	"dependencies": {
 		"@emailjs/browser": "^3.11.0",
+		"@next/env": "^13.3.0",
 		"@website/buttons": "*",
 		"@website/constants": "*",
+		"@website/firebase": "*",
 		"@website/footer": "*",
 		"@website/markdown": "*",
 		"@website/navbar": "*",
