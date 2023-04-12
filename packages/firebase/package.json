@@ -1,0 +1,31 @@
+{
+	"name": "@website/firebase",
+	"type": "module",
+	"version": "0.0.0",
+	"main": "./src/index.tsx",
+	"types": "./src/index.tsx",
+	"license": "MIT",
+	"scripts": {
+		"lint": "TIMING=1 eslint"
+	},
+	"peerDependencies": {
+		"@types/node": "18.15.11",
+		"eslint": "^8.38.0",
+		"next": "13.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "^5.0.4"
+	},
+	"devDependencies": {
+		"@sapphire/eslint-config": "^4.4.0",
+		"@sapphire/prettier-config": "^1.4.5",
+		"@sapphire/ts-config": "^4.0.0",
+		"@types/react": "^18.0.34",
+		"@types/react-dom": "^18.0.11"
+	},
+	"dependencies": {
+		"@website/constants": "*",
+		"firebase": "^9.19.1",
+		"react-firebase-hooks": "^5.1.1"
+	}
+}
