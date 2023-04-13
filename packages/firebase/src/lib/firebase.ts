@@ -1,16 +1,15 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, type FirebaseOptions } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-// REPLACE THESE CREDENTAILS WITH YOUR OWN CREDENTIALS!
-const firebaseConfig = {
-	apiKey: "AIzaSyCzdkTdHF_b4LLB53P2jVNa-nrQVKkfXDk",
-	authDomain: "personal-website-69cde.firebaseapp.com",
-	projectId: "personal-website-69cde",
-	storageBucket: "personal-website-69cde.appspot.com",
-	messagingSenderId: "553053228220",
-	appId: "1:553053228220:web:4c9c3e3d3669c6df1ed4b9",
-	measurementId: "G-WTP63DHLNL"
+const firebaseConfig: FirebaseOptions = {
+	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+	authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+	projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGE_SENDER_ID,
+	appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+	measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 export const app = initializeApp(firebaseConfig);
