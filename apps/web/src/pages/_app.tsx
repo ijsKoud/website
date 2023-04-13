@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
+import "nprogress/nprogress.css";
 
 import type { AppProps } from "next/app";
 import { ThemeProvider, useTheme } from "next-themes";
@@ -11,6 +12,8 @@ import { DefaultSeo } from "next-seo";
 import config from "../../next-seo.config";
 import { nunito } from "@website/ui";
 import { FirebaseProvider } from "@website/firebase";
+import NProgress from "nprogress";
+import { useRouter } from "next/router";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	const [theme, setTheme] = useState("dark");
@@ -19,6 +22,22 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	useEffect(() => {
 		if (_theme) setTheme(_theme);
 	}, [_theme]);
+
+	const { events } = useRouter();
+	useEffect(() => {
+		const handleRouteStart = () => NProgress.start();
+		const handleRouteDone = () => NProgress.done();
+
+		events.on("routeChangeStart", handleRouteStart);
+		events.on("routeChangeComplete", handleRouteDone);
+		events.on("routeChangeError", handleRouteDone);
+
+		return () => {
+			events.off("routeChangeStart", handleRouteStart);
+			events.off("routeChangeComplete", handleRouteDone);
+			events.off("routeChangeError", handleRouteDone);
+		};
+	}, []);
 
 	return (
 		<div className={nunito.className}>
