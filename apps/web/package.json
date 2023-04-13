@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^3.11.0",
 		"@next/env": "^13.3.0",
+		"@vercel/analytics": "^0.1.11",
 		"@website/buttons": "*",
 		"@website/constants": "*",
 		"@website/firebase": "*",
