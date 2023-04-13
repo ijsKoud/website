@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ijskoud.dev/
+
+# Sitemaps
+Sitemap: https://ijskoud.dev/sitemap.xml
