@@ -1,7 +1,7 @@
-import { ReCaptchaV3Provider, initializeAppCheck } from "firebase/app-check";
+import { ReCaptchaV3Provider, initializeAppCheck, type AppCheck } from "firebase/app-check";
 import { AppCheckProvider, useFirebaseApp } from "reactfire";
 import type React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 /**
  * Handles API protection with firebase AppCheck
@@ -20,15 +20,18 @@ export const FirebaseAppCheckProvider: React.FC<React.PropsWithChildren> = ({ ch
 
 	if (!siteKey) return <>{children}</>;
 
+	const [sdk, setSdk] = useState<AppCheck>();
+
 	useEffect(() => {
 		if (process.env.NODE_ENV === "development") attachAppCheckDebugToken();
+		const provider = new ReCaptchaV3Provider(siteKey);
+		const sdk = initializeAppCheck(app, {
+			provider,
+			isTokenAutoRefreshEnabled: true
+		});
+
+		setSdk(sdk);
 	}, []);
 
-	const provider = new ReCaptchaV3Provider(siteKey);
-	const sdk = initializeAppCheck(app, {
-		provider,
-		isTokenAutoRefreshEnabled: true
-	});
-
-	return <AppCheckProvider sdk={sdk}>{children}</AppCheckProvider>;
+	return sdk ? <AppCheckProvider sdk={sdk}>{children}</AppCheckProvider> : <></>;
 };
