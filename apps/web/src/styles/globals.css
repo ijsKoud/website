@@ -24,3 +24,8 @@ html {
 .navlink:hover:before {
 	transform: scaleX(1);
 }
+
+#nprogress .bar,
+#nprogress .spinner {
+	z-index: 99999 !important;
+}

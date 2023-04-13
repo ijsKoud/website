@@ -34,6 +34,7 @@
 		"next-seo": "^6.0.0",
 		"next-sitemap": "^4.0.7",
 		"next-themes": "^0.2.1",
+		"nprogress": "^0.2.0",
 		"react-toastify": "9.1.2"
 	},
 	"devDependencies": {
@@ -41,6 +42,7 @@
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
 		"@types/node": "18.15.11",
+		"@types/nprogress": "^0.2.0",
 		"@types/react": "18.0.35",
 		"@types/react-dom": "18.0.11",
 		"autoprefixer": "^10.4.14",
