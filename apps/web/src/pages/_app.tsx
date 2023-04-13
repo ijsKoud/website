@@ -14,6 +14,7 @@ import { nunito } from "@website/ui";
 import { FirebaseProvider } from "@website/firebase";
 import NProgress from "nprogress";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	const [theme, setTheme] = useState("dark");
@@ -50,6 +51,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 					<Footer />
 				</ThemeProvider>
 			</FirebaseProvider>
+			<Analytics />
 		</div>
 	);
 };
