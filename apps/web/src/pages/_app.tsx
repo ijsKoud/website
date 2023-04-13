@@ -15,6 +15,8 @@ import { FirebaseProvider } from "@website/firebase";
 import NProgress from "nprogress";
 import { useRouter } from "next/router";
 import { Analytics } from "@vercel/analytics/react";
+import NProgress from "nprogress";
+import { useRouter } from "next/router";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	const [theme, setTheme] = useState("dark");
