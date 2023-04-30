@@ -9,9 +9,9 @@
 		"lint": "TIMING=1 eslint"
 	},
 	"peerDependencies": {
-		"@types/node": "18.16.0",
+		"@types/node": "18.16.3",
 		"eslint": "^8.39.0",
-		"next": "13.3.1",
+		"next": "13.3.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"typescript": "^5.0.4"
@@ -20,12 +20,12 @@
 		"@sapphire/eslint-config": "^4.4.1",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
-		"@types/react": "^18.0.38",
-		"@types/react-dom": "^18.0.11"
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.1"
 	},
 	"dependencies": {
 		"@website/constants": "*",
-		"firebase": "^9.20.0",
+		"firebase": "^9.21.0",
 		"react-firebase-hooks": "^5.1.1",
 		"reactfire": "^4.2.2"
 	}
