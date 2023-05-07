@@ -16,20 +16,20 @@
 		"postinstall": "is-ci || husky install"
 	},
 	"dependencies": {
-		"next": "13.3.2",
+		"next": "13.4.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.6.1",
-		"@commitlint/config-angular": "^17.6.1",
-		"@sapphire/eslint-config": "^4.4.1",
+		"@commitlint/cli": "^17.6.3",
+		"@commitlint/config-angular": "^17.6.3",
+		"@sapphire/eslint-config": "^4.4.2",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
-		"@types/node": "18.16.3",
-		"@typescript-eslint/eslint-plugin": "^5.59.1",
-		"@typescript-eslint/parser": "^5.59.1",
-		"eslint": "^8.39.0",
+		"@types/node": "18.16.5",
+		"@typescript-eslint/eslint-plugin": "^5.59.2",
+		"@typescript-eslint/parser": "^5.59.2",
+		"eslint": "^8.40.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.3",
@@ -39,5 +39,5 @@
 		"turbo": "^1.9.3",
 		"typescript": "^5.0.4"
 	},
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "yarn@3.5.1"
 }
