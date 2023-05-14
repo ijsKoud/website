@@ -9,9 +9,9 @@
 		"lint": "TIMING=1 eslint"
 	},
 	"peerDependencies": {
-		"@types/node": "18.16.5",
+		"@types/node": "18.16.9",
 		"eslint": "^8.40.0",
-		"next": "13.4.1",
+		"next": "13.4.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"typescript": "^5.0.4"
@@ -30,7 +30,7 @@
 		"@website/markdown": "*",
 		"@website/modal": "*",
 		"formik": "^2.2.9",
-		"framer-motion": "10.12.8",
+		"framer-motion": "10.12.10",
 		"next-themes": "0.2.1",
 		"react-intersection-observer": "9.4.3",
 		"twemoji-parser": "^14.0.0",
