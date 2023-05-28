@@ -29,11 +29,11 @@
 		"@website/firebase": "*",
 		"@website/markdown": "*",
 		"@website/modal": "*",
-		"formik": "^2.2.9",
-		"framer-motion": "10.12.12",
+		"formik": "^2.4.0",
+		"framer-motion": "10.12.16",
 		"next-themes": "0.2.1",
 		"react-intersection-observer": "9.4.3",
 		"twemoji-parser": "^14.0.0",
-		"yup": "^1.1.1"
+		"yup": "^1.2.0"
 	}
 }
