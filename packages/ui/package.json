@@ -29,10 +29,10 @@
 		"@website/firebase": "*",
 		"@website/markdown": "*",
 		"@website/modal": "*",
-		"formik": "^2.4.0",
+		"formik": "^2.4.1",
 		"framer-motion": "10.12.16",
 		"next-themes": "0.2.1",
-		"react-intersection-observer": "9.4.3",
+		"react-intersection-observer": "9.4.4",
 		"twemoji-parser": "^14.0.0",
 		"yup": "^1.2.0"
 	}

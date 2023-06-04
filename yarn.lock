@@ -1916,10 +1916,10 @@ __metadata:
     "@website/firebase": "*"
     "@website/markdown": "*"
     "@website/modal": "*"
-    formik: ^2.4.0
+    formik: ^2.4.1
     framer-motion: 10.12.16
     next-themes: 0.2.1
-    react-intersection-observer: 9.4.3
+    react-intersection-observer: 9.4.4
     twemoji-parser: ^14.0.0
     yup: ^1.2.0
   peerDependencies:
@@ -3777,9 +3777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formik@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "formik@npm:2.4.0"
+"formik@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "formik@npm:2.4.1"
   dependencies:
     deepmerge: ^2.1.1
     hoist-non-react-statics: ^3.3.0
@@ -3790,7 +3790,7 @@ __metadata:
     tslib: ^1.10.0
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 54ada391af4e59f6439ac3492f66fbe562523de585b47b7169964d7f32b2ed03d8bfe485e7a14bd69ae5e76a77aa8cebd950a7a64822b77822a43b7801096ac2
+  checksum: c4238b81c7780b3772f2ef2a439f676822f5c4a944de45505fd15eaf8dd84051420c91ce2ccc72da047d89e2ab630a76c992719de643fe3f302fb4af948d4bbc
   languageName: node
   linkType: hard
 
@@ -6577,12 +6577,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:9.4.3":
-  version: 9.4.3
-  resolution: "react-intersection-observer@npm:9.4.3"
+"react-intersection-observer@npm:9.4.4":
+  version: 9.4.4
+  resolution: "react-intersection-observer@npm:9.4.4"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: ac31c6c76ce72019a1fb50fe6b53ef6429d98b9e9b937f92d16635ef8586392c7058bb61526a8fe6bea6ce36c006015fe2d8893bac43eda6157b9e6b17ad9b68
+  checksum: 9d99396b4457ad73952c2ce77442f4b67ca3ff79d29fabd9da17785777c93092c233246b208509e01b7c4beadd79db7bb033ba1ee763fd7d9a5471800a89f4dd
   languageName: node
   linkType: hard
 
