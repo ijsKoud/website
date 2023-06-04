@@ -1785,7 +1785,7 @@ __metadata:
     eslint: ^8.42.0
     next: 13.4.4
     react: ^18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1803,7 +1803,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.16
     eslint: ^8.42.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1826,7 +1826,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1847,7 +1847,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1865,7 +1865,7 @@ __metadata:
     "@types/node": 18.16.16
     eslint: ^8.42.0
     react: ^18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1885,7 +1885,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1909,7 +1909,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1939,7 +1939,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -8222,7 +8222,7 @@ __metadata:
     next: 13.4.4
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: ^5.0.4
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
