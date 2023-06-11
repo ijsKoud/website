@@ -20,7 +20,7 @@
 		"@sapphire/eslint-config": "^4.4.2",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
-		"@types/react": "^18.2.8",
+		"@types/react": "^18.2.11",
 		"@types/react-dom": "^18.2.4",
 		"@types/twemoji-parser": "^13.1.1"
 	},
