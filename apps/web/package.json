@@ -11,7 +11,7 @@
 		"sitemap": "next-sitemap --config next-sitemap.config.cjs"
 	},
 	"peerDependencies": {
-		"@types/node": "18.16.17",
+		"@types/node": "18.16.18",
 		"eslint": "^8.42.0",
 		"next": "13.4.5",
 		"react": "18.2.0",
