@@ -43,10 +43,10 @@
 		"@sapphire/ts-config": "^4.0.0",
 		"@types/node": "18.16.18",
 		"@types/nprogress": "^0.2.0",
-		"@types/react": "18.2.12",
-		"@types/react-dom": "18.2.5",
+		"@types/react": "18.2.14",
+		"@types/react-dom": "18.2.6",
 		"autoprefixer": "^10.4.14",
-		"eslint-config-next": "13.4.6",
+		"eslint-config-next": "13.4.7",
 		"postcss": "^8.4.24",
 		"tailwindcss": "^3.3.2"
 	}
