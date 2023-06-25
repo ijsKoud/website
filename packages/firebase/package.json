@@ -25,7 +25,7 @@
 	},
 	"dependencies": {
 		"@website/constants": "*",
-		"firebase": "^9.22.2",
+		"firebase": "^9.23.0",
 		"react-firebase-hooks": "^5.1.1",
 		"reactfire": "^4.2.2"
 	}
