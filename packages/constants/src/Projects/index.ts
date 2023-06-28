@@ -36,5 +36,31 @@ export const PROJECTS_LIST = [
 				icon: "fa-solid fa-arrow-up-right-from-square"
 			}
 		]
+	},
+	{
+		image: "https://cdn.ijskoud.dev/files/ncmmvNjiX5DU.png",
+		name: "ijsblokje",
+		description: "Co-pilot for GitHub operations ✈️",
+		urls: [
+			{
+				url: "/github/ijsblokje",
+				icon: "fa-brands fa-github"
+			}
+		]
+	},
+	{
+		image: "https://cdn.ijskoud.dev/files/vqAEI3xROdjw.png",
+		name: "GitCord",
+		description: "A Discord bot which makes your GitHub Discord embeds prettier ✨",
+		urls: [
+			{
+				url: "/github/gitcord",
+				icon: "fa-brands fa-github"
+			},
+			{
+				url: "https://discord.com/api/oauth2/authorize?client_id=1018461517408120842&permissions=536870928&scope=bot%20applications.commands",
+				icon: "fa-brands fa-discord"
+			}
+		]
 	}
 ];
