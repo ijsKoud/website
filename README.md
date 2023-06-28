@@ -20,13 +20,12 @@
 
 ## Information
 
-More information Soon™️
+✨ My portfolio built with Next.js, Tailwind and TypeScript. Hosted on Vercel.
 
 ## Install
 
-Soon™️
-
-
+Want to create your own version of this website? Make sure to [fork it](https://github.com/ijskoud/website/fork) first and edit all the contents in [@website/constants](/packages/constants/src).
+After that `yarn install` to install all the dependencies, `yarn start:dev` to spin-up the dev version and `yarn build` to build the application. You can use `yarn workspace web run start` to start the application or ship it to [Vercel](https://vercel.com/snowcrystals?utm_source=snowcrystals&utm_campaign=oss). Make sure to check the [.env.example](/.env.example) file for the required environment variables
 
 ## Author
 
