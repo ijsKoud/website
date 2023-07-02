@@ -999,7 +999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:13.4.7, @next/env@npm:^13.4.7":
+"@next/env@npm:13.4.7, @next/env@npm:^13.4.3, @next/env@npm:^13.4.7":
   version: 13.4.7
   resolution: "@next/env@npm:13.4.7"
   checksum: 5a2bba68fb8c80c87324025f10af7fe7319efdb15777247bfa8ff58e61bcc19b150bce4068396351e6c6df3344294cc06c03a2fb1bb0330659d230830a202c53
@@ -1799,7 +1799,7 @@ __metadata:
     "@types/react": ^18.2.14
     "@types/react-dom": ^18.2.6
     "@types/twemoji-parser": ^13.1.1
-    framer-motion: 10.12.17
+    framer-motion: 10.12.18
   peerDependencies:
     "@types/node": 18.16.18
     eslint: ^8.43.0
@@ -1819,7 +1819,7 @@ __metadata:
     "@website/constants": "*"
     firebase: ^9.23.0
     react-firebase-hooks: ^5.1.1
-    reactfire: ^4.2.2
+    reactfire: ^4.2.3
   peerDependencies:
     "@types/node": 18.16.18
     eslint: ^8.43.0
@@ -1900,7 +1900,7 @@ __metadata:
     "@types/react-dom": ^18.2.6
     "@types/twemoji-parser": ^13.1.1
     "@website/constants": "*"
-    framer-motion: ^10.12.17
+    framer-motion: ^10.12.18
     next-themes: ^0.2.1
     twemoji-parser: ^14.0.0
   peerDependencies:
@@ -1928,9 +1928,9 @@ __metadata:
     "@website/markdown": "*"
     "@website/modal": "*"
     formik: ^2.4.2
-    framer-motion: 10.12.17
+    framer-motion: 10.12.18
     next-themes: 0.2.1
-    react-intersection-observer: 9.5.1
+    react-intersection-observer: 9.5.2
     twemoji-parser: ^14.0.0
     yup: ^1.2.0
   peerDependencies:
@@ -3812,9 +3812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:10.12.17, framer-motion@npm:^10.12.17":
-  version: 10.12.17
-  resolution: "framer-motion@npm:10.12.17"
+"framer-motion@npm:10.12.18, framer-motion@npm:^10.12.18":
+  version: 10.12.18
+  resolution: "framer-motion@npm:10.12.18"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -3829,7 +3829,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: d36fbc7fabd0b9e519e5ef776528b37acea9129ee3cfb4ced77c641dd3b9c31b4b63a7328f86d3b79dd86e8139102dac57f70915c0afd0a3eb7361dc2bd15e81
+  checksum: 71539be1175de80d2266702069bb3c4f0150eb3e28f0e32307e10c217410d5ee350b025d48a86c3144caf2d0e0e1dd95e33ed886a14466bc1e763e52d4cd6157
   languageName: node
   linkType: hard
 
@@ -5798,20 +5798,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "next-sitemap@npm:4.1.3"
+"next-sitemap@npm:^4.1.8":
+  version: 4.1.8
+  resolution: "next-sitemap@npm:4.1.8"
   dependencies:
     "@corex/deepmerge": ^4.0.43
+    "@next/env": ^13.4.3
     fast-glob: ^3.2.12
     minimist: ^1.2.8
   peerDependencies:
-    "@next/env": "*"
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: de9b292dffdafcaf0a1cd661471f34892aaad37820b613d6776f04a30ab5b1ead21b79890dcfdfb2de72e0f12d052674ffe165692f5b106495759f3d9cf5141e
+  checksum: 787e7d1f310ad4caec6bb683db6d7c5b45cc71b729b59cd5e93b60bf72354eae04853c11fc88f1dafa23504083a945c6dd717c1f7d6f7501ba54111ef6e9c5ae
   languageName: node
   linkType: hard
 
@@ -6596,12 +6596,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:9.5.1":
-  version: 9.5.1
-  resolution: "react-intersection-observer@npm:9.5.1"
+"react-intersection-observer@npm:9.5.2":
+  version: 9.5.2
+  resolution: "react-intersection-observer@npm:9.5.2"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 862d531757a9eea1f0eff072be21e6c11d8d9f78c5918609ac8164899365484ce983a50f9ed45c861753d407d2066b3198cf6444506d0c6e4212a4a361995643
+  checksum: cdbe40544930d59fc3820bce017fb688910cbecd7baaf382387a3d60d98a36e1d1e4bc27a876775e99b2a9f86762286a29d7bca21f3345f653cff29850c2641d
   languageName: node
   linkType: hard
 
@@ -6666,16 +6666,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reactfire@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "reactfire@npm:4.2.2"
+"reactfire@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "reactfire@npm:4.2.3"
   dependencies:
     rxfire: ^6.0.3
     rxjs: ^6.6.3 || ^7.0.1
   peerDependencies:
     firebase: ^9.0.0
     react: "*"
-  checksum: a6311df3e564e1364141a83ab053a29e1faa98223235d61439854dd36f976f8a214f5af370a7d40d02351a8039a769df496548b0501c0ff74a9d44b73eabad51
+  checksum: 7e8fa2636440ae8bbda10d194c8655538465f9d665dce68b4810637d68dc15e88a9a5f8103290055d7ddff2f54975f7c4140e80c0efc598a5b6c6dd5d0dc6fb3
   languageName: node
   linkType: hard
 
@@ -8235,7 +8235,7 @@ __metadata:
     eslint-config-next: 13.4.7
     fuse.js: ^6.6.2
     next-seo: ^6.1.0
-    next-sitemap: ^4.1.3
+    next-sitemap: ^4.1.8
     next-themes: ^0.2.1
     nprogress: ^0.2.0
     postcss: ^8.4.24
