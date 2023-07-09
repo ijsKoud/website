@@ -1641,7 +1641,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: ^18.2.0
     typescript: ^5.1.6
   languageName: unknown
@@ -1681,7 +1681,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
@@ -1702,7 +1702,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
@@ -1740,7 +1740,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
@@ -1764,7 +1764,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
@@ -1794,7 +1794,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
@@ -8020,7 +8020,7 @@ __metadata:
   peerDependencies:
     "@types/node": 18.16.19
     eslint: ^8.43.0
-    next: 13.4.7
+    next: 13.4.9
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^5.1.6
