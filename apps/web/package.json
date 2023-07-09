@@ -13,14 +13,14 @@
 	"peerDependencies": {
 		"@types/node": "18.16.19",
 		"eslint": "^8.44.0",
-		"next": "13.4.7",
+		"next": "13.4.9",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"typescript": "^5.1.3"
+		"typescript": "^5.1.6"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^3.11.0",
-		"@next/env": "^13.4.7",
+		"@next/env": "^13.4.9",
 		"@vercel/analytics": "^1.0.1",
 		"@website/buttons": "*",
 		"@website/constants": "*",
@@ -38,7 +38,7 @@
 		"react-toastify": "9.1.3"
 	},
 	"devDependencies": {
-		"@sapphire/eslint-config": "^4.4.2",
+		"@sapphire/eslint-config": "^4.4.3",
 		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^4.0.0",
 		"@types/node": "18.16.19",
@@ -46,8 +46,8 @@
 		"@types/react": "18.2.14",
 		"@types/react-dom": "18.2.6",
 		"autoprefixer": "^10.4.14",
-		"eslint-config-next": "13.4.7",
-		"postcss": "^8.4.24",
+		"eslint-config-next": "13.4.9",
+		"postcss": "^8.4.25",
 		"tailwindcss": "^3.3.2"
 	}
 }
