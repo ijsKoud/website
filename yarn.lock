@@ -1773,7 +1773,7 @@ __metadata:
     "@types/react-dom": ^18.2.7
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: ^18.2.0
     typescript: ^5.1.6
@@ -1793,7 +1793,7 @@ __metadata:
     framer-motion: 10.12.21
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     typescript: ^5.1.6
   languageName: unknown
   linkType: soft
@@ -1813,7 +1813,7 @@ __metadata:
     reactfire: ^4.2.3
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
@@ -1834,7 +1834,7 @@ __metadata:
     axios: ^1.4.0
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
@@ -1854,7 +1854,7 @@ __metadata:
     react-markdown: ^8.0.7
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     react: ^18.2.0
     typescript: ^5.1.6
   languageName: unknown
@@ -1872,7 +1872,7 @@ __metadata:
     "@website/constants": "*"
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
@@ -1896,7 +1896,7 @@ __metadata:
     twemoji-parser: ^14.0.0
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
@@ -1926,7 +1926,7 @@ __metadata:
     yup: ^1.2.0
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
@@ -8190,7 +8190,7 @@ __metadata:
     tailwindcss: ^3.3.3
   peerDependencies:
     "@types/node": 18.16.19
-    eslint: ^8.44.0
+    eslint: ^8.45.0
     next: 13.4.10
     react: 18.2.0
     react-dom: 18.2.0
