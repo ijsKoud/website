@@ -1256,12 +1256,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.4.5":
-  version: 1.4.5
-  resolution: "@sapphire/prettier-config@npm:1.4.5"
+"@sapphire/prettier-config@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@sapphire/prettier-config@npm:2.0.0"
   dependencies:
-    prettier: ^2.8.2
-  checksum: 241dfda0e73d1cb62d97fc946530041f1515a077572e4fd2da9f0bef80b97fbd8828ad6d36f6c98561b217acce185d111175eb3c889907e2591daf778e800274
+    prettier: ^3.0.0
+  checksum: 5e7aa2f3c29587d8bd409d66e75ffa5ff6d6b98df6bdfb82dedb6d43b6134a5ba764d95dfc6b252b92bb4a56f125b22b83737449ee8dbf1d2ff41b0f1b6e87f7
   languageName: node
   linkType: hard
 
@@ -1798,7 +1798,7 @@ __metadata:
   resolution: "@website/buttons@workspace:packages/buttons"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1816,7 +1816,7 @@ __metadata:
   resolution: "@website/constants@workspace:packages/constants"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1834,7 +1834,7 @@ __metadata:
   resolution: "@website/firebase@workspace:packages/firebase"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1857,7 +1857,7 @@ __metadata:
   resolution: "@website/footer@workspace:packages/footer"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1878,7 +1878,7 @@ __metadata:
   resolution: "@website/markdown@workspace:packages/markdown"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1896,7 +1896,7 @@ __metadata:
   resolution: "@website/modal@workspace:packages/modal"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1916,7 +1916,7 @@ __metadata:
   resolution: "@website/navbar@workspace:packages/navbar"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -1940,7 +1940,7 @@ __metadata:
   resolution: "@website/ui@workspace:packages/ui"
   dependencies:
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/react": ^18.2.18
     "@types/react-dom": ^18.2.7
@@ -6489,15 +6489,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.2":
-  version: 2.8.2
-  resolution: "prettier@npm:2.8.2"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
-  languageName: node
-  linkType: hard
-
 "prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
@@ -8239,7 +8230,7 @@ __metadata:
     "@emailjs/browser": ^3.11.0
     "@next/env": ^13.4.12
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/node": 18.17.3
     "@types/nprogress": ^0.2.0
@@ -8288,7 +8279,7 @@ __metadata:
     "@commitlint/cli": ^17.6.7
     "@commitlint/config-angular": ^17.6.7
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^1.4.5
+    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
     "@types/node": 18.17.3
     "@typescript-eslint/eslint-plugin": ^5.62.0
