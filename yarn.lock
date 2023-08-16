@@ -1275,6 +1275,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@snowcrystals/prettier-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@snowcrystals/prettier-config@npm:1.0.0"
+  checksum: 3f86d203fc0176713ce81debfece3408a290d4deb68ebdd36af8abf9715a25592484753013721e28c3fe0059b5aaef1d8cdb3fde9340f786c4c9823032dc72e5
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.5.1":
   version: 0.5.1
   resolution: "@swc/helpers@npm:0.5.1"
@@ -8287,8 +8294,8 @@ __metadata:
     "@commitlint/cli": ^17.7.1
     "@commitlint/config-angular": ^17.7.0
     "@sapphire/eslint-config": ^4.4.3
-    "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
+    "@snowcrystals/prettier-config": ^1.0.0
     "@types/node": 18.17.5
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
