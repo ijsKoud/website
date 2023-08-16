@@ -9,17 +9,17 @@
 		"lint": "TIMING=1 eslint"
 	},
 	"peerDependencies": {
-		"@types/node": "18.16.19",
-		"eslint": "^8.45.0",
-		"next": "13.4.10",
+		"@types/node": "18.17.5",
+		"eslint": "^8.46.0",
+		"next": "13.4.13",
 		"react": "^18.2.0",
 		"typescript": "^5.1.6"
 	},
 	"devDependencies": {
-		"@sapphire/eslint-config": "^4.4.3",
-		"@sapphire/prettier-config": "^1.4.5",
-		"@sapphire/ts-config": "^4.0.0",
-		"@types/react": "^18.2.15",
+		"@sapphire/eslint-config": "^5.0.0",
+		"@sapphire/ts-config": "^4.0.1",
+		"@snowcrystals/prettier-config": "^1.0.0",
+		"@types/react": "^18.2.20",
 		"@types/react-dom": "^18.2.7"
 	}
 }
