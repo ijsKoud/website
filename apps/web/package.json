@@ -29,7 +29,7 @@
 		"@website/markdown": "*",
 		"@website/navbar": "*",
 		"@website/ui": "*",
-		"axios": "^1.4.0",
+		"axios": "^1.5.0",
 		"fuse.js": "^6.6.2",
 		"next-seo": "^6.1.0",
 		"next-sitemap": "^4.2.2",
