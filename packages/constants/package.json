@@ -14,7 +14,7 @@
 		"typescript": "^5.2.2"
 	},
 	"devDependencies": {
-		"@sapphire/eslint-config": "^5.0.1",
+		"@sapphire/eslint-config": "^5.0.2",
 		"@sapphire/ts-config": "^4.0.1",
 		"@snowcrystals/prettier-config": "^1.0.0",
 		"@types/react": "^18.2.21",
