@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"@sapphire/eslint-config": "^5.0.2",
-		"@sapphire/ts-config": "^4.0.1",
+		"@sapphire/ts-config": "^5.0.0",
 		"@snowcrystals/prettier-config": "^1.0.0",
 		"@types/node": "18.17.14",
 		"@types/nprogress": "^0.2.0",
