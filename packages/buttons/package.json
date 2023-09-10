@@ -9,7 +9,7 @@
 		"lint": "TIMING=1 eslint"
 	},
 	"peerDependencies": {
-		"@types/node": "18.17.14",
+		"@types/node": "18.17.15",
 		"eslint": "^8.48.0",
 		"next": "13.4.19",
 		"react": "^18.2.0",
