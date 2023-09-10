@@ -1650,7 +1650,7 @@ __metadata:
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
     "@types/twemoji-parser": ^13.1.1
-    framer-motion: 10.16.2
+    framer-motion: 10.16.4
   peerDependencies:
     "@types/node": 18.17.14
     eslint: ^8.48.0
@@ -1751,7 +1751,7 @@ __metadata:
     "@types/react-dom": ^18.2.7
     "@types/twemoji-parser": ^13.1.1
     "@website/constants": "*"
-    framer-motion: ^10.16.2
+    framer-motion: ^10.16.4
     next-themes: ^0.2.1
     twemoji-parser: ^14.0.0
   peerDependencies:
@@ -1778,8 +1778,8 @@ __metadata:
     "@website/firebase": "*"
     "@website/markdown": "*"
     "@website/modal": "*"
-    formik: ^2.4.3
-    framer-motion: 10.16.2
+    formik: ^2.4.4
+    framer-motion: 10.16.4
     next-themes: 0.2.1
     react-intersection-observer: 9.5.2
     twemoji-parser: ^14.0.0
@@ -3572,9 +3572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formik@npm:^2.4.3":
-  version: 2.4.3
-  resolution: "formik@npm:2.4.3"
+"formik@npm:^2.4.4":
+  version: 2.4.4
+  resolution: "formik@npm:2.4.4"
   dependencies:
     deepmerge: ^2.1.1
     hoist-non-react-statics: ^3.3.0
@@ -3585,7 +3585,7 @@ __metadata:
     tslib: ^2.0.0
   peerDependencies:
     react: ">=16.8.0"
-  checksum: d98dabfce97beb5cf2ff10bdaff61e0cb9e1d29090cfcad706efc793d06674cfe65299d432d32518a2756a58b6b6bfe85ceec8b47b4f5f9dcc375bcd7a37107a
+  checksum: 013214f315a942975879bb9fcd08e1a622e9418a6a30fe3cffdb369915ac695e0790af001231bf5909a2d21bf46d2f3d3b0490a403901e35f20f2a3d458a249c
   languageName: node
   linkType: hard
 
@@ -3596,9 +3596,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:10.16.2, framer-motion@npm:^10.16.2":
-  version: 10.16.2
-  resolution: "framer-motion@npm:10.16.2"
+"framer-motion@npm:10.16.4, framer-motion@npm:^10.16.4":
+  version: 10.16.4
+  resolution: "framer-motion@npm:10.16.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -3613,7 +3613,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 341de9ed9ad26e67306d6467a17f5260ce0e8a034f936f2af22f03a7fe4087de487a8aebcbc396ab591de7fe181926d0cd6a79ec1dca6172e85f7fdf5103484f
+  checksum: 57eb252f25a2c4ee14b024295c6a1162a53a05e0321bdb9c8a22ec266fbe777832823eaa0309e42854170fcde16c42915c6c5d0208b628fd000d6fab013c501f
   languageName: node
   linkType: hard
 
@@ -5568,9 +5568,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "next-sitemap@npm:4.2.2"
+"next-sitemap@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "next-sitemap@npm:4.2.3"
   dependencies:
     "@corex/deepmerge": ^4.0.43
     "@next/env": ^13.4.3
@@ -5581,7 +5581,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 0a0c08a0185888985789571e2bfcfd719079993f646a589058e5046b3a0fd3cfdef46a1e3b58a57e883291bfa24a7b2af056932ceb58b7bdb462652e006a121d
+  checksum: 322cbbf11b6549b7bd5acda98f60a4ef6bb6627e6cd5b4a9367aa8950edf6bcc90f47f4da74a18ecdd823f52c0f625b559b4165dbd27f292c731b222e38fa105
   languageName: node
   linkType: hard
 
@@ -7889,7 +7889,7 @@ __metadata:
     eslint-config-next: 13.4.19
     fuse.js: ^6.6.2
     next-seo: ^6.1.0
-    next-sitemap: ^4.2.2
+    next-sitemap: ^4.2.3
     next-themes: ^0.2.1
     nprogress: ^0.2.0
     postcss: ^8.4.29
