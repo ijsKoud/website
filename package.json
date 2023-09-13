@@ -21,8 +21,6 @@
 		"react-dom": "18.2.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.7.1",
-		"@commitlint/config-angular": "^17.7.0",
 		"@sapphire/eslint-config": "^5.0.2",
 		"@sapphire/ts-config": "^5.0.0",
 		"@snowcrystals/prettier-config": "^1.0.0",
