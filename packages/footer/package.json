@@ -25,6 +25,6 @@
 	},
 	"dependencies": {
 		"@website/constants": "*",
-		"axios": "^1.5.0"
+		"axios": "^1.5.1"
 	}
 }
